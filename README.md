@@ -122,7 +122,7 @@ This submod is not essential for an immersive gaming experience.
 
 # TOOLS
 
-You can find [them](https://github.com/czxieddan/Beat-down-the-Sun/tree/main/bdts_tools) in `bdts_tools` .
+- [Flag Converter](#falg-converter)
 
 ## Flag Converter
 
