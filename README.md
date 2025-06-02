@@ -12,7 +12,7 @@
   </a>
   <h1><a href="https://steamcommunity.com/workshop/filedetails/?id=3478462766">Beat down the Sun Series</a></h1>
 </div>
-<h1>Beat down the Sun Series</h1>
-<h2>Description</h2>
+# Beat down the Sun Series
+**Description:**
 This collection includes the [**Beat down the Sun**](https://steamcommunity.com/sharedfiles/filedetails/?id=3448474441/) Series proper as well as expansions. Bringing you graphical and musical modifications or gameplay expansions for a richer gaming experience. Some of this content may be provided by some of the collaborators and fans of this work!
 
