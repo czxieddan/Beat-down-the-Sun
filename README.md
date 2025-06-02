@@ -43,7 +43,7 @@ As the tolling of the bells ushers in the dawn of the year 2025, a tide of uphea
 >  This mod's GUI is designed exclusively for **_2560×1440_ resolution**. If you play the game at a lower resolution, some windows may extend beyond the screen, potentially affecting your gameplay experience
 
 > [!TIP]
->  All `.mod` files should be placed in `C:\Users\User_name\Documents\Paradox Interactive\Hearts of Iron IV\mod\`. All mod files should be placed in `D:\bdts_github\Beat-down-the-Sun\`.
+>  If you obtain this mod from a source other than "steamcommunity",all `.mod` files should be placed in `C:\Users\User_name\Documents\Paradox Interactive\Hearts of Iron IV\mod\`,and all mod files should be placed in `D:\bdts_github\Beat-down-the-Sun\`.
 
 ### Required items
 
