@@ -120,7 +120,7 @@ Bokaro Style [Radio](#radio).
 
 This submod is not essential for an immersive gaming experience.
 
-# TOOLS
+# Tools
 
 - [Flag Converter](#falg-converter)
 
