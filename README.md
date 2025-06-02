@@ -50,7 +50,7 @@ You can reach me via **[my personal blog](https://czxieddan.top)** or directly b
 ### ACKNOWLEDGEMENT
 #### Producer/Participant:
 - Beat down the Sun: [CzXieDdan](https://x.com/czxieddan)(chief)
-+ Others: 
++ Others: Glaaki
 # Submods
 - #### Audio
   - [Beat down the Sun Sounds (for super events)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52) [(**Required item**)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#required-items)
