@@ -16,7 +16,13 @@
 **Description:**
 This collection includes the [**Beat down the Sun**](https://steamcommunity.com/sharedfiles/filedetails/?id=3448474441/) Series proper as well as expansions. Bringing you graphical and musical modifications or gameplay expansions for a richer gaming experience. Some of this content may be provided by some of the collaborators and fans of this work!
 
-## Beat down the Sun
+# Beat down the Sun
+
+<div align="center">
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3448474441">
+    <img src="https://images.steamusercontent.com/ugc/13254602505795477169/6F69D2FE52A09515ACC82919B70E49302BC577C4/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" width="1080">
+  </a>
+</div>
 
 ### BRIEF
 As the tolling of the bells ushers in the dawn of the year 2025, a tide of upheaval, vast and inexorable, prepares to sweep across the world. Since the turn of the millennium, the iron shroud of the Cold War has dissipated, granting way to an era of rapid progress after the millennium. Yet beneath the placid veneer of global harmony, unseen tempests churn. How shall the people, and the governments entrusted with their fate, navigate this shifting landscape? Amidst the lingering specters of the old order, who shall rise to unfurl the standard of defiance? And who shall emerge as the architect of a new epoch? As the wheel of fate turns, how many nations shall ascend in glory, only to fall into obscurity? And upon what path shall they embark, as fate calls them forth...
@@ -33,3 +39,60 @@ As the tolling of the bells ushers in the dawn of the year 2025, a tide of uphea
 
 ### CONTACTS
 You can reach me via **[my personal blog](https://czxieddan.top)** or directly by sending an email to **czxieddan@czxieddan.top**.
+
+### Required items
+> [!CAUTION]
+> This item requires all of the following other items
+> - [Beat down the Sun Sounds (for super events)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52)
+> + [Beat down the Sun Fonts (52)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52)
+
+# Submods
+- #### Audio
+  - [Beat down the Sun Sounds (for super events)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52) [(**Required item**)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#required-items)
+- #### Fonts
+  - [Beat down the Sun Fonts (52)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52) [(**Required item**)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#required-items)
+- #### Radio
+  - [Beat down the Sun Radio (bokaro)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-radio-bokaro)
+- #### Focus
+
+## Beat down the Sun Sounds (for super events)
+
+<div align="center">
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3478546823">
+    <img src="https://images.steamusercontent.com/ugc/15187478053144182077/30D82BD88DF7E854A0480673AF5218270456FC93/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" width="1080">
+  </a>
+</div>
+
+### BRIEF
+[Audio](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#audio) expansion pack for super events support.
+
+### ELEMENT
+This submod is essential for an immersive gaming experience.
+
+## Beat down the Sun Fonts (52)
+
+<div align="center">
+  <a href="https://steamcommunity.com/workshop/filedetails/?id=3483197045">
+    <img src="https://images.steamusercontent.com/ugc/10677267097707118233/9542402CB7EB3653AEAB1FFAB9AC9D2DEA7C13AA/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" width="1080">
+  </a>
+</div>
+
+### BRIEF
+[Fonts](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#fonts).
+
+### ELEMENT
+This submod is essential for an immersive gaming experience.
+
+## Beat down the Sun Radio (bokaro)
+
+<div align="center">
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3478571427">
+    <img src="https://images.steamusercontent.com/ugc/13304858896917380389/2FB35B4FB7729ABA6ADB23B23B61D56373C06C15/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" width="1080">
+  </a>
+</div>
+
+### BRIEF
+Bokaro Style [Radio](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#radio).
+
+### ELEMENT
+This submod is not essential for an immersive gaming experience.
