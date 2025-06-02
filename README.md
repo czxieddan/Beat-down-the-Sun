@@ -22,11 +22,11 @@ This collection includes the [**Beat down the Sun**](https://steamcommunity.com/
 As the tolling of the bells ushers in the dawn of the year 2025, a tide of upheaval, vast and inexorable, prepares to sweep across the world. Since the turn of the millennium, the iron shroud of the Cold War has dissipated, granting way to an era of rapid progress after the millennium. Yet beneath the placid veneer of global harmony, unseen tempests churn. How shall the people, and the governments entrusted with their fate, navigate this shifting landscape? Amidst the lingering specters of the old order, who shall rise to unfurl the standard of defiance? And who shall emerge as the architect of a new epoch? As the wheel of fate turns, how many nations shall ascend in glory, only to fall into obscurity? And upon what path shall they embark, as fate calls them forth...
 
 ### DISCLAIMER
-This work is currently in its early development stage and is not yet playable. It is shared solely for personal exchange. Some elements may draw inspiration from other works—please inform me of any potential copyright concerns.  
-The content may include imbalances and does not reflect any personal political stance or bias.
+- This work is currently in its early development stage and is not yet playable. It is shared solely for personal exchange. Some elements may draw inspiration from other works—please inform me of any potential copyright concerns.  
++  The content may include imbalances and does not reflect any personal political stance or bias.
 
 ### ELEMENT
-The East Asia region is presently undergoing meticulous refinement, as its intricate landscapes and storied history are woven into a grand tapestry of development...
+- The East Asia region is presently undergoing meticulous refinement, as its intricate landscapes and storied history are woven into a grand tapestry of development...
 
 ### NOTICE
 - This mod's GUI is designed exclusively for **_2560×1440_ resolution**. If you play the game at a lower resolution, some windows may extend beyond the screen, potentially affecting your gameplay experience
