@@ -1,0 +1,17 @@
+state={
+	id=1039
+	name="STATE_1039"
+	provinces={
+		 13385 13386 13387 
+	}
+	manpower=0
+	history={
+		owner = DMD
+		add_core_of = DMD
+		add_core_of = DPK
+		victory_points = { 13385 20 }
+	}
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

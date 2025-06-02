@@ -1,0 +1,28 @@
+scripted_gui = {
+	gridbox_partyattached_window = {
+		window_name = "gridbox_partyattached_window"
+		parent_window_name = "party_attached_window_view"
+		visible = {
+			always = yes
+
+		}
+		
+		triggers = {
+			
+		}
+
+		#dynamic_lists = {
+		#    partyattached_grid = {
+		#	    array = grid_partyattached_array
+		#	    index = i
+		#		value = v
+		#	change_scope = no
+		#		entry_container = partyattached_entry
+		#	}
+		#}
+
+		
+		
+	}
+	
+}

@@ -1,0 +1,174 @@
+refresh_seat = {
+	ROOT = {
+	set_variable = { 1_total = ROOT.party_popularity@Power_Authoritarianism }
+	multiply_variable = { 1_total = party_size }
+	round_variable = 1_total
+	set_variable = { 2_total = ROOT.party_popularity@Ethnonationalism }
+	multiply_variable = { 2_total = party_size }
+	round_variable = 2_total
+	set_variable = { 3_total = ROOT.party_popularity@Religious_Supremacy }
+	multiply_variable = { 3_total = party_size }
+	round_variable = 3_total
+	set_variable = { 4_total = ROOT.party_popularity@Individual_Supremacy }
+	multiply_variable = { 4_total = party_size }
+	round_variable = 4_total
+	set_variable = { 5_total = ROOT.party_popularity@Total_Autonomy }
+	multiply_variable = { 5_total = party_size }
+	round_variable = 5_total
+	set_variable = { 6_total = ROOT.party_popularity@Market_Capitalism }
+	multiply_variable = { 6_total = party_size }
+	round_variable = 6_total
+	set_variable = { 7_total = ROOT.party_popularity@Environmental_Determinism }
+	multiply_variable = { 7_total = party_size }
+	round_variable = 7_total
+	set_variable = { 8_total = ROOT.party_popularity@Social_Contractism }
+	multiply_variable = { 8_total = party_size }
+	round_variable = 8_total
+	set_variable = { 9_total = ROOT.party_popularity@Economic_Interventionism }
+	multiply_variable = { 9_total = party_size }
+	round_variable = 9_total
+
+	
+	
+	
+	
+	set_variable = { 10_total = party_size }
+	subtract_from_variable = { 10_total = 1_total }
+	subtract_from_variable = { 10_total = 2_total }
+	subtract_from_variable = { 10_total = 3_total }
+	subtract_from_variable = { 10_total = 4_total }
+	subtract_from_variable = { 10_total = 5_total }
+	subtract_from_variable = { 10_total = 6_total }
+	subtract_from_variable = { 10_total = 7_total }
+	subtract_from_variable = { 10_total = 8_total }
+	subtract_from_variable = { 10_total = 9_total }
+
+	set_variable = {1_end = 1_total }
+	set_variable = { 2_end = 1_total }
+	add_to_variable = { 2_end = 2_total }
+	set_variable = { 3_end = 2_end }
+	add_to_variable = { 3_end = 3_total }
+	set_variable = { 4_end = 3_end }
+	add_to_variable = { 4_end = 4_total }
+	set_variable = { 5_end = 4_end }
+	add_to_variable = { 5_end = 5_total }
+	set_variable = { 6_end = 5_end }
+	add_to_variable = { 6_end = 6_total }
+	set_variable = { 7_end = 6_end }
+	add_to_variable = { 7_end = 7_total }
+	set_variable = { 8_end = 7_end }
+	add_to_variable = { 8_end = 8_total }
+	set_variable = { 9_end = 8_end }
+	add_to_variable = { 9_end = 9_total }
+	
+}
+    clear_array = ROOT.gridbox_partyseat_array
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 1
+		size = ROOT.1_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 2
+		size = ROOT.2_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 3
+		size = ROOT.3_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 4
+		size = ROOT.4_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 5
+		size = ROOT.5_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 6
+		size = ROOT.6_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 7
+		size = ROOT.7_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 8
+		size = ROOT.8_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 9
+		size = ROOT.9_end
+	}
+	resize_array = {
+		array = gridbox_partyseat_array
+		value = 10
+		size = party_size
+	}
+	clear_array = ROOT.grid_partyattached_array
+	resize_array = {
+		array = grid_partyattached_array
+		value = 1
+		size = 1
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 2
+		size = 2
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 3
+		size = 3
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 4
+		size = 4
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 5
+		size = 5
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 6
+		size = 6
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 7
+		size = 7
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 8
+		size = 8
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 9
+		size = 9
+	}
+	resize_array = {
+		array = grid_partyattached_array
+		value = 10
+		size = 10
+	}
+	set_variable = {
+		party_size = 0
+	}
+
+}
+
+
+

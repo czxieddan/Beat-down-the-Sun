@@ -1,0 +1,307 @@
+
+defined_text = {
+    name = 1_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.1_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+		    check_variable = {
+                ROOT.1_total100 < 10
+			}
+        }
+        localization_key = partypul0a
+    }
+    text = {
+        localization_key = partypul0b
+    }
+}
+defined_text = {
+    name = 2_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.2_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.2_total100 < 10
+			}
+			
+        }
+        localization_key = partypul1a
+    }
+    text = {
+        localization_key = partypul1b
+    }
+}
+defined_text = {
+    name = 3_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.3_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.3_total100 < 10
+			}
+			
+        }
+        localization_key = partypul2a
+    }
+    text = {
+        localization_key = partypul2b
+    }
+}
+defined_text = {
+    name = 4_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.4_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.4_total100 < 10
+			}
+			
+        }
+        localization_key = partypul3a
+    }
+    text = {
+        localization_key = partypul3b
+    }
+}
+defined_text = {
+    name = 5_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.5_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.5_total100 < 10
+			}
+			
+        }
+        localization_key = partypul4a
+    }
+    text = {
+        localization_key = partypul4b
+    }
+}
+defined_text = {
+    name = 6_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.6_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.6_total100 < 10
+			}
+			
+        }
+        localization_key = partypul5a
+    }
+    text = {
+        localization_key = partypul5b
+    }
+}
+defined_text = {
+    name = 7_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.7_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.7_total100 < 10
+			}
+			
+        }
+        localization_key = partypul6a
+    }
+    text = {
+        localization_key = partypul6b
+    }
+}
+defined_text = {
+    name = 8_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.8_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.8_total100 < 10
+			}
+			
+        }
+        localization_key = partypul7a
+    }
+    text = {
+        localization_key = partypul7b
+    }
+}
+defined_text = {
+    name = 9_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.9_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.9_total100 < 10
+			}
+			
+        }
+        localization_key = partypul8a
+    }
+    text = {
+        localization_key = partypul8b
+    }
+}
+defined_text = {
+    name = 10_total100_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.10_total100 = 100
+			}
+        }
+        localization_key = partypulful
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                ROOT.10_total100 < 10
+			}
+			
+        }
+        localization_key = partypul9a
+    }
+    text = {
+        localization_key = partypul9b
+    }
+}
+defined_text = {
+    name = parliament_pop_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.pop_size < 10
+			}
+        }
+        localization_key = parliament_pop_a
+    }
+    
+    text = {
+        localization_key = parliament_pop_b
+    }
+}
+
+defined_text = {
+    name = parliament_unpop_loc
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.unpop_size < 10
+			}
+        }
+        localization_key = parliament_unpop_a
+    }
+    
+    text = {
+        localization_key = parliament_unpop_b
+    }
+}
+defined_text = {
+    name = party_parliament
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.pop_size > 32
+			}
+        }
+        localization_key = party_parliament_a
+    }
+    
+    text = {
+        localization_key = party_parliament_b
+    }
+}
+defined_text = {
+    name = party_parliament_influence
+	text = {
+        trigger = {
+		    check_variable = {
+                ROOT.pop_size > 32
+			}
+        }
+        localization_key = party_parliament_influence_a
+    }
+    
+    text = {
+        localization_key = party_parliament_influence_b
+    }
+}
+defined_text = {
+    name = country_parliament_name
+	text = {
+        trigger = {
+		    has_idea = CCP_NPC_of_RPC
+        }
+        localization_key = country_parliament_name_CCPNPC
+    }
+    
+    text = {
+        localization_key = country_parliament_name_gen
+    }
+}
+
+
+

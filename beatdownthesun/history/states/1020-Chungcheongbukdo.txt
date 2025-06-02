@@ -1,0 +1,27 @@
+state={
+	id=1020
+	name="STATE_1020"
+	provinces={
+		 1100 9936 10115 
+	}
+	manpower=1641481
+	
+	history={
+		owner = ROK
+		#victory_points = { 3838 1 }
+		
+		add_core_of = ROK
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+			
+		}
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

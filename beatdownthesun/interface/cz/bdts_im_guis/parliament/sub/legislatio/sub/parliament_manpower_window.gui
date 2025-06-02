@@ -1,0 +1,70 @@
+guiTypes = {
+    containerWindowType = {
+		name = "parliament_manpower_window"
+		position = {x=493 y=-87}
+		background = {
+			name = "background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		orientation = center
+		origo = left
+		#moveable = yes
+		size = { width = 231 height= 253 }
+		buttonType = {
+			name = "change_manpower_level7_button"
+			position = { x = 5 y = 5 }
+			spriteType = "GFX_button_221x34"
+			text = "change_manpower_level7_button_text"
+			font = "hoi_16mbs"
+			pdx_tooltip = "change_manpower_level7_button_desc"
+		}
+		buttonType = {
+			name = "change_manpower_level6_button"
+			position = { x = 5 y = 40 }
+			spriteType = "GFX_button_221x34"
+			text = "change_manpower_level6_button_text"
+			font = "hoi_16mbs"
+			pdx_tooltip = "change_manpower_level6_button_desc"
+		}
+		buttonType = {
+			name = "change_manpower_level5_button"
+			position = { x = 5 y = 75 }
+			spriteType = "GFX_button_221x34"
+			text = "change_manpower_level5_button_text"
+			font = "hoi_16mbs"
+			pdx_tooltip = "change_manpower_level5_button_desc"
+		}
+		buttonType = {
+			name = "change_manpower_level4_button"
+			position = { x = 5 y = 110 }
+			spriteType = "GFX_button_221x34"
+			text = "change_manpower_level4_button_text"
+			font = "hoi_16mbs"
+			pdx_tooltip = "change_manpower_level4_button_desc"
+		}
+		buttonType = {
+			name = "change_manpower_level3_button"
+			position = { x = 5 y = 145 }
+			spriteType = "GFX_button_221x34"
+			text = "change_manpower_level3_button_text"
+			font = "hoi_16mbs"
+			pdx_tooltip = "change_manpower_level3_button_desc"
+		}
+		buttonType = {
+			name = "change_manpower_level2_button"
+			position = { x = 5 y = 180 }
+			spriteType = "GFX_button_221x34"
+			text = "change_manpower_level2_button_text"
+			font = "hoi_16mbs"
+			pdx_tooltip = "change_manpower_level2_button_desc"
+		}
+		buttonType = {
+			name = "change_manpower_level1_button"
+			position = { x = 5 y = 215 }
+			spriteType = "GFX_button_221x34"
+			text = "change_manpower_level1_button_text"
+			font = "hoi_16mbs"
+			pdx_tooltip = "change_manpower_level1_button_desc"
+		}
+	}
+}

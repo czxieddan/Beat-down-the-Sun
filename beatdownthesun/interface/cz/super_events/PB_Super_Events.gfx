@@ -1,0 +1,66 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_Pax_Super_Event_Window"
+		texturefile = "gfx/super_event/Pax_Super_Event_Window.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Super_Event_Quote_Background"
+		texturefile = "gfx/super_event/Super_Event_Quote_Background.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_REMARK"
+		texturefile = "gfx/super_event/Super_Event_Remark_Button.png"
+		legacy_lazy_load = no
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_thin_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx/super_eventtiled_window_thin_border_kr2.png"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_BDTS_SUPER_EVENTS_SCREEN"
+		texturefile = "gfx/super_event/BDTS_SUPER_EVENTS_SCREEN.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_BDTS_SUPER_EVENTS_BOX"
+		texturefile = "gfx/super_event/BDTS_SUPER_EVENTS_BOX.png"
+		legacy_lazy_load = no
+	}
+
+
+	#SUPER_EVENTS_IMAGES
+
+	spriteType = {
+		name = "GFX_Super_Event_Image_Test"
+		texturefile = "gfx/super_events/Super_Event_Image_Test.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_JPN_power_of_god_chingyu_s"
+		texturefile = "gfx/super_events/SPEVNT_JPN_power_of_god_chingyu_s.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SPEVNT_JPN_sun_war_chingyu_s"
+		texturefile = "gfx/super_events/SPEVNT_JPN_sun_war_chingyu_s.png"
+		legacy_lazy_load = no
+	}
+
+	
+	
+	
+	
+	
+}

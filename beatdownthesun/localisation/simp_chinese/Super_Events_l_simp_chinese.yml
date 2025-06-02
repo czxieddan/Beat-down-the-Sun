@@ -1,0 +1,20 @@
+﻿l_simp_chinese:
+ get_super_event_title: "-"
+ GFX_SPEVNT_JPN_power_of_god_chingyu_s: "§0日本政府宣布晴雨天皇降临§!"
+ GFX_SPEVNT_JPN_power_of_god_chingyu_s_TEXT: "我们至高的神明——晴雨天皇已经降临。无知的世人们啊，速速臣服于脚下吧！祂将带我们走向胜利！§4——日本晴雨天皇集团§!"
+ GFX_SPEVNT_JPN_power_of_god_chingyu_s_REMARK: "神明降临人世间"
+ GFX_SPEVNT_JPN_power_of_god_chingyu_s_DESC: "日本历经数年发展，当前已达到空前领先的发展水平。如今晴雨天皇被日本民众的前程深深感动，于今日正式降临。日本政府于本日正午正式为晴雨天皇举行加冕仪式，改年号为普世元年。这种极具深味的年号不禁引人深思，日本的崛起有将会引发怎样一系列的动荡？……"
+ 
+ GFX_SPEVNT_JPN_sun_war_chingyu_s: "§0阳光普照战争§!"
+ GFX_SPEVNT_JPN_sun_war_chingyu_s_TEXT: "让阳光再次普照大地！§4——晴雨天皇§!"
+ GFX_SPEVNT_JPN_sun_war_chingyu_s_REMARK: "人与神之间的战争打响了"
+ GFX_SPEVNT_JPN_sun_war_chingyu_s_DESC: "晴雨天皇庄严宣告，向世界各国收复“§R我们阳光下的地盘§!”，并已向[JPN.CHINGYUWARWITHTAG]正式宣战。这场面向全世界的进攻，人类与神明之间正面对决的打响，究竟会将这个世界引向怎样的未来？……"
+ #[JPN.CHINGYUWARWITHTAG]
+ 
+ 
+ 
+ Quote_of_the_Day: "每日一语"
+ KX_turn_off_superevents_decision: "永久隐藏决议组"
+ KX_turn_off_superevents_total: "禁用超事件"
+ KX_turn_on_superevents_total: "启用超事件"
+ KX_superevent_total_off: "超事件已禁用"

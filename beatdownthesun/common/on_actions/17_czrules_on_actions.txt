@@ -1,0 +1,46 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = faction_button_options
+						option = BUTTON_PRESENT
+					}
+				}
+				set_global_flag = bdts_faction_buttons_present
+			}
+		}
+		
+	}
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_wargoals
+						option = ALWAYS_FREE_BDTS
+					}
+				}
+				set_global_flag = use_bdts_free_wargoals
+			}
+		}
+		
+	}
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = manpower_choice_options
+						option = BDTS
+					}
+				}
+				set_global_flag = use_bdts_manpower
+			}
+		}
+		
+	}
+	
+}

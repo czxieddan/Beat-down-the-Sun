@@ -1,0 +1,516 @@
+defined_text = { 
+    name = getchange_manpower_desc
+	
+    text = {
+        localization_key = gen_change_manpower_desc
+    }
+}
+#此後部分用於填寫游戲内每個兵役制度的本地化
+defined_text = { #默認
+    name = getname_manpower_gen_lv7
+	
+    text = {
+        localization_key = manpower_gen_lv7
+    }
+}
+defined_text = {
+    name = getdesc_manpower_gen_lv7
+	
+    text = {
+        localization_key = desc_manpower_gen_lv7
+    }
+}
+defined_text = {
+    name = getname_manpower_gen_lv6
+	
+    text = {
+        localization_key = manpower_gen_lv6
+    }
+}
+defined_text = {
+    name = getdesc_manpower_gen_lv6
+	
+    text = {
+        localization_key = desc_manpower_gen_lv6
+    }
+}
+defined_text = {
+    name = getname_manpower_gen_lv5
+	
+    text = {
+        localization_key = manpower_gen_lv5
+    }
+}
+defined_text = {
+    name = getdesc_manpower_gen_lv5
+	
+    text = {
+        localization_key = desc_manpower_gen_lv5
+    }
+}
+defined_text = {
+    name = getname_manpower_gen_lv4
+	
+    text = {
+        localization_key = manpower_gen_lv4
+    }
+}
+defined_text = {
+    name = getdesc_manpower_gen_lv4
+	
+    text = {
+        localization_key = desc_manpower_gen_lv4
+    }
+}
+defined_text = {
+    name = getname_manpower_gen_lv3
+	
+    text = {
+        localization_key = manpower_gen_lv3
+    }
+}
+defined_text = {
+    name = getdesc_manpower_gen_lv3
+	
+    text = {
+        localization_key = desc_manpower_gen_lv3
+    }
+}
+defined_text = {
+    name = getname_manpower_gen_lv2
+	
+    text = {
+        localization_key = manpower_gen_lv2
+    }
+}
+defined_text = {
+    name = getdesc_manpower_gen_lv2
+	
+    text = {
+        localization_key = desc_manpower_gen_lv2
+    }
+}
+defined_text = {
+    name = getname_manpower_gen_lv1
+	
+    text = {
+        localization_key = manpower_gen_lv1
+    }
+}
+defined_text = {
+    name = getdesc_manpower_gen_lv1
+	
+    text = {
+        localization_key = desc_manpower_gen_lv1
+    }
+}
+defined_text = { #豬豬
+    name = getname_manpower_DPKggbond_lv7
+	
+    text = {
+        localization_key = manpower_DPKggbond_lv7
+    }
+}
+defined_text = {
+    name = getdesc_manpower_DPKggbond_lv7
+	
+    text = {
+        localization_key = desc_manpower_DPKggbond_lv7
+    }
+}
+defined_text = {
+    name = getname_manpower_DPKggbond_lv6
+	
+    text = {
+        localization_key = manpower_DPKggbond_lv6
+    }
+}
+defined_text = {
+    name = getdesc_manpower_DPKggbond_lv6
+	
+    text = {
+        localization_key = desc_manpower_DPKggbond_lv6
+    }
+}
+defined_text = {
+    name = getname_manpower_DPKggbond_lv5
+	
+    text = {
+        localization_key = manpower_DPKggbond_lv5
+    }
+}
+defined_text = {
+    name = getdesc_manpower_DPKggbond_lv5
+	
+    text = {
+        localization_key = desc_manpower_DPKggbond_lv5
+    }
+}
+defined_text = {
+    name = getname_manpower_DPKggbond_lv4
+	
+    text = {
+        localization_key = manpower_DPKggbond_lv4
+    }
+}
+defined_text = {
+    name = getdesc_manpower_DPKggbond_lv4
+	
+    text = {
+        localization_key = desc_manpower_DPKggbond_lv4
+    }
+}
+defined_text = {
+    name = getname_manpower_DPKggbond_lv3
+	
+    text = {
+        localization_key = manpower_DPKggbond_lv3
+    }
+}
+defined_text = {
+    name = getdesc_manpower_DPKggbond_lv3
+	
+    text = {
+        localization_key = desc_manpower_DPKggbond_lv3
+    }
+}
+defined_text = {
+    name = getname_manpower_DPKggbond_lv2
+	
+    text = {
+        localization_key = manpower_DPKggbond_lv2
+    }
+}
+defined_text = {
+    name = getdesc_manpower_DPKggbond_lv2
+	
+    text = {
+        localization_key = desc_manpower_DPKggbond_lv2
+    }
+}
+defined_text = {
+    name = getname_manpower_DPKggbond_lv1
+	
+    text = {
+        localization_key = manpower_DPKggbond_lv1
+    }
+}
+defined_text = {
+    name = getdesc_manpower_DPKggbond_lv1
+	
+    text = {
+        localization_key = desc_manpower_DPKggbond_lv1
+    }
+}
+defined_text = { #這個地方應該填寫游戲内全部的兵役制度
+    name = getname_manpower_now
+	
+    text = { #默認
+		trigger = {
+			has_idea = manpower_gen_lv7
+		}
+        localization_key = manpower_gen_lv7
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_gen_lv6
+		}
+        localization_key = manpower_gen_lv6
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_gen_lv5
+		}
+        localization_key = manpower_gen_lv5
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_gen_lv4
+		}
+        localization_key = manpower_gen_lv4
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_gen_lv3
+		}
+        localization_key = manpower_gen_lv3
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_gen_lv2
+		}
+        localization_key = manpower_gen_lv2
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_gen_lv1
+		}
+        localization_key = manpower_gen_lv1
+    }
+    text = { #豬豬
+		trigger = {
+			has_idea = manpower_DPKggbond_lv7
+		}
+        localization_key = manpower_DPKggbond_lv7
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_DPKggbond_lv6
+		}
+        localization_key = manpower_DPKggbond_lv6
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_DPKggbond_lv5
+		}
+        localization_key = manpower_DPKggbond_lv5
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_DPKggbond_lv4
+		}
+        localization_key = manpower_DPKggbond_lv4
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_DPKggbond_lv3
+		}
+        localization_key = manpower_DPKggbond_lv3
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_DPKggbond_lv2
+		}
+        localization_key = manpower_DPKggbond_lv2
+    }
+	text = {
+		trigger = {
+			has_idea = manpower_DPKggbond_lv1
+		}
+        localization_key = manpower_DPKggbond_lv1
+    }
+}
+defined_text = { #此處填寫游戲内全部的7級兵役制度名稱，後見解釋即效果，以此類推
+    name = manpowername7
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv7
+        }
+        localization_key = manpower_gen_lv7
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv7
+        }
+        localization_key = manpower_DPKggbond_lv7
+    }
+}
+defined_text = { 
+    name = manpowerdesc7
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv7
+        }
+        localization_key = desc_manpower_gen_lv7
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv7
+        }
+        localization_key = desc_manpower_DPKggbond_lv7
+    }
+}
+defined_text = { 
+    name = manpowername6
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv6
+        }
+        localization_key = manpower_gen_lv6
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv6
+        }
+        localization_key = manpower_DPKggbond_lv6
+    }
+}
+defined_text = { 
+    name = manpowerdesc6
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv6
+        }
+        localization_key = desc_manpower_gen_lv6
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv6
+        }
+        localization_key = desc_manpower_DPKggbond_lv6
+    }
+}
+defined_text = { 
+    name = manpowername5
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv5
+        }
+        localization_key = manpower_gen_lv5
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv5
+        }
+        localization_key = manpower_DPKggbond_lv5
+    }
+}
+defined_text = { 
+    name = manpowerdesc5
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv5
+        }
+        localization_key = desc_manpower_gen_lv5
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv5
+        }
+        localization_key = desc_manpower_DPKggbond_lv5
+    }
+}
+defined_text = { 
+    name = manpowername4
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv4
+        }
+        localization_key = manpower_gen_lv4
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv4
+        }
+        localization_key = manpower_DPKggbond_lv4
+    }
+}
+defined_text = { 
+    name = manpowerdesc4
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv4
+        }
+        localization_key = desc_manpower_gen_lv4
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv4
+        }
+        localization_key = desc_manpower_DPKggbond_lv4
+    }
+}
+defined_text = { 
+    name = manpowername3
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv3
+        }
+        localization_key = manpower_gen_lv3
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv3
+        }
+        localization_key = manpower_DPKggbond_lv3
+    }
+}
+defined_text = { 
+    name = manpowerdesc3
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv3
+        }
+        localization_key = desc_manpower_gen_lv3
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv3
+        }
+        localization_key = desc_manpower_DPKggbond_lv3
+    }
+}
+defined_text = { 
+    name = manpowername2
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv2
+        }
+        localization_key = manpower_gen_lv2
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv2
+        }
+        localization_key = manpower_DPKggbond_lv2
+    }
+}
+defined_text = { 
+    name = manpowerdesc2
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv2
+        }
+        localization_key = desc_manpower_gen_lv2
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv2
+        }
+        localization_key = desc_manpower_DPKggbond_lv2
+    }
+}
+defined_text = { 
+    name = manpowername1
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv1
+        }
+        localization_key = manpower_gen_lv1
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv1
+        }
+        localization_key = manpower_DPKggbond_lv1
+    }
+}
+defined_text = { 
+    name = manpowerdesc1
+    
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_gen_lv1
+        }
+        localization_key = desc_manpower_gen_lv1
+    }
+    text = {
+        trigger = {
+            has_country_flag = use_manpower_DPKggbond_lv1
+        }
+        localization_key = desc_manpower_DPKggbond_lv1
+    }
+}

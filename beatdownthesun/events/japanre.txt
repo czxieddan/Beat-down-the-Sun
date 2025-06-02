@@ -1,0 +1,415 @@
+add_namespace = idea_jpn
+add_namespace = country_jpn
+add_namespace = news_jpn
+
+
+
+
+country_event = {
+	id = country_jpn.1
+	title = country_jpn.1.t
+	desc = country_jpn.1.desc
+	#picture = GFX_report_event_japanese_transport_soldiers
+	
+
+	is_triggered_only = no
+	fire_only_once = yes
+    hidden = yes
+	
+	trigger = {
+        OR = {
+		    tag = JPN
+			tag = JPJ
+			}
+       
+        JPN = { has_completed_focus = JPN_wield_power_JRCL }
+        
+       
+        
+    }
+
+	
+	
+    immediate = {
+		
+		JPN = { 
+			set_capital = {state = 531}
+		    }
+		JPJ = {
+				add_state_core = 282 
+				add_state_core = 532
+				add_state_core = 533 
+				add_state_core = 534 
+				add_state_core = 535
+				transfer_state = 282 
+				transfer_state = 532
+				transfer_state = 533 
+				transfer_state = 534 
+			    transfer_state = 535
+				
+		}
+
+			
+		JPJ = { change_tag_from = JPN }	
+		
+        
+        
+    }
+    
+	option = {
+		name = "country_jpj.1.a"
+		JPJ = { 
+			declare_war_on = {
+				target = JPN
+				type = civil_war
+			}
+			add_civil_war_target = JPN
+	    }
+	}
+}
+
+country_event = {
+	id = country_jpn.2
+	title = country_jpn.2.t
+	desc = country_jpn.2.desc
+	picture = GFX_cz_events_JPN_2
+
+	is_triggered_only = yes
+	fire_only_once = no
+    
+	
+
+	
+	
+    immediate = {
+		hidden_effect = {
+			set_province_name = {
+			    id = 11960
+			    name = "JPN_V_11960_NAME_JZ"
+		    }
+		}
+		set_global_flag = country_jpn_2_dc
+        
+    }
+    
+	option = {
+		name = "country_jpn.2.a"
+		trigger = {
+			controls_province = 11960
+			
+		}
+		if = {
+			limit = {
+				controls_province = 11960
+			}
+			set_province_name = {
+				id = 11960
+				name = "JPN_V_11960_NAME_J0"
+			}
+			set_global_flag = jpn_move_capital_531_a
+			
+			set_variable = {
+				var = jpn_move_capital_531_where_p
+				value = 531
+			}
+			set_variable = {
+				var = jpn_move_capital_531_where_s
+				value = 11960
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost
+				value = 300
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost2
+				value = 50
+			}
+			
+			
+			
+
+		}
+
+		
+	}
+	option = {
+		name = "country_jpn.2.b"
+		trigger = {
+			controls_province = 11960
+		}
+		if = {
+			limit = {
+				controls_province = 11960
+			}
+			set_province_name = {
+				id = 11960
+				name = "JPN_V_11960_NAME_J0"
+			}
+			set_global_flag = jpn_move_capital_531_b
+			set_variable = {
+				var = jpn_move_capital_531_where_p
+				value = 531
+			}
+			set_variable = {
+				var = jpn_move_capital_531_where_s
+				value = 11960
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost
+				value = 300
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost2
+				value = 50
+			}
+			
+			
+
+		}
+
+		
+	}
+	option = {
+		name = "country_jpn.2.c"
+		trigger = {
+			controls_province = 11960
+		}
+		if = {
+			limit = {
+				controls_province = 11960
+			}
+			set_province_name = {
+				id = 11960
+				name = "JPN_V_11960_NAME_J0"
+			}
+			set_global_flag = jpn_move_capital_531_c
+			set_variable = {
+				var = jpn_move_capital_531_where_p
+				value = 531
+			}
+			set_variable = {
+				var = jpn_move_capital_531_where_s
+				value = 11960
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost
+				value = 300
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost2
+				value = 50
+			}
+			
+			
+
+		}
+
+		
+	}
+	option = {
+		name = "country_jpn.2.d"
+		trigger = {
+			controls_province = 11960
+			NOT = { has_global_flag = JPN_531_CHINGYU }
+		}
+		if = {
+			limit = {
+				controls_province = 11960
+			}
+			set_province_name = {
+				id = 11960
+				name = "JPN_V_11960_NAME_J0"
+			}
+			set_global_flag = jpn_move_capital_531_d
+			set_variable = {
+				var = jpn_move_capital_531_where_p
+				value = 531
+			}
+			set_variable = {
+				var = jpn_move_capital_531_where_s
+				value = 11960
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost
+				value = 300
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost2
+				value = 50
+			}
+			
+			
+
+		}
+
+		
+	}
+	option = {
+		name = "country_jpn.2.e"
+		trigger = {
+			controls_province = 11960
+		}
+		if = {
+			limit = {
+				controls_province = 11960
+			}
+			set_province_name = {
+				id = 11960
+				name = "JPN_V_11960_NAME_J0"
+			}
+			set_global_flag = jpn_move_capital_531_e
+			set_variable = {
+				var = jpn_move_capital_531_where_p
+				value = 531
+			}
+			set_variable = {
+				var = jpn_move_capital_531_where_s
+				value = 11960
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost
+				value = 150
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost2
+				value = 50
+			}
+			add_to_variable = {
+				var = jpn_chingyu_resentment
+				value = 4000
+			}
+			
+
+		}
+
+		
+	}
+	option = {
+		name = "country_jpn.2.f"
+		trigger = {
+			
+			controls_province = 1182
+		}
+		if = {
+			limit = {
+				
+				controls_province = 1182
+			}
+			
+			set_province_name = {
+				id = 11960
+				name = "JPN_V_11960_NAME_JA"
+			}
+			set_global_flag = jpn_move_capital_531_f
+			set_variable = {
+				var = jpn_move_capital_531_where_p
+				value = 282
+			}
+			set_variable = {
+				var = jpn_move_capital_531_where_s
+				value = 1182
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost
+				value = 300
+			}
+			set_variable = {
+				var = jpn_move_capital_531_cost2
+				value = 1
+			}
+			add_to_variable = {
+				var = jpn_chingyu_resentment
+				value = 2000
+			}
+			
+		}
+
+		
+	}
+}
+news_event = {
+	
+
+	id = news_jpn.1
+	title = news_jpn.1.t
+	desc = news_jpn.1.desc
+	picture = GFX_cz_news_JPN_1
+
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+
+	option = {
+		name = "news_jpn.1.a"
+		trigger = {
+			
+			tag = JPN
+		}
+		if = {
+			limit = {
+				
+				OR = {
+					has_global_flag = jpn_move_capital_531_a
+					has_global_flag = jpn_move_capital_531_b
+					has_global_flag = jpn_move_capital_531_c
+					has_global_flag = jpn_move_capital_531_d
+					#has_global_flag = jpn_move_capital_531_e
+					#has_global_flag = jpn_move_capital_531_f
+				}
+			}
+			
+			531 = {
+				set_state_category = modernmetropolis
+				add_extra_state_shared_building_slots = 8
+			}
+			set_global_flag = jpn_move_capital_531_success
+			
+		}
+		if = {
+			limit = {
+				
+				
+					has_global_flag = jpn_move_capital_531_f
+				
+			}
+			
+			282 = {
+				set_state_category = modernmetropolis
+				add_extra_state_shared_building_slots = 8
+			}
+			set_global_flag = jpn_move_capital_282_success
+			
+		}
+		if = {
+			limit = {
+				
+				
+					has_global_flag = jpn_move_capital_531_e
+				
+			}
+			
+			531 = {
+				set_state_category = moderncity
+				add_extra_state_shared_building_slots = 10
+			}
+			set_global_flag = jpn_move_capital_282_success
+			
+		}
+
+		
+	}
+	option = {
+		name = "news_jpn.1.b"
+		trigger = {
+			
+			NOT = { tag = JPN }
+		}
+	}
+	option = {
+		name = "news_jpn.1.c"
+		trigger = {
+			#always = no #test
+			NOT = { tag = JPN }
+		}
+	}
+}

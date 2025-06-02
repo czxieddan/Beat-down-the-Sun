@@ -1,0 +1,462 @@
+parliament_change_set = {
+    ROOT = {
+	    if = {
+		    limit = { 
+			    check_variable = {
+                    manpower_change_to_variable = 7
+			    }
+			}
+			clear_variable = manpower_change_to_variable
+			set_variable = { manpower_will_change_variable = 7 }
+			if = {
+				limit = { 
+					NOT = { has_country_flag = parliament_changing }
+				}
+				set_country_flag = change_manpower_to_lv7
+				set_country_flag = parliament_changing
+				clr_country_flag = parliament_manpower_open
+				clr_country_flag = change_successes
+				clr_country_flag =  change_abortive
+			}
+			else = {
+				set_country_flag = warn_parliament_changing
+				clr_country_flag = parliament_manpower_open
+			}
+		}
+		if = {
+		    limit = { 
+			    check_variable = {
+                    manpower_change_to_variable = 6
+			    }
+			}
+			clear_variable = manpower_change_to_variable
+			set_variable = { manpower_will_change_variable = 6 }
+			if = {
+				limit = { 
+					NOT = { has_country_flag = parliament_changing }
+				}
+				set_country_flag = change_manpower_to_lv6
+				set_country_flag = parliament_changing
+				clr_country_flag = parliament_manpower_open
+				clr_country_flag = change_successes
+				clr_country_flag =  change_abortive
+			}
+			else = {
+				set_country_flag = warn_parliament_changing
+				clr_country_flag = parliament_manpower_open
+			}
+		}
+		if = {
+		    limit = { 
+			    check_variable = {
+                    manpower_change_to_variable = 5
+			    }
+			}
+			clear_variable = manpower_change_to_variable
+			set_variable = { manpower_will_change_variable = 5 }
+			if = {
+				limit = { 
+					NOT = { has_country_flag = parliament_changing }
+				}
+				set_country_flag = change_manpower_to_lv5
+				set_country_flag = parliament_changing
+				clr_country_flag = parliament_manpower_open
+				clr_country_flag = change_successes
+				clr_country_flag =  change_abortive
+			}
+			else = {
+				set_country_flag = warn_parliament_changing
+				clr_country_flag = parliament_manpower_open
+			}
+		}
+		if = {
+		    limit = { 
+			    check_variable = {
+                    manpower_change_to_variable = 4
+			    }
+			}
+			clear_variable = manpower_change_to_variable
+			set_variable = { manpower_will_change_variable = 4 }
+			if = {
+				limit = { 
+					NOT = { has_country_flag = parliament_changing }
+				}
+				set_country_flag = change_manpower_to_lv4
+				set_country_flag = parliament_changing
+				clr_country_flag = parliament_manpower_open
+				clr_country_flag = change_successes
+				clr_country_flag =  change_abortive
+			}
+			else = {
+				set_country_flag = warn_parliament_changing
+				clr_country_flag = parliament_manpower_open
+			}
+		}
+		if = {
+		    limit = { 
+			    check_variable = {
+                    manpower_change_to_variable = 3
+			    }
+			}
+			clear_variable = manpower_change_to_variable
+			set_variable = { manpower_will_change_variable = 3 }
+			if = {
+				limit = { 
+					NOT = { has_country_flag = parliament_changing }
+				}
+				set_country_flag = change_manpower_to_lv3
+				set_country_flag = parliament_changing
+				clr_country_flag = parliament_manpower_open
+				clr_country_flag = change_successes
+				clr_country_flag =  change_abortive
+			}
+			else = {
+				set_country_flag = warn_parliament_changing
+				clr_country_flag = parliament_manpower_open
+			}
+		}
+		if = {
+		    limit = { 
+			    check_variable = {
+                    manpower_change_to_variable = 2
+			    }
+			}
+			clear_variable = manpower_change_to_variable
+			set_variable = { manpower_will_change_variable = 2 }
+			if = {
+				limit = { 
+					NOT = { has_country_flag = parliament_changing }
+				}
+				set_country_flag = change_manpower_to_lv2
+				set_country_flag = parliament_changing
+				clr_country_flag = parliament_manpower_open
+				clr_country_flag = change_successes
+				clr_country_flag =  change_abortive
+			}
+			else = {
+				set_country_flag = warn_parliament_changing
+				clr_country_flag = parliament_manpower_open
+			}
+		}
+		if = {
+		    limit = { 
+			    check_variable = {
+                    manpower_change_to_variable = 1
+			    }
+			}
+			clear_variable = manpower_change_to_variable
+			set_variable = { manpower_will_change_variable = 1 }
+			if = {
+				limit = { 
+					NOT = { has_country_flag = parliament_changing }
+				}
+				set_country_flag = change_manpower_to_lv1
+				set_country_flag = parliament_changing
+				clr_country_flag = parliament_manpower_open
+				clr_country_flag = change_successes
+				clr_country_flag =  change_abortive
+			}
+			else = {
+				set_country_flag = warn_parliament_changing
+				clr_country_flag = parliament_manpower_open
+			}
+		}
+	}
+}
+parliament_change_present = {
+    ROOT = {
+	    if = {
+		    limit = {
+			    OR = {
+				    has_idea = manpower_gen_lv7
+					has_idea = manpower_DPKggbond_lv7
+				}
+			}
+			set_variable = { manpower_present_variable = 7 }
+		}
+		if = {
+		    limit = {
+			    OR = {
+				    has_idea = manpower_gen_lv6
+					has_idea = manpower_DPKggbond_lv6
+				}
+			}
+			set_variable = { manpower_present_variable = 6 }
+		}
+		if = {
+		    limit = {
+			    OR = {
+				    has_idea = manpower_gen_lv5
+					has_idea = manpower_DPKggbond_lv5
+				}
+			}
+			set_variable = { manpower_present_variable = 5 }
+		}
+		if = {
+		    limit = {
+			    OR = {
+				    has_idea = manpower_gen_lv4
+					has_idea = manpower_DPKggbond_lv4
+				}
+			}
+			set_variable = { manpower_present_variable = 4 }
+		}
+		if = {
+		    limit = {
+			    OR = {
+				    has_idea = manpower_gen_lv3
+					has_idea = manpower_DPKggbond_lv3
+				}
+			}
+			set_variable = { manpower_present_variable = 3 }
+		}
+		if = {
+		    limit = {
+			    OR = {
+				    has_idea = manpower_gen_lv2
+					has_idea = manpower_DPKggbond_lv2
+				}
+			}
+			set_variable = { manpower_present_variable = 2 }
+		}
+		if = {
+		    limit = {
+			    OR = {
+				    has_idea = manpower_gen_lv1
+					has_idea = manpower_DPKggbond_lv1
+				}
+			}
+			set_variable = { manpower_present_variable = 1 }
+		}
+	}
+	
+}
+
+parliament_change_count = {
+    ROOT = {
+	    set_variable = { manpower_count_variable = manpower_present_variable }
+	    subtract_from_variable = { manpower_count_variable = manpower_will_change_variable }
+		if = {
+			limit = {
+                check_variable = {
+					manpower_count_variable < 0
+				}
+			}
+			multiply_variable = { manpower_count_variable = -1 }
+		}
+		else = {
+			multiply_variable = { manpower_count_variable = 1 }
+		}
+		multiply_variable = { manpower_count_variable = 0.7 }
+		set_variable = { pop_variable = pop_size }
+		subtract_from_variable = { pop_variable = unpop_size }
+		multiply_variable = { pop_variable = 0.6 }
+		multiply_variable = { pop_variable = manpower_count_variable }
+		set_variable = { manpower_count_variable = pop_variable }
+		
+		add_to_variable = { manpower_count_variable = 50 }
+		if = { 
+		    limit = {
+			    check_variable = {
+                    manpower_count_variable < 0
+			    }	
+			}
+			set_variable = { manpower_count_variable_successes = 0 }
+		}
+		else_if = { 
+		    limit = {
+			    check_variable = {
+                    manpower_count_variable > 100
+			    }	
+			}
+			set_variable = { manpower_count_variable_successes = 100 }
+		}
+		else = {
+		    set_variable = { manpower_count_variable_successes = manpower_count_variable }
+		}
+		set_variable = { manpower_count_variable_abortive = 100 }
+		subtract_from_variable = { manpower_count_variable_abortive = manpower_count_variable_successes }
+	}
+}
+
+parliament_change_completed = {
+	ROOT = {
+	    parliament_change_count = yes
+	    if = {
+		    limit = { has_country_flag = change_manpower_to_lv7 }
+			random_list = {
+				manpower_count_variable_successes = {
+					clr_country_flag = change_manpower_to_lv7
+					set_country_flag = change_successes
+					if = {
+						limit = {
+							has_country_flag = use_manpower_gen_lv7
+						}
+						add_ideas = manpower_gen_lv7
+					}
+					if = {
+						limit = {
+							has_country_flag = use_manpower_DPKggbond_lv7
+						}
+						add_ideas = manpower_DPKggbond_lv7
+					}
+				}
+				manpower_count_variable_abortive = {
+                    clr_country_flag = change_manpower_to_lv7
+					set_country_flag = change_abortive
+				}
+			}
+		}
+		if = {
+		    limit = { has_country_flag = change_manpower_to_lv6 }
+			random_list = {
+				manpower_count_variable_successes = {
+					clr_country_flag = change_manpower_to_lv6
+					set_country_flag = change_successes
+					if = {
+						limit = {
+							has_country_flag = use_manpower_gen_lv6
+						}
+						add_ideas = manpower_gen_lv6
+					}
+					if = {
+						limit = {
+							has_country_flag = use_manpower_DPKggbond_lv6
+						}
+						add_ideas = manpower_DPKggbond_lv6
+					}
+				}
+				manpower_count_variable_abortive = {
+                    clr_country_flag = change_manpower_to_lv6
+					set_country_flag = change_abortive
+				}
+			}
+		}
+		if = {
+		    limit = { has_country_flag = change_manpower_to_lv5 }
+			random_list = {
+				manpower_count_variable_successes = {
+					clr_country_flag = change_manpower_to_lv5
+					set_country_flag = change_successes
+					if = {
+						limit = {
+							has_country_flag = use_manpower_gen_lv5
+						}
+						add_ideas = manpower_gen_lv5
+					}
+					if = {
+						limit = {
+							has_country_flag = use_manpower_DPKggbond_lv5
+						}
+						add_ideas = manpower_DPKggbond_lv5
+					}
+				}
+				manpower_count_variable_abortive = {
+                    clr_country_flag = change_manpower_to_lv5
+					set_country_flag = change_abortive
+				}
+			}
+		}
+		if = {
+		    limit = { has_country_flag = change_manpower_to_lv4 }
+			random_list = {
+				manpower_count_variable_successes = {
+					clr_country_flag = change_manpower_to_lv4
+					set_country_flag = change_successes
+					if = {
+						limit = {
+							has_country_flag = use_manpower_gen_lv4
+						}
+						add_ideas = manpower_gen_lv4
+					}
+					if = {
+						limit = {
+							has_country_flag = use_manpower_DPKggbond_lv4
+						}
+						add_ideas = manpower_DPKggbond_lv4
+					}
+				}
+				manpower_count_variable_abortive = {
+                    clr_country_flag = change_manpower_to_lv4
+					set_country_flag = change_abortive
+				}
+			}
+		}
+		if = {
+		    limit = { has_country_flag = change_manpower_to_lv3 }
+			random_list = {
+				manpower_count_variable_successes = {
+					clr_country_flag = change_manpower_to_lv3
+					set_country_flag = change_successes
+					if = {
+						limit = {
+							has_country_flag = use_manpower_gen_lv3
+						}
+						add_ideas = manpower_gen_lv3
+					}
+					if = {
+						limit = {
+							has_country_flag = use_manpower_DPKggbond_lv3
+						}
+						add_ideas = manpower_DPKggbond_lv3
+					}
+				}
+				manpower_count_variable_abortive = {
+                    clr_country_flag = change_manpower_to_lv3
+					set_country_flag = change_abortive
+				}
+			}
+		}
+		if = {
+		    limit = { has_country_flag = change_manpower_to_lv2 }
+			random_list = {
+				manpower_count_variable_successes = {
+					clr_country_flag = change_manpower_to_lv2
+					set_country_flag = change_successes
+					if = {
+						limit = {
+							has_country_flag = use_manpower_gen_lv2
+						}
+						add_ideas = manpower_gen_lv2
+					}
+					if = {
+						limit = {
+							has_country_flag = use_manpower_DPKggbond_lv2
+						}
+						add_ideas = manpower_DPKggbond_lv2
+					}
+				}
+				manpower_count_variable_abortive = {
+                    clr_country_flag = change_manpower_to_lv2
+					set_country_flag = change_abortive
+				}
+			}
+		}
+		if = {
+		    limit = { has_country_flag = change_manpower_to_lv1 }
+			random_list = {
+				manpower_count_variable_successes = {
+					clr_country_flag = change_manpower_to_lv1
+					set_country_flag = change_successes
+					if = {
+						limit = {
+							has_country_flag = use_manpower_gen_lv1
+						}
+						add_ideas = manpower_gen_lv1
+					}
+					if = {
+						limit = {
+							has_country_flag = use_manpower_DPKggbond_lv1
+						}
+						add_ideas = manpower_DPKggbond_lv1
+					}
+				}
+				manpower_count_variable_abortive = {
+                    clr_country_flag = change_manpower_to_lv1
+					set_country_flag = change_abortive
+				}
+			}
+		}
+	}
+}
+

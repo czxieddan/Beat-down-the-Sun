@@ -1,0 +1,12 @@
+land_grab_campaigns_tool = {
+	icon = GFX_decision_hol_attract_foreign_investors
+	priority = 999
+	allowed = {
+		has_country_flag = state_buy_tool_open
+		#test set_country_flag = state_buy_tool_open
+	}
+	visible = {
+		has_country_flag = state_buy_tool_open
+	}
+	visible_when_empty = yes
+}

@@ -1,0 +1,111 @@
+jpn_move_capital_531_planing_modifier_5 = {
+    icon = GFX_idea_unknown
+    enable = { always = yes }
+    remove_trigger = {
+         OR = {
+			    has_global_flag = jpn_move_capital_531_plandone_a
+		        has_global_flag = jpn_move_capital_531_plandone_b
+			    has_global_flag = jpn_move_capital_531_plandone_c
+			    has_global_flag = jpn_move_capital_531_plandone_d
+			    has_global_flag = jpn_move_capital_531_plandone_e
+			    has_global_flag = jpn_move_capital_531_plandone_f
+			}
+    }
+    
+		political_power_cost = 0.5
+        command_power_gain = -0.5
+    
+	
+}
+jpn_move_capital_531_planing_modifier_3 = {
+    icon = GFX_idea_unknown
+    enable = { always = yes }
+    remove_trigger = {
+         OR = {
+			    has_global_flag = jpn_move_capital_531_plandone_a
+		        has_global_flag = jpn_move_capital_531_plandone_b
+			    has_global_flag = jpn_move_capital_531_plandone_c
+			    has_global_flag = jpn_move_capital_531_plandone_d
+			    has_global_flag = jpn_move_capital_531_plandone_e
+			    has_global_flag = jpn_move_capital_531_plandone_f
+			}
+    }
+    
+		political_power_cost = 0.3
+        command_power_gain = -0.3
+    
+	
+}
+jpn_move_capital_531_planing_modifier_2 = {
+    icon = GFX_idea_unknown
+    enable = { always = yes }
+    remove_trigger = {
+         OR = {
+			    has_global_flag = jpn_move_capital_531_plandone_a
+		        has_global_flag = jpn_move_capital_531_plandone_b
+			    has_global_flag = jpn_move_capital_531_plandone_c
+			    has_global_flag = jpn_move_capital_531_plandone_d
+			    has_global_flag = jpn_move_capital_531_plandone_e
+			    has_global_flag = jpn_move_capital_531_plandone_f
+			}
+    }
+    
+		political_power_cost = 0.2
+        command_power_gain = -0.2
+    
+	
+}
+jpn_move_capital_531_building_modifier_15 = {
+    icon = GFX_idea_unknown
+    enable = { always = yes }
+    remove_trigger = {
+         OR = {
+			    has_global_flag = jpn_move_capital_531_plandone_a
+		        has_global_flag = jpn_move_capital_531_plandone_b
+			    has_global_flag = jpn_move_capital_531_plandone_c
+			    has_global_flag = jpn_move_capital_531_plandone_d
+			    has_global_flag = jpn_move_capital_531_plandone_e
+			    has_global_flag = jpn_move_capital_531_plandone_f
+			}
+    }
+    
+		civilian_factory_use = 15
+    
+	
+}
+jpn_move_capital_531_building_modifier_5 = {
+    icon = GFX_idea_unknown
+    enable = { always = yes }
+    remove_trigger = {
+         OR = {
+			    has_global_flag = jpn_move_capital_531_plandone_a
+		        has_global_flag = jpn_move_capital_531_plandone_b
+			    has_global_flag = jpn_move_capital_531_plandone_c
+			    has_global_flag = jpn_move_capital_531_plandone_d
+			    has_global_flag = jpn_move_capital_531_plandone_e
+			    has_global_flag = jpn_move_capital_531_plandone_f
+			}
+    }
+    
+		civilian_factory_use = 5
+    
+	
+}
+jpn_move_capital_531_building_modifier_8 = {
+    icon = GFX_idea_unknown
+    enable = { always = yes }
+    remove_trigger = {
+         OR = {
+			    has_global_flag = jpn_move_capital_531_plandone_a
+		        has_global_flag = jpn_move_capital_531_plandone_b
+			    has_global_flag = jpn_move_capital_531_plandone_c
+			    has_global_flag = jpn_move_capital_531_plandone_d
+			    has_global_flag = jpn_move_capital_531_plandone_e
+			    has_global_flag = jpn_move_capital_531_plandone_f
+			}
+    }
+    
+		civilian_factory_use = 8
+    
+	
+}

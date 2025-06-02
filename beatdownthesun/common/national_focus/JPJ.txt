@@ -1,0 +1,109 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+
+
+focus_tree = {
+	id = JPJ_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JPJ
+		}
+	}
+	default = no
+	#continuous_focus_position = {
+		#x = 500
+		#y = 2500
+	#}
+	focus = {
+		id = JPJ_REUNIFICATION_of_jpn
+		text = JPJ_REUNIFICATION_of_jpn
+		icon = GFX_focus_JPJ_REUNIFICATION_of_jpn
+		cost = 0
+		
+		x = 7
+		y = 0
+		#relative_position_id = 
+		available = {	
+		JPN = {
+			all_core_state = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		
+		
+			
+		}
+		completion_reward = {
+			
+			
+			hidden_effect = {
+				
+
+			}
+			
+			every_state = {
+				limit = { is_core_of = JPN }
+					add_core_of = JPJ
+				}
+			
+			
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPJ_revolutionary_overseas_bases
+		text = JPJ_revolutionary_overseas_bases
+		icon = GFX_focus_JPJ_revolutionary_overseas_bases
+		cost = 0
+		
+		x = 4
+		y = 0
+		#relative_position_id = 
+		available = {
+			
+
+		
+	    any_state = {
+			NOT = {
+				is_core_of = ROOT
+			}
+			state_is_fully_controlled_by_ROOT_or_subject = yes
+		}
+		
+
+		 	
+		
+		
+		
+			
+		}
+		completion_reward = {
+			
+			
+			
+			
+			
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+}

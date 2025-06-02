@@ -1,0 +1,31 @@
+﻿l_simp_chinese:
+ ### SPECIALIZATIONS ###
+ SPECIAL_PROJECT_COMPLETED_POPUP_TITLE: "特殊项目完成"
+ 
+ can_replace_hog: "能够更换政府首脑"
+ for_cannot_be_replaced: "外交部长不能被更换"
+ eco_cannot_be_replaced: "经济部长不能被更换"
+ sec_cannot_be_replaced: "安保部长不能被更换"
+ ministers_cannot_be_replaced: "部长不能被更换"
+ #head_of_government: "[Root.GetheadofgovernmentName]"
+ head_of_government: "政府首脑"
+ #modheadofgovernment_localization_key: "政府首脑"
+ foreign_minister: "外交部长"
+ economy_minister: "经济部长"
+ security_minister: "内政部长"
+ head_of_intel: "军事情报局局长"
+ head_of_gov_available: "§R政府首脑不能被手动添加或解雇。§!他们只能够通过诸如事件、国策、决议等更换。\n\n这个列表列出了这个国家所有可能的政府首脑，所有列表上的人可能与现首脑不和、在另一个国家，甚至是已经gg了。"
+ minister_available: "§R无法手动添加或移除部长。§!只能通过事件、国策、决议等更换。\n\n这里列出了该国所有可能的部长，他们或与现政府不和，或已不在国内，甚至已经去世。"
+ military_staff_available: "该军事部长依旧在世，时刻准备为国服务。"
+ person_of_influence: "头面人士"
+ chief_of_staff: "总参谋长"
+ chief_of_army: "陆军参谋长"
+ chief_of_navy: "海军参谋长"
+ chief_of_air_force: "空军参谋长"
+ POLITICS_LEADER: "§T国家领导人：$LEADER|H$§!"
+ 
+ 
+ 
+ moderncity: "现代化城市"
+ modernmetropolis: "现代化大都市"
+ modernmetropolitanarea: "大都会圈"

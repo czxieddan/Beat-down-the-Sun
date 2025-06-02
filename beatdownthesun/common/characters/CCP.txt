@@ -1,0 +1,47 @@
+characters = {
+	
+
+	
+
+	CCP_xijinping = {
+		name = CCP_xijinping
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_CCP_xijinping
+			}
+		}
+		country_leader = {
+			ideology = pc
+			traits = { 
+				ccp_chairman
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	CCP_xijinping2 = {
+		name = CCP_xijinping
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_CCP_xijinping
+			}
+		}
+		country_leader = {
+			ideology = pc
+			traits = { 
+				ccp_chairman
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+	
+	
+
+	
+}

@@ -1,0 +1,1170 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+
+
+focus_tree = {
+	id = JPN_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JPN
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 500
+		y = 2500
+	}
+	focus = {
+		id = JPN_call_upon_chingyu
+		text = JPN_call_upon_chingyu
+		icon = GFX_focus_JPN_call_upon_chingyu
+		cost = 0
+		
+		x = 3
+		y = 8
+		#relative_position_id = 
+		allow_branch = {
+			NOT = {
+				OR = {
+				#has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = JPN_power_of_god_chingyu_trigger_tooltip
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+					
+			    }
+			
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				promote_character = { 
+					character = JPN_chingyu_l 
+					#chingyu
+					ideology = Power_Authoritarianism 
+				}
+				if = {
+					limit = { 
+						OR = { 
+							controls_province = 11960
+							controls_province = 1182
+					    }
+						NOT = {has_global_flag = country_jpn_2_dc}
+					}
+					
+					JPN = {
+					    country_event = country_jpn.2
+				    }
+					set_global_flag = jpn_can_move_capital_531
+				}
+				set_variable = {
+					var = jpn_chingyu_resentment
+					value = 1
+					
+				}
+				remove_ideas = JPN_naruhito_i
+				set_global_flag = JPN_531_CHINGYU
+				#set_global_flag = jpn_move_capital_531_comp #test
+
+			}
+			
+			set_politics = {
+				ruling_party = Power_Authoritarianism
+				elections_allowed = no
+				last_election = [GetDateText]
+				#election_frequency = 48
+				long_name = JPN_chingyuim_party_long
+				name = JPN_chingyuim_party
+			}
+			custom_effect_tooltip = JPN_call_upon_chingyu_text
+			add_ideas = JPN_chingyu_JPN_call_upon_chingyu
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_acknowledge_allegiance_to_chingyu
+		text = JPN_acknowledge_allegiance_to_chingyu
+		icon = GFX_focus_JPN_acknowledge_allegiance_to_chingyu
+		cost = 10.00
+		prerequisite = {
+			focus = JPN_call_upon_chingyu
+		}
+		x = 0
+		y = 1
+		relative_position_id = JPN_call_upon_chingyu
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = JPN_power_of_god_chingyu_trigger_tooltip
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+					
+			    }
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_political_party = {
+				ideology = Power_Authoritarianism
+				popularity = 60
+			    }
+		    }
+			set_variable = { current_int = 64 }
+			change_parliament_seats = yes
+			custom_effect_tooltip = JPN_acknowledge_allegiance_to_chingyu_text
+			add_ideas = JPN_chingyu_pv
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_lit_tall_buildings_chingyu
+		text = JPN_lit_tall_buildings_chingyu
+		icon = GFX_focus_JPN_lit_tall_buildings_chingyu
+		cost = 5.00
+		prerequisite = {
+			focus = JPN_acknowledge_allegiance_to_chingyu
+		}
+		x = -1
+		y = 1
+		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = JPN_power_of_god_chingyu_trigger_tooltip
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+					
+			    }
+		}
+		completion_reward = {
+			add_ideas = JPN_chingyu_lit_tall_buildings
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_cars_are_fast_chingyu
+		text = JPN_cars_are_fast_chingyu
+		icon = GFX_focus_JPN_cars_are_fast_chingyu
+		cost = 5.00
+		prerequisite = {
+			focus = JPN_lit_tall_buildings_chingyu
+		}
+		x = 0
+		y = 1
+		relative_position_id = JPN_lit_tall_buildings_chingyu
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = JPN_power_of_god_chingyu_trigger_tooltip
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+					
+			    }
+		}
+		completion_reward = {
+			add_ideas = JPN_chingyu_cars_are_fast
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_city_life_style_chingyu
+		text = JPN_city_life_style_chingyu
+		icon = GFX_focus_JPN_city_life_style_chingyu
+		cost = 5.00
+		prerequisite = {
+			focus = JPN_acknowledge_allegiance_to_chingyu
+		}
+		x = 1
+		y = 1
+		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = JPN_power_of_god_chingyu_trigger_tooltip
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+					
+			    }
+		}
+		completion_reward = {
+			add_ideas = JPN_chingyu_city_life_style
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_factory_full_off_weapons_chingyu
+		text = JPN_factory_full_off_weapons_chingyu
+		icon = GFX_focus_JPN_factory_full_off_weapons_chingyu
+		cost = 5.00
+		prerequisite = {
+			focus = JPN_city_life_style_chingyu
+		}
+		x = 0
+		y = 1
+		relative_position_id = JPN_city_life_style_chingyu
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = JPN_power_of_god_chingyu_trigger_tooltip
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+					
+			    }
+		}
+		completion_reward = {
+			add_ideas = JPN_chingyu_factory_full_off_weapons
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_power_of_god_chingyu
+		text = JPN_power_of_god_chingyu
+		icon = GFX_focus_JPN_power_of_god_chingyu
+		cost = 14.40
+		allow_branch = {
+			NOT = {
+				OR = {
+				#has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		prerequisite = {
+			#focus = JPN_acknowledge_allegiance_to_chingyu
+			#focus = JPN_lit_tall_buildings_chingyu
+			#focus = JPN_city_life_style_chingyu
+		}
+		prerequisite = { 
+			#focus = JPN_factory_full_off_weapons_chingyu
+			#focus = JPN_cars_are_fast_chingyu
+		 }
+		x = 0
+		y = 4
+		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
+		available = {
+
+			custom_trigger_tooltip = {
+			    tooltip = JPN_power_of_god_chingyu_trigger_tooltip
+			        OR = {
+					    AND = { 
+						    has_completed_focus = JPN_lit_tall_buildings_chingyu
+						    has_completed_focus = JPN_factory_full_off_weapons_chingyu
+				        }
+
+					    AND = { 
+						    has_completed_focus = JPN_city_life_style_chingyu
+						    has_completed_focus = JPN_cars_are_fast_chingyu
+				        }
+				    }
+					has_global_flag = jpn_move_capital_531_comp_done
+					OR = {
+						has_global_flag = jpn_chingyu_appeared
+						
+						#always = yes #test
+					}
+					NOT = { has_global_flag = jpn_chingyu_oooooout }
+			    }
+				
+				
+			
+		}
+		completion_reward = {
+			
+            custom_effect_tooltip = JPN_power_of_god_chingyu_text
+			hidden_effect = {
+				set_country_leader_portrait = {
+				    ideology = Power_Authoritarianism
+				    portrait = GFX_portrait_JPN_power_of_god_chingyu
+			    } 
+				add_ideas = JPN_chingyu_power_of_god
+                set_global_flag = JPN_power_of_god_chingyu_s
+			    set_global_flag = Super_Event_Visible
+				set_global_flag = JPN_531_CHINGYU
+			    set_country_flag = JPN_power_of_god_chingyu_flag
+				play_song = "SPEVNT_JPN_power_of_god_chingyu_s_music"
+				hidden_effect = { set_cosmetic_tag = JPN_yamatoflag }
+				
+				
+				
+			}
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_sunshine_chingyu
+		text = JPN_sunshine_chingyu
+		icon = GFX_focus_JPN_sunshine_chingyu
+		cost = 14.40
+		allow_branch = {
+			NOT = {
+				OR = {
+				#has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		prerequisite = {
+			#focus = JPN_power_of_god_chingyu
+		}
+		prerequisite = { 
+			
+		 }
+		x = 0
+		y = 2
+		relative_position_id = JPN_power_of_god_chingyu
+		available = {
+            hidden_trigger = {
+				has_completed_focus = JPN_power_of_god_chingyu
+				has_country_flag = {
+				flag = JPN_power_of_god_chingyu_flag
+				days > 365
+			}
+
+
+
+			}
+
+			
+			custom_trigger_tooltip = {
+				tooltip = JPN_last_chingy_focus_days_military_tt
+				has_country_flag = {
+					flag = JPN_power_of_god_chingyu_flag
+					days > 365
+				}
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				 # add_ideas = JPN_chingyu_power_of_god
+		        every_state = {
+			     #limit = { is_on_continent = europe }
+			    add_core_of = JPN
+		        }
+				set_global_flag = JPN_sunshine_chingyu_without_war
+				#set_country_flag = state_buy_tool_open #t
+				
+			}
+          custom_effect_tooltip = JPN_sunshine_chingyu_text
+		  hidden_effect = { set_cosmetic_tag = JPN_chingyuflag }
+		  hidden_effect = {
+			set_variable = {
+				var = JPN_yamatocapital_d_TM
+				value = 520
+			}
+		  }
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_wield_power_naruhito
+		text = JPN_wield_power_naruhito
+		icon = GFX_focus_JPN_wield_power_naruhito
+		cost = 0
+		allow_branch = {
+			NOT = {
+				OR = {
+				has_global_flag = jpn_chingyu_appeared
+				#has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		
+		x = 8
+		y = 8
+		#relative_position_id = 
+		available = {
+			OR = {
+				has_global_flag = jpn_naruhito_wield_power
+				#always = yes #test
+			}
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				#promote_character = { 
+				#	character = JPN_chingyu_l 
+					#chingyu
+				#	ideology = Power_Authoritarianism 
+				#}
+
+			}
+			
+			set_politics = {
+				ruling_party = Power_Authoritarianism
+				elections_allowed = no
+				last_election = [GetDateText]
+				#election_frequency = 48
+				long_name = JPN_naruhito_party_long
+				name = JPN_naruhito_party
+			}
+			custom_effect_tooltip = JPN_wield_power_naruhito_text
+			#add_ideas = 
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_god_position_naruhito
+		text = JPN_god_position_naruhito
+		icon = GFX_focus_JPN_god_position_naruhito
+		cost = 0
+		prerequisite = {
+			focus = JPN_acknowledge_allegiance_to_chingyu
+			FOCUS = JPN_wield_power_naruhito
+		}
+		x = 0
+		y = 2
+	    relative_position_id = JPN_wield_power_naruhito
+		available = {
+			if = {
+				limit = { has_global_flag = jpn_naruhito_wield_power }
+				has_completed_focus = JPN_wield_power_naruhito
+			}
+
+			else_if = {
+				limit = { 
+					NOT = { has_global_flag = jpn_naruhito_wield_power }
+				}
+				if = {
+				    limit = { has_global_flag = jpn_chingyu_appeared }
+				    has_completed_focus = JPN_power_of_god_chingyu
+			    }
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_global_flag = jpn_naruhito_wield_power
+							has_global_flag = jpn_naruhito_wield_power
+						}
+					}
+				}
+				always = no
+			}
+			else = {
+				always = no
+			}
+
+			
+		}
+		completion_reward = {
+			
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_wield_power_nipponkaigi
+		text = JPN_wield_power_nipponkaigi
+		icon = GFX_focus_JPN_wield_power_nipponkaigi
+		cost = 0
+		allow_branch = {
+			NOT = {
+				OR = {
+				has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				#has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		x = 30
+		y = 8
+		#relative_position_id = 
+		available = {
+			OR = {
+				has_global_flag = jpn_nipponkaigi_wield_power
+				#always = yes #test
+			}
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				#promote_character = { 
+				#	character = JPN_chingyu_l 
+					#chingyu
+				#	ideology = Power_Authoritarianism 
+				#}
+
+			}
+			
+			set_politics = {
+				ruling_party = Ethnonationalism
+				elections_allowed = no
+				last_election = [GetDateText]
+				#election_frequency = 48
+				long_name = JPN_nipponkaigi_party_long
+				name = JPN_nipponkaigi_party
+			}
+			custom_effect_tooltip = JPN_wield_power_nipponkaigi_text
+			#add_ideas = 
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_wield_power_tamura_tomoko
+		text = JPN_wield_power_tamura_tomoko
+		icon = GFX_focus_JPN_wield_power_tamura_tomoko
+		cost = 0
+		allow_branch = {
+			NOT = {
+				OR = {
+				has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				#has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		
+		x = 13
+		y = 8
+		#relative_position_id = 
+		available = {
+			OR = {
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				#always = yes #test
+			}
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				#promote_character = { 
+				#	character = JPN_chingyu_l 
+					#chingyu
+				#	ideology = Power_Authoritarianism 
+				#}
+
+			}
+			
+			set_politics = {
+				ruling_party = Economic_Interventionism
+				elections_allowed = no
+				last_election = [GetDateText]
+				#election_frequency = 48
+				#long_name = JPN_naruhito_party_long
+				#name = JPN_naruhito_party
+			}
+			custom_effect_tooltip = JPN_wield_power_tamura_tomoko_text
+			#add_ideas = 
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_choose_tamura_tomoko
+		text = JPN_choose_tamura_tomoko
+		icon = GFX_focus_JPN_choose_tamura_tomoko
+		cost = 0
+		prerequisite = {
+			focus = JPN_wield_power_tamura_tomoko
+		}
+		x = 0
+		y = 2
+		relative_position_id = JPN_wield_power_tamura_tomoko
+		available = {
+			OR = {
+				has_global_flag = jpn_tamura_tomoko_choose
+				always = yes #test
+			}
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				
+
+			}
+			
+			
+			custom_effect_tooltip = JPN_choose_tamura_tomoko_text
+			#add_ideas = 
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_choose_shii_kazuo
+		text = JPN_choose_shii_kazuo
+		icon = GFX_focus_JPN_choose_shii_kazuo
+		cost = 0
+		prerequisite = {
+			focus = JPN_wield_power_tamura_tomoko
+		}
+		x = -3
+		y = 2
+		relative_position_id = JPN_wield_power_tamura_tomoko
+		available = {
+			OR = {
+				has_global_flag = jpn_shii_kazuo_choose
+				always = yes #test
+			}
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				promote_character = { 
+					character = JPN_shii_kazuo
+					
+					ideology = Economic_Interventionism
+				}
+
+			}
+			
+			
+			custom_effect_tooltip = JPN_choose_shii_kazuo_text
+			#add_ideas = 
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_choose_koike_akira
+		text = JPN_choose_koike_akira
+		icon = GFX_focus_JPN_choose_koike_akira
+		cost = 0
+		prerequisite = {
+			focus = JPN_wield_power_tamura_tomoko
+		}
+		x = 3
+		y = 2
+		relative_position_id = JPN_wield_power_tamura_tomoko
+		available = {
+			OR = {
+				has_global_flag = jpn_koike_akira_choose
+				always = yes #test
+			}
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				promote_character = { 
+					character = JPN_koike_akira
+					
+					ideology = Economic_Interventionism
+				}
+
+			}
+			
+			
+			custom_effect_tooltip = JPN_choose_koike_akira_text
+			#add_ideas = 
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_wield_power_JRCL
+		text = JPN_wield_power_JRCL
+		icon = GFX_focus_JPN_wield_power_JRCL
+		cost = 0
+		allow_branch = {
+			NOT = {
+				OR = {
+				has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				#has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		x = 23
+		y = 8
+		#relative_position_id = 
+		available = {
+			OR = {
+				has_global_flag = jpn_JRCL_wield_power
+				#always = yes #test
+			}
+		}
+		completion_reward = {
+			
+
+			
+			hidden_effect = {
+				#promote_character = { 
+				#	character = JPN_JRCL
+				#	
+				#	ideology = Social_Contractism 
+				#}
+				JPN = { country_event = country_jpn.1 }
+			}
+			#set_politics = {
+				#ruling_party = Social_Contractism
+				#elections_allowed = no
+				#last_election = [GetDateText]
+				#election_frequency = 48
+				#long_name = JPN_JRCL_party_long
+				#name = JPN_JRCL_party
+			#}
+
+			#start_civil_war = {
+				#ruling_party = ROOT
+				# Original country's ideology changes to Social_Contractism
+				#ideology = Social_Contractism
+				# Breakaway gets old ideology of ROOT
+				##size = 0.8
+				#capital = 282
+				#states = {
+				#	282 532 533 534 535
+				#}
+				#keep_unit_leaders = {
+				#	750 751 752
+				#}
+				#keep_political_leader = yes
+				#keep_political_party_members = yes
+			#}
+			
+
+			
+			
+			
+
+			
+
+			custom_effect_tooltip = JPN_wield_power_JRCL_text
+			#add_ideas = 
+			#hidden_effect = { set_cosmetic_tag = JPN_JRCLflag }
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_peacefulrevolutin_JRCL
+		text = JPN_peacefulrevolutin_JRCL
+		icon = GFX_focus_JPN_peacefulrevolutin_JRCL
+		allow_branch = {
+			NOT = {
+				OR = {
+				has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				#has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		x = 20
+		y = 8
+		#relative_position_id = 
+		available = {
+			OR = {
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				#always = yes #test
+			}
+		}
+		completion_reward = {
+			#add_country_leader_role = {
+            #    character = JPN_chingyu_l
+            #    country_leader = {
+            #        expire = "2040.1.1"
+            #        ideology = imperial
+            #        traits = {
+			#			jpn_tenno
+			#			ow_god_chingyu
+            #        }
+            #    }
+            #    promote_leader = yes
+            #}
+
+			
+			hidden_effect = {
+				promote_character = { 
+					character = JPN_JRCL
+					#chingyu
+					ideology = Social_Contractism
+				}
+
+			}
+			
+			set_politics = {
+				ruling_party = Social_Contractism
+				elections_allowed = no
+				last_election = [GetDateText]
+				#election_frequency = 48
+				long_name = JPN_JRCL_party_long
+				name = JPN_JRCL_party
+			}
+			custom_effect_tooltip = JPN_peacefulrevolutin_JRCL_text
+            hidden_effect = { set_cosmetic_tag = JPN_JRCLflag }
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
+		id = JPN_power_of_god_chingyu_rest
+		text = JPN_power_of_god_chingyu_rest
+		icon = GFX_focus_JPN_power_of_god_chingyu
+		cost = 0
+		allow_branch = {
+			NOT = {
+				OR = {
+				#has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		prerequisite = {
+			#focus = JPN_acknowledge_allegiance_to_chingyu
+			#focus = JPN_lit_tall_buildings_chingyu
+			#focus = JPN_city_life_style_chingyu
+		}
+		prerequisite = { 
+			#focus = JPN_factory_full_off_weapons_chingyu
+			#focus = JPN_cars_are_fast_chingyu
+		 }
+		x = 0
+		y = 9
+		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
+		available = {
+	
+			custom_trigger_tooltip = {
+				tooltip = JPN_power_of_god_chingyu_rest_trigger_tooltip
+					always = yes
+				}
+				
+				is_ai = no
+			
+		}
+		completion_reward = {
+			
+			custom_effect_tooltip = JPN_power_of_god_chingyu_text
+			hidden_effect = {
+				set_country_leader_portrait = {
+					ideology = Power_Authoritarianism
+					portrait = GFX_portrait_JPN_power_of_god_chingyu
+				} 
+				add_ideas = JPN_chingyu_power_of_god
+				set_global_flag = JPN_power_of_god_chingyu_s
+				set_global_flag = Super_Event_Visible
+				set_global_flag = JPN_531_CHINGYU
+				set_country_flag = JPN_power_of_god_chingyu_flag
+				play_song = "SPEVNT_JPN_power_of_god_chingyu_s_music"
+				hidden_effect = { set_cosmetic_tag = JPN_yamatoflag }
+				
+				
+				
+			}
+		}
+		
+	
+		cancel_if_invalid = no
+	
+		ai_will_do = {
+			factor = 10
+		}
+	
+	   
+	
+	}
+}
+

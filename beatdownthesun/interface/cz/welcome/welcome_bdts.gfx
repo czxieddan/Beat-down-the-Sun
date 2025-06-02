@@ -1,0 +1,44 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_welcome_bdts_logo_w"
+		textureFile = "gfx/interface/cz/welcome/bdts_w_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_welcome_bdts_logo"
+		textureFile = "gfx/interface/cz/welcome/bdts_bg.png"
+	}
+	spriteType = {
+		name = "GFX_welcome_bdts_logo_box"
+		textureFile = "gfx/interface/cz/welcome/welcome_box.png"
+	}
+	spriteType = {
+		name = "GFX_welcome_bdts_bdts"
+		textureFile = "gfx/interface/cz/welcome/bdts_bdts.png"
+	}
+	textSpriteType = {
+		name = "GFX_bdts_welcome_button"
+		textureFile = "gfx/interface/cz/welcome/bdts_welcome_button.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	SpriteType = {
+		name = "GFX_bdts_welcome_button_highlight"
+		textureFile = "gfx/interface/cz/welcome/bdts_welcome_button_transparent.dds"
+
+		animation = {
+			animationmaskfile = "gfx/interface/cz/welcome/bdts_welcome_button_white.dds"
+			animationtexturefile = "gfx/interface/cz/welcome/bdts_welcome_button_highlight.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1				# in seconds
+			animationdelay = 0.5			# in seconds
+			animationblendmode = "normal"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+}

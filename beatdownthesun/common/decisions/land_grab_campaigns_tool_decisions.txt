@@ -1,0 +1,570 @@
+land_grab_campaigns_tool = {
+    land_grab_campaigns_tool_buying = {
+        icon = GFX_decision_hol_attract_foreign_investors
+        allowed = {
+            always = yes
+        }
+        available = {
+            #num_of_civilian_factories > 15
+        }
+        ai_will_do = {
+            base = 200
+        }
+        state_target = yes
+        visible = {
+            always = yes
+        }
+        days_re_enable = 14
+        cost = 10
+        on_map_mode = map_and_decisions_view
+        
+        target_trigger = {
+            FROM = {
+                NOT = { owner = { has_war_with = ROOT } }
+                NOT = { is_owned_by = ROOT }
+                NOT = { has_state_flag = rejected_selling_this_state_to_eic }
+                owner = { NOT = { has_country_flag = rejected_ever_selling_land_to_eic } }
+                OR = {
+                    any_neighbor_state = { 
+                        is_controlled_by_ROOT_or_subject = yes
+                    }
+                    state = 446 #Suez
+                    state = 268 #French Somalialand
+                    state = 543 #Madagascar
+                    state = 299 #Falklands
+                    state = 649 #Galapagos
+                    state = 685 #Panama
+                    state = 696 #Bermuda
+                    state = 698 #azores
+                    state = 177 #Islas bandares
+                    state = 658 #Abu Dhabi
+                    state = 337 #Faroe
+                    state = 799 #hatay
+                    state = 910 #Bornholm
+                    state = 721 #Portuguese TImor
+                }
+            }
+        }
+
+        complete_effect = {
+            ROOT = {
+                if = {
+                    limit = {
+                        AND = {
+                            OR = {
+                                FROM = { has_state_category = wasteland }
+                                FROM = { has_state_category = enclave }
+                                FROM = { has_state_category = tiny_island }
+                            }
+                            NOT = {
+                                OR = {
+                                    FROM = { state = 446 }
+                                    FROM = { state = 685 }
+                                }
+                            }
+                        }
+                    }
+                    for_loop_effect = {
+                        end = 1
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            FROM = { has_state_category = pastoral }
+                            FROM = { has_state_category = small_island }
+                        }
+                    }
+                    for_loop_effect = {
+                        end = 3
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        FROM = { has_state_category = rural }
+                    }
+                    for_loop_effect = {
+                        end = 4
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            FROM = { has_state_category = town }
+                            FROM = { has_state_category = large_town }
+                        }
+                    }
+                    for_loop_effect = {
+                        end = 6
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            FROM = { has_state_category = city }
+                            FROM = { has_state_category = large_city }
+                        }
+                    }
+                    for_loop_effect = {
+                        end = 8
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        FROM = { has_state_category = metropolis }
+                    }
+                    for_loop_effect = {
+                        end = 10
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            FROM = { has_state_category = megalopolis }
+                        }
+                    }
+                    for_loop_effect = {
+                        end = 15
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            FROM = { state = 446 }
+                            FROM = { state = 685 }
+                        }
+                    }
+                    for_loop_effect = {
+                        end = 8
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+                else = {
+                    for_loop_effect = {
+                        end = 5
+                        value = temp
+                        random_controlled_state = {
+                            limit = {
+                                industrial_complex > 0
+                            }
+                            remove_building = {
+                                type = industrial_complex 
+                                level = 1
+                            }
+                        }
+                    }
+                }
+            }
+            
+            FROM = {
+                if = {
+                    limit = {
+                        AND = {
+                            OR = {
+                                has_state_category = wasteland
+                                has_state_category = enclave
+                                has_state_category = tiny_island
+                            }
+                            NOT = {
+                                OR = {
+                                    state = 446
+                                    state = 685
+                                }
+                            }
+                        }
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 1
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            has_state_category = pastoral
+                            has_state_category = small_island
+                        }
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 3
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = rural
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 4
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            has_state_category = town
+                            has_state_category = large_town
+                        }
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 6
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            has_state_category = city
+                            has_state_category = large_city
+                        }
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 8
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = metropolis
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 10
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_state_category = megalopolis
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 15
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            state = 446
+                            state = 685
+                        }
+                    }
+                    owner = { 
+                        for_loop_effect = {
+                            end = 8
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                else = {
+                    owner = { 
+                        for_loop_effect = {
+                            end = 5
+                            value = temp
+                            random_controlled_state = {
+                                limit = {
+                                    NOT = {
+                                        state = FROM
+                                    }
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                                }
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            FROM = {
+                transfer_state_to = ROOT
+            }
+        }
+    }
+
+    land_grab_campaigns_tool_get_core = {
+        name = land_grab_campaigns_tool_get_core
+        icon = generic_nationalism
+        allowed = {]
+            always = yes
+        }
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+            FROM = {
+                compliance > 30
+            }
+        }
+        visible = {
+            always = yes
+        }
+        state_target = yes
+        on_map_mode = map_and_decisions_view
+        target_array = controlled_states
+        target_trigger = {
+            FROM = {
+                NOT = {
+                    is_core_of = ROOT
+                }
+                compliance > 30
+            }
+        }
+        cost = 10
+        fire_only_once = yes
+        days_remove = 14
+        visible = {
+            always = yes
+        }
+        remove_effect = {
+            FROM = {
+                add_core_of = ROOT
+            }
+            transfer_state = FROM
+        }
+    }
+}

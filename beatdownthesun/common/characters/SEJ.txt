@@ -1,0 +1,34 @@
+characters = {
+	SEJ_sej = {
+		name = SEJ_sej
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SEJ_sej
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+	SEJ_sej2 = {
+		name = SEJ_sej
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SEJ_sej
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+
+	
+}

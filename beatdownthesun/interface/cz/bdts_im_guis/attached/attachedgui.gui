@@ -1,0 +1,248 @@
+guiTypes = {
+	containerWindowType = {
+		name = "political_attached_window"
+		position = { x = 0 y = 0 }
+		size = { width = 160 height = 240 }
+		orientation = upper_left
+		clipping = no
+		iconType = {
+			name = "second_leader_portrait"
+			position = { x = 20 y = 117 }
+			spriteType = "GFX_leader_unknown"
+			scale = 0.74
+			#pdx_tooltip = "second_leader_name"
+			#pdx_tooltip_delayed = "second_leader_desc"
+			pdx_tooltip = "second_leader_desc"
+		}
+	}
+
+	
+
+	containerWindowType = {
+		name = "political_attached_frame_window"
+		position = { x = 0 y = 0 }
+		size = { width = 160 height = 240 }
+		orientation = upper_left
+		clipping = no
+		iconType = {
+			name = "diplo_leader_frame"
+			position = { x = 10 y = 110 }
+			spriteType = "GFX_diplo_leader_frame"
+			alwaystransparent = yes
+		}
+		
+
+		
+	}
+
+	containerWindowType = {
+		name = "political_attached_button_window"
+		position = { x = 0 y = 0 }
+		size = { width = 160 height = 240 }
+		orientation = upper_left
+		clipping = no
+		buttonType = {
+			name = "change_leader"
+			position = { x = 20  y = 117 }
+			spriteType = "button_left"
+			orientation = upper_left
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "political_attached2_window"
+		position = { x = 0 y = 0 }
+		size = { width = 160 height = 240 }
+		orientation = upper_left
+		clipping = no
+		iconType = {
+			name = "second_leader_portrait2"
+			position = { x = 18 y = 58 }
+			spriteType = "GFX_leader_unknown"
+			scale = 1
+			#pdx_tooltip = "second_leader_name"
+			#pdx_tooltip_delayed = "second_leader_desc"
+			pdx_tooltip = "second_leader_desc"
+		}
+	}
+
+	containerWindowType = {
+		name = "political_attached2_button_window"
+		position = { x = 0 y = 0 }
+		size = { width = 160 height = 240 }
+		orientation = upper_left
+		clipping = no
+		buttonType = {
+			name = "change_leader2"
+			position = { x = 18  y = 53 }
+			spriteType = "button_left"
+			orientation = upper_left
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "political_attached2_frame_window"
+		position = { x = 0 y = 0 }
+		size = { width = 160 height = 240 }
+		orientation = upper_left
+		clipping = no
+		iconType = {
+			name = "cz_secondleader_name_bg"	
+			quadTextureSprite ="GFX_cz_secondleader_name_bg"
+			scale = 1
+			position = { x = 10 y = 44 }
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "secondleader_name"
+			position = { x = 18 y = 271 }
+			font = "hoi_18mbs"
+			text = "second_leader_name"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+		}
+		
+
+		
+	}
+	
+	
+	
+
+	containerwindowtype = {
+		name = "state_view_button"
+		position = { x = 45 y = 500 }
+		size = { width = 80 height = 80 }
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_state_view_bg"
+		}
+		buttontype = {
+			name = "state_button"
+			spritetype = "GFX_SL_state_book_button"
+			position = { x = 9 y = 16 }
+			pdx_tooltip = "open_button_tt"
+			pdx_tooltip_anchor = { x = 65 y = -20 }
+		}
+	}
+
+	containerwindowtype = {
+		name = "State_view_window"
+		position = { x = 0 y = 0 }
+		size = { width = 429 height = 504 }
+		orientation = center
+		origo = center
+		moveable = yes
+		clipping = no
+
+		fade_time = 300
+		fade_type = linear
+		show_sound = "open_sub_window"
+		hide_sound = "menu_close_window"
+
+		background = {
+			name = "bg"
+			quadtexturesprite = "GFX_state_view_bg"
+		}
+
+
+		icontype = {
+			name = "state_lore_image"
+			position = { x = 8 y = 49 }
+			spritetype = "GFX_state_lore_img_1"
+			alwaystransparent = yes
+		}
+		icontype = {
+			name = "title_underlay"
+			position = { x = 5 y = 6 }
+			spritetype = "GFX_SL_title_underlay"
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 10 y = 8 }
+			text = "[GetStateCity]"
+			font = "hoi_36header"
+			maxwidth = 370
+			maxheight = 36
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 11 y = 121 }
+			text = "[GetStateCityDesc]"
+			font = "hoi_18mbs"
+			maxwidth = 390
+			maxheight = 375
+			format = left
+		}
+		buttontype = {
+			name = "close_btn"
+			position = { x = -40 y = 10 }
+			spritetype = "GFX_tno_close_button"
+			orientation = UPPER_RIGHT
+			clicksound = "click_close"
+			shortcut = "ESCAPE"
+		}
+	}
+
+	containerwindowtype = {
+		name = "stateview_mapicons"
+		position = { x = 34 y = -25 }
+		size = { width = 85 height = 85 }
+		buttonType = {
+			name = "state_lore_mapicon"
+			spritetype = "GFX_SL_mapicon_button"
+			oversound = "ui_menu_over"
+		}
+	}
+
+	containerWindowType = {
+		name = "tension_animation_gui"
+		position = {
+			x = -400
+			y = -100
+		}
+		orientation = upper_left
+		clipping = no
+		moveable = no
+
+		click_to_front = yes
+		
+		background = {
+			spriteType = "GFX_world_tension_background"
+		}
+		buttonType = {
+			name = "tension_show_wars_button"
+			quadtexturesprite = "GFX_ongoingconflicts_button"
+			clicksound = click_default
+			position = { x = 428 y = 450 }
+			
+		}
+		iconType = {
+			name = "block"
+			quadtexturesprite = "GFX_world_tension_block"
+			position = { x = 21 y = 312 }
+		}
+		iconType = {
+			name = "globe_animation"
+			quadtexturesprite = "GFX_world_tension_globe_animation"
+			position = { x = 200 y = 360 }
+		}
+		iconType = {
+			name = "progbar_animation"
+			quadtexturesprite = "GFX_world_tension_progbar_animation"
+			position = { x = 600 y = 430 }
+		}
+	}
+
+	
+
+    
+
+}

@@ -1,0 +1,158 @@
+on_actions = {
+    
+	
+
+    on_daily = {
+		effect = {
+			if = {
+				limit = {
+					is_ai = no
+                    has_country_flag = parliament_changing
+				}
+                random_country = {
+					limit = {
+						is_ai = no
+                        has_country_flag = parliament_changing
+					}
+					add_to_variable = { parliament_ring_progressbar = 1 }
+				}
+				random_country = {
+					limit = {
+						check_variable = {
+                            parliament_ring_progressbar > 99
+			            }
+					}
+					clear_variable = parliament_ring_progressbar
+                    clr_country_flag = parliament_changing
+                    parliament_change_completed = yes
+				}	
+			}
+			if = {
+				limit = {
+					is_ai = no
+                    OR = {
+                            has_country_flag = {
+					            flag = change_abortive
+					            days > 10
+				            }
+							has_country_flag = {
+					            flag = change_successes
+					            days > 10
+				            }
+						}
+				}
+                random_country = {
+					limit = {
+						is_ai = no
+						OR = {
+                            has_country_flag = {
+					            flag = change_abortive
+					            days > 10
+				            }
+							has_country_flag = {
+					            flag = change_successes
+					            days > 10
+				            }
+						}
+					}
+					if = {
+						limit = {
+                             has_country_flag = {
+					            flag = change_abortive
+					            days > 10
+				            }
+						}
+						clr_country_flag = change_abortive
+					}
+					if = {
+						limit = {
+                             has_country_flag = {
+					            flag = change_successes
+					            days > 10
+				            }
+						}
+						clr_country_flag = change_successes
+					}
+					
+					
+				}
+					
+			}
+           
+		}
+	}
+
+    on_daily = {
+        effect = {
+            every_country = {
+               
+                    limit = { 
+                        is_ai = no
+                    }
+                ROOT = {
+
+                    refresh_parliament_seats = yes
+
+                   
+    set_variable = { 1_total100 = ROOT.party_popularity_100@Power_Authoritarianism }
+	
+	round_variable = 1_total100
+	set_variable = { 2_total100 = ROOT.party_popularity_100@Ethnonationalism }
+	
+	round_variable = 2_total100
+	set_variable = { 3_total100 = ROOT.party_popularity_100@Religious_Supremacy }
+	
+	round_variable = 3_total100
+	set_variable = { 4_total100 = ROOT.party_popularity_100@Individual_Supremacy }
+	
+	round_variable = 4_total100
+	set_variable = { 5_total100 = ROOT.party_popularity_100@Total_Autonomy }
+	
+	round_variable = 5_total100
+	set_variable = { 6_total100 = ROOT.party_popularity_100@Market_Capitalism }
+	
+	round_variable = 6_total100
+	set_variable = { 7_total100 = ROOT.party_popularity_100@Environmental_Determinism }
+	
+	round_variable = 7_total100
+	set_variable = { 8_total100 = ROOT.party_popularity_100@Social_Contractism }
+	
+	round_variable = 8_total100
+	set_variable = { 9_total100 = ROOT.party_popularity_100@Economic_Interventionism }
+	
+	round_variable = 9_total100
+	set_variable = { 10_total100 = ROOT.party_popularity_100@Absolute_Egalitarianism }
+
+    round_variable = 10_total100
+
+ set_variable = {
+    party_size_quantitative = 80
+}
+    
+						set_variable = {
+                            
+                        party_size = party_size_quantitative
+                    }                     
+                    refresh_seat = yes
+               
+            }  
+            }
+            
+        }
+    }
+	
+	on_weekly_JPN = {
+        effect = {
+	        if = {
+                limit = {
+                    check_variable = { jpn_chingyu_resentment > 6000 }
+                    has_global_flag = JPN_531_CHINGYU
+                }
+                JPN = { country_event = peevents_chingyu.3 }
+            }
+       
+        }
+    }
+	
+	
+}

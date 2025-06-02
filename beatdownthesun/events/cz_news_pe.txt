@@ -1,0 +1,326 @@
+add_namespace = penews_chingyu
+add_namespace = peevents_chingyu
+news_event = {
+	id = penews_chingyu.1
+	title = penews_chingyu.1.t
+	desc = penews_chingyu.1.desc
+	picture = "GFX_cz_news_penews_chingyu_1"
+	#major = yes
+	
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = pe_chingyu_showls
+	}
+	option = {
+		name = penews_chingyu.1.a
+		trigger = {
+			NOT = { tag = CCP }
+		}
+		if = {
+			limit = {
+				tag = JPN
+			}
+			JPN = {
+				add_stability = -0.01
+			}
+			set_global_flag = pe_chingyu_showls_a
+		}
+
+		
+		ai_chance = {
+			base = 10.5
+
+    
+            modifier = { tag = JPN add = -6 }
+            modifier = { is_major = yes add = -1 }
+            
+            factor = 2
+	    }
+	}
+	
+	option = {
+		name = penews_chingyu.1.b
+		
+
+		if = {
+			limit = {
+				tag = JPN
+			}
+			
+			set_global_flag = pe_chingyu_showls_b
+		}
+
+		if = {
+			limit = {
+				tag = CCP
+			}
+			CCP = {
+				add_stability = -0.05
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -1
+					
+				}
+			}
+			
+		}
+		ai_chance = {
+			base = 8.5
+
+    
+            
+            
+            factor = 2
+	    }
+	}
+	
+	
+}
+
+country_event = {
+	id = peevents_chingyu.1
+	title = peevents_chingyu.1.t
+	desc = peevents_chingyu.1.desc
+	picture = "GFX_cz_events_peevents_chingyu_1"
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		date > 2027.1.6
+        tag = JPN
+        has_global_flag = pe_chingyu_showls_a
+        NOT = {
+		    has_global_flag = jpn_tamura_tomoko_wield_power
+		    has_global_flag = jpn_JRCL_peacefulrevolutin
+	    }
+    }
+	mean_time_to_happen = { days = 0 }
+    immediate = {}
+    option = {
+        name = "peevents_chingyu.1.a"
+		ai_chance = {
+			base = 8.5
+            factor = 2
+	    }
+        hidden_effect = {
+			
+			JPN = { country_event = peevents_chingyu.2 }
+        }
+    }
+	option = {
+        name = "peevents_chingyu.1.b"
+        hidden_effect = {
+			clr_global_flag = pe_chingyu_showls_a
+			clr_global_flag = pe_chingyu_showls_b
+        }
+		add_political_power = 5
+		ai_chance = {
+			base = 18.5
+            factor = 2
+	    }
+    }    
+}
+
+news_event = {
+	id = penews_chingyu.2
+	title = penews_chingyu.2.t
+	desc = penews_chingyu.2.desc
+	picture = "GFX_cz_news_penews_chingyu_2"
+	major = yes
+	trigger = {
+		has_global_flag = jpn_chingyu_appeared
+		NOT = {
+			has_global_flag = penews_chingyu2_dn
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			complete_national_focus = {
+				focus = JPN_call_upon_chingyu
+				use_side_message = yes
+				originator_name = JPN_call_upon_chingyu_completed_happend_d
+			}
+		    remove_ideas = JPN_naruhito_i
+			set_global_flag = penews_chingyu2_dn
+		} 
+			
+		
+		
+	}
+	option = {
+		name = penews_chingyu.2.a
+		trigger = {
+			NOT = { tag = JPN }
+			NOT = {
+				OR= { 
+					has_country_leader_ideology = pc
+					has_government = Social_Contractism
+					#has_government = Market_Capitalism
+					if = {
+						limit = { tag = DPK }
+						has_country_leader_ideology = hd
+					}
+				}
+			}
+		}
+		
+
+		
+		ai_chance = {
+			
+            factor = 2
+	    }
+	}
+	
+	option = {
+		name = penews_chingyu.2.b
+		trigger = {
+			tag = JPN 
+		}
+
+		if = {
+			limit = {
+				tag = JPN
+			}
+			
+			add_stability = 0.1
+		}
+
+		
+		ai_chance = {
+			base = 8.5
+            factor = 2
+	    }
+	}
+
+	option = {
+		name = penews_chingyu.2.c
+		trigger = {
+			NOT = { tag = JPN }
+			OR= { 
+				has_country_leader_ideology = pc
+			    has_government = Social_Contractism
+				#has_government = Market_Capitalism
+				if = {
+					limit = { tag = DPK }
+					has_country_leader_ideology = hd
+				}
+			}
+		}
+		
+
+		
+		ai_chance = {
+			
+            factor = 2
+	    }
+	}
+	
+	
+}
+
+country_event = {
+	id = peevents_chingyu.2
+	title = peevents_chingyu.2.t
+	desc = peevents_chingyu.2.desc
+	picture = "GFX_cz_events_peevents_chingyu_2"
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+        tag = JPN
+        #has_global_flag = jpn_chingyu_appeared
+       
+    }
+	
+    immediate = {
+		hidden_effect = {
+			
+				JPN = {
+					
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1
+						
+					}
+				}
+				
+			}	
+		
+	}
+    option = {
+        name = "peevents_chingyu.2.a"
+		ai_chance = {
+			
+            factor = 2
+	    }
+        hidden_effect = {
+			set_global_flag = jpn_chingyu_appeared
+			clr_global_flag = jpn_nipponkaigi_wield_power
+			clr_global_flag = jpn_naruhito_wield_power
+			JPN = { 
+				
+				#load_focus_tree = {
+			    #    tree = JPN_2
+			    #    keep_completed = yes
+			    #    copy_completed_from = JPN
+		        #}
+				mark_focus_tree_layout_dirty = yes
+		    }
+			JPN = { news_event = penews_chingyu.2 }
+		}
+    }
+	
+}
+
+country_event = {
+	id = peevents_chingyu.3
+	title = peevents_chingyu.3.t
+	desc = peevents_chingyu.3.desc
+	picture = "GFX_cz_events_peevents_chingyu_3"
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		
+        tag = JPN
+        #has_global_flag = jpn_chingyu_appeared
+       
+    }
+	
+    immediate = {
+		hidden_effect = {
+			
+				JPN = {
+					
+					promote_character = { 
+					    character = JPN_chingyu_l_out
+					#chingyu_out!!!
+					    ideology = Power_Authoritarianism 
+				    }
+				}
+				set_global_flag = jpn_chingyu_oooooout
+			}	
+		
+	}
+    option = {
+        name = "peevents_chingyu.3.a"
+		ai_chance = {
+			
+            factor = 2
+	    }
+        hidden_effect = {
+			set_global_flag = peevents_chingyu_3_a #这后续会将游戏导向对离去神明虔诚的追随者路线
+		}
+    }
+	option = {
+        name = "peevents_chingyu.3.b"
+		ai_chance = {
+			
+            factor = 2
+	    }
+        hidden_effect = {
+			set_global_flag = peevents_chingyu_3_b #这后续会将游戏导向无神论路线
+		}
+    }
+	
+}

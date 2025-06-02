@@ -1,0 +1,14 @@
+defined_text = {
+    name = GetheadofgovernmentName
+    text = {
+        trigger = {
+            original_tag = JPN
+			has_global_flag = JPN_tennoheadofgovernment
+        }
+        localization_key = JPNtennoheadofgovernment_localization_key
+    }
+    text = {
+        localization_key = modheadofgovernment_localization_key
+    }
+}
+

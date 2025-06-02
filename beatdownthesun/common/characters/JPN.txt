@@ -1,0 +1,254 @@
+characters = {
+	#JPN_ishiba_shigeru2 = { 
+	#	name = JPN_ishiba_shigeru
+	#
+	#	country_leader = {
+	#		ideology = mikado
+	#		
+	#		expire = "2040.1.1.1"
+    #
+	#	}
+    #    
+	#}
+
+	JPN_ishiba_shigeru = {
+		name = JPN_ishiba_shigeru
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_ishiba_shigeru
+			}
+		}
+		country_leader = {
+			ideology = mikado
+			traits = { 
+				pragmatic_hardliners
+				hoshuha
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_ishiba_shigeru2 = {
+		name = JPN_ishiba_shigeru
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_ishiba_shigeru
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { 
+				pragmatic_hardliners
+				hoshuha
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_ishiba_shigeru3 = { #scarecrow
+		name = JPN_ishiba_shigeru
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_ishiba_shigeru
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { 
+				pragmatic_hardliners
+				hoshuha
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_chingyu_l = {
+		name = JPN_chingyu_l
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_chingyu_l
+			}
+		}
+		country_leader = {
+			ideology = imperial
+			traits = { 
+				jpn_tenno
+				ow_god_chingyu
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_chingyu_l_out = {
+		name = JPN_chingyu_l
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_power_of_god_chingyu2
+			}
+		}
+		country_leader = {
+			ideology = imperial
+			traits = { 
+				jpn_chingyu_eclipsingbronzestatue
+	        }
+			expire = "2099.1.1.1"
+    
+		}
+        
+	}
+
+	#JPN_chingyu_l2 = {
+	#	name = JPN_chingyu_l2
+	#	portraits = {
+	#	    civilian = {
+	#			large = GFX_portrait_JPN_chingyu_l
+	#		}
+	#	}
+	#	country_leader = {
+	#		ideology = imperial
+	#		traits = { 
+	#			jpn_tenno
+	#		    ow_god_chingyu
+	#        }
+	#		expire = "2040.1.1.1"
+    #
+	#	}
+    #    
+	#}
+
+	JPN_naruhito = {
+		name = JPN_naruhito
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_naruhito
+			}
+		}
+		country_leader = {
+			ideology = jr
+			traits = { 
+				jpn_tenno
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_tamura_tomoko = {
+		name = JPN_tamura_tomoko
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_tamura_tomoko
+			}
+		}
+		country_leader = {
+			ideology = japanesestylecommunism
+			traits = { 
+				jpn_japanesestylecommunism
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_shii_kazuo = {
+		name = JPN_shii_kazuo
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_shii_kazuo
+			}
+		}
+		country_leader = {
+			ideology = japanesestylecommunism
+			traits = { 
+				jpn_japanesestylecommunism
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_koike_akira = {
+		name = JPN_koike_akira
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_koike_akira
+			}
+		}
+		country_leader = {
+			ideology = japanesestylecommunism
+			traits = { 
+				jpn_japanesestylecommunism
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_JRCL = {
+		name = JPN_JRCL
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_JRCL
+			}
+		}
+		country_leader = {
+			ideology = trotskyism
+			traits = { 
+				jpn_Social_Contractism
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_nipponkaigi = {
+		name = JPN_nipponkaigi
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_chingyu_l
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism
+			traits = { 
+				jpn_nipponkaigi_post_vacancies
+				jpn_nipponkaigi_l
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	JPN_nipponkaigi2 = {
+		name = JPN_nipponkaigi
+		country_leader = {
+			ideology = gen_nazism
+			traits = { 
+				
+				
+	        }
+		}
+	}
+
+	
+}

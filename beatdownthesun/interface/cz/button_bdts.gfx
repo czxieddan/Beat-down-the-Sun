@@ -1,0 +1,83 @@
+spriteTypes = {
+	
+	textSpriteType = {
+		name = "GFX_bdts_main_button"
+		textureFile = "gfx/interface/cz/welcome/bdts_welcome_button.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	SpriteType = {
+		name = "GFX_bdts_main_button_highlight"
+		textureFile = "gfx/interface/cz/welcome/bdts_welcome_button_transparent.dds"
+
+		animation = {
+			animationmaskfile = "gfx/interface/cz/welcome/bdts_welcome_button_white.dds"
+			animationtexturefile = "gfx/interface/cz/welcome/bdts_welcome_button_highlight.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1				# in seconds
+			animationdelay = 0.5			# in seconds
+			animationblendmode = "normal"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	textSpriteType = {
+		name = "GFX_bdts_02_left_button"
+		textureFile = "gfx/interface/cz/b/bdts_02_left_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	SpriteType = {
+		name = "GFX_bdts_02_left_button_highlight"
+		textureFile = "gfx/interface/cz/b/bdts_02_button_transparent.dds"
+
+		animation = {
+			animationmaskfile = "gfx/interface/cz/b/bdts_02_button_white.dds"
+			animationtexturefile = "gfx/interface/cz/b/bdts_02_button_highlight.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1				# in seconds
+			animationdelay = 0.5			# in seconds
+			animationblendmode = "normal"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	textSpriteType = {
+		name = "GFX_bdts_02_right_button"
+		textureFile = "gfx/interface/cz/b/bdts_02_right_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	SpriteType = {
+		name = "GFX_bdts_02_right_button_highlight"
+		textureFile = "gfx/interface/cz/b/bdts_02_button_transparent.dds"
+
+		animation = {
+			animationmaskfile = "gfx/interface/cz/b/bdts_02_button_white.dds"
+			animationtexturefile = "gfx/interface/cz/b/bdts_02_button_highlight.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1				# in seconds
+			animationdelay = 0.5			# in seconds
+			animationblendmode = "normal"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+}

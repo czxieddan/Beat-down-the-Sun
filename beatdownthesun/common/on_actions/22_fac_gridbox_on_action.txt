@@ -1,0 +1,464 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			every_country = {
+				clear_array = global.faction_menber_@THIS.faction_leader
+			}
+			
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					clear_array = global.grid_main_country
+				}
+			}
+
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				clear_array = global.faction_menber_@THIS
+				
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+			}
+
+
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					add_to_array = {
+						global.grid_main_country = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				add_to_array = {
+					global.faction_menber_@THIS = THIS
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+			}
+
+			#add_to_array = {
+			#	global.faction_menber_ENG = ENG
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = yes
+			#		is_in_faction_with = ENG
+			#		NOT = {
+			#			tag = ENG
+			#		}
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = no
+			#		is_in_faction_with = ENG
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+		}
+	}
+	on_daily = {
+		effect = {
+			every_country = {
+				clear_array = global.faction_menber_@THIS.faction_leader
+			}
+			
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					clear_array = global.grid_main_country
+				}
+			}
+
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				clear_array = global.faction_menber_@THIS
+				
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+			}
+
+
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					add_to_array = {
+						global.grid_main_country = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				add_to_array = {
+					global.faction_menber_@THIS = THIS
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+			}
+
+			#add_to_array = {
+			#	global.faction_menber_ENG = ENG
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = yes
+			#		is_in_faction_with = ENG
+			#		NOT = {
+			#			tag = ENG
+			#		}
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = no
+			#		is_in_faction_with = ENG
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+		}
+	}
+	on_faction_formed = {
+		effect = {
+			every_country = {
+				clear_array = global.faction_menber_@THIS.faction_leader
+			}
+			
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					clear_array = global.grid_main_country
+				}
+			}
+
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				clear_array = global.faction_menber_@THIS
+				
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+			}
+
+
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					add_to_array = {
+						global.grid_main_country = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				add_to_array = {
+					global.faction_menber_@THIS = THIS
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+			}
+
+			#add_to_array = {
+			#	global.faction_menber_ENG = ENG
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = yes
+			#		is_in_faction_with = ENG
+			#		NOT = {
+			#			tag = ENG
+			#		}
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = no
+			#		is_in_faction_with = ENG
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+		}
+	}
+	on_join_faction = {
+		effect = {
+			every_country = {
+				clear_array = global.faction_menber_@THIS.faction_leader
+			}
+			
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					clear_array = global.grid_main_country
+				}
+			}
+
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				clear_array = global.faction_menber_@THIS
+				
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					clear_array = global.faction_menber_@PREV
+				}
+			}
+
+
+			for_each_scope_loop = {
+				array = global.majors
+				if = {
+					limit = {
+						THIS = {
+							is_faction_leader = yes
+						}
+					}
+					add_to_array = {
+						global.grid_main_country = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = global.grid_main_country
+				add_to_array = {
+					global.faction_menber_@THIS = THIS
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+						is_in_faction_with = PREV
+						NOT = {
+							tag = PREV
+						}
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+						NOT = {
+							has_country_flag = not_show_in_faction
+						}
+						is_in_faction_with = PREV
+					}
+					add_to_array = {
+						global.faction_menber_@PREV = THIS
+					}
+				}
+			}
+
+			#add_to_array = {
+			#	global.faction_menber_ENG = ENG
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = yes
+			#		is_in_faction_with = ENG
+			#		NOT = {
+			#			tag = ENG
+			#		}
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_major = no
+			#		is_in_faction_with = ENG
+			#	}
+			#	add_to_array = {
+			#		global.faction_menber_ENG = THIS
+			#	}
+			#}
+		}
+	}
+}
+#global.GER_faction_menber

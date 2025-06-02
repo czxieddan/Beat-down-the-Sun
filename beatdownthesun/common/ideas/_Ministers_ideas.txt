@@ -1,0 +1,156 @@
+ideas = { ### ### Head of Government ### person_of_influence
+	head_of_government = { 
+	    ROK_choi_sangmok2 = {
+		    name = ROK_choi_sangmok2
+
+			allowed = {
+				original_tag = ROK
+				
+			}
+			
+			visible = {
+				NOT = { has_country_leader = {
+					    character = ROK_choi_sangmok
+					    ruling_only = yes
+				        }
+			    }
+				has_government = Market_Capitalism
+				has_completed_focus = ROK_reappoint_yin
+			}
+			
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+		    cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ROK_choi_sangmok2"
+			}
+            traits = {
+				head_of_government
+				prime
+				economic_vitality_reformer2
+				
+			}
+		}
+
+		ROK_han_ducksoo = {
+		    name = ROK_han_ducksoo
+
+			allowed = {
+				original_tag = ROK
+				
+			}
+			
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+		    cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ROK_han_ducksoo"
+			}
+            traits = {
+				head_of_government
+				rational_doer2
+				manpower_policy_facilitators
+				
+				
+			}
+		}
+	}
+
+	person_of_influence = {
+		
+		ROK_cho_taeyul = {
+			name = ROK_cho_taeyul
+			allowed = { original_tag = ROK }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ROK_cho_taeyul"
+			}
+			traits = {
+				foreign_minister
+				troubleshooter
+				audacious_cho
+			}
+		}
+
+		ROK_choi_sangmok3 = {
+		    name = ROK_choi_sangmok2
+
+			allowed = {
+				original_tag = ROK
+				
+			}
+			
+			visible = {
+				has_country_leader = {
+					character = ROK_choi_sangmok
+					ruling_only = yes
+				}
+			
+			}
+			
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+		    cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ROK_choi_sangmok3"
+			}
+            traits = {
+				economy_minister
+				ROK_choi_sangmok_economy_minister
+				economic_vitality_reformer3
+				
+			}
+		}
+
+		ROK_congress_Market_Capitalism = {
+		    name = ROK_congress_Market_Capitalism
+
+			allowed = {
+				original_tag = ROK
+				
+			}
+			
+			visible = {
+				#NOT = { has_country_leader = ROK_choi_sangmok }
+				has_government = Market_Capitalism
+				#has_completed_focus = ROK_reappoint_yin
+			}
+			
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+		    cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ROK_congress_Market_Capitalism"
+			}
+            traits = {
+				security_minister
+				rok_traits_ROK_congress_Market_Capitalism
+				
+			}
+		}
+
+
+	}
+}

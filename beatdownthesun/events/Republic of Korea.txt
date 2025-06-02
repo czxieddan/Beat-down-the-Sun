@@ -1,0 +1,211 @@
+﻿add_namespace = idea_rok
+add_namespace = country_rok
+add_namespace = news_rok
+
+
+
+
+country_event = {
+	id = country_rok.1
+	title = country_rok.1.t
+	desc = country_rok.1.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = no
+	fire_only_once = yes
+    #hidden = yes
+	
+	trigger = {
+        tag = ROK
+       
+        has_global_flag = rok_yoonsukyoul_arrest
+        
+       
+        
+    }
+
+	mean_time_to_happen = {
+        days = 30
+       
+    }
+	
+    immediate = {
+		hidden_effect = {
+            random_list = {
+                30 = {
+                    set_global_flag = rok_yin_d
+                }
+                70 = {
+                    set_global_flag = rok_yin_l
+                }
+            }
+            set_global_flag = rok_yin_c
+        }
+        
+        
+    }
+    option = {
+        name = "country_rok.1.a"
+        set_global_flag = rok_yin_a
+    }
+    option = {
+        name = "country_rok.1.b"
+        set_global_flag = rok_yin_b
+    }
+}
+
+country_event = {
+	id = country_rok.2
+	title = country_rok.2.t
+	desc = country_rok.2.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+    #hidden = yes
+	
+	trigger = {
+        tag = ROK
+       
+       
+        
+       
+        
+    }
+
+	#mean_time_to_happen = { days = 1 }
+	
+    immediate = {
+		hidden_effect = {
+            
+            set_global_flag = rok_yoonsukyoul124
+        }
+        
+        
+    }
+    option = {
+        name = "country_rok.2.a"
+        hidden_effect = {
+            set_global_flag = rok_yoonsukyoul_request
+            add_political_power = -100
+        }
+    }
+    
+}
+
+country_event = {
+	id = country_rok.3
+	title = country_rok.3.t
+	desc = country_rok.3.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = no
+	fire_only_once = yes
+    #hidden = yes
+	
+	trigger = {
+        tag = ROK
+       
+        has_global_flag = rok_trialyoon_a
+        
+       
+        
+    }
+
+	mean_time_to_happen = {
+        days = 1
+       
+    }
+	
+    immediate = {
+		
+        
+    }
+    option = {
+        name = "country_rok.3.a"
+        set_global_flag = rok_trialyoona_a
+    }
+    option = {
+        name = "country_rok.3.b"
+        set_global_flag = rok_trialyoona_b
+    }
+   
+}
+
+country_event = {
+	id = country_rok.4
+	title = country_rok.4.t
+	desc = country_rok.4.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = no
+	fire_only_once = yes
+    #hidden = yes
+	
+	trigger = {
+        tag = ROK
+       
+        has_global_flag = rok_trialyoon_b
+        
+       
+        
+    }
+
+	mean_time_to_happen = {
+        days = 1
+       
+    }
+	
+    immediate = {
+		
+        
+    }
+    option = {
+        name = "country_rok.4.a"
+        set_global_flag = rok_trialyoonb_a
+    }
+    option = {
+        name = "country_rok.4.b"
+        set_global_flag = rok_trialyoonb_b
+    }
+   
+}
+
+country_event = {
+	id = country_rok.5
+	title = country_rok.5.t
+	desc = country_rok.5.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = no
+	fire_only_once = yes
+    #hidden = yes
+	
+	trigger = {
+        tag = ROK
+       
+        has_global_flag = rok_trialyoon_b
+        
+       
+        
+    }
+
+	mean_time_to_happen = {
+        days = 1
+       
+    }
+	
+    immediate = {
+		
+        
+    }
+    option = {
+        name = "country_rok.5.a"
+        set_global_flag = rok_trialyoonb_a
+    }
+    option = {
+        name = "country_rok.5.b"
+        set_global_flag = rok_trialyoonb_b
+    }
+   
+}

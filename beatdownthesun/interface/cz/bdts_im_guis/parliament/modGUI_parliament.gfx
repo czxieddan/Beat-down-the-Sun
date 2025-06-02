@@ -1,0 +1,41 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_slider_dot"
+		textureFile = "gfx/parliament/econ_crt_slider_dot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_Seat"
+		textureFile = "gfx/parliament/parliament_seat.png"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_set_slider"
+		textureFile = "gfx/parliament/set_slider.png"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_econ_crt_slider_limit_left"
+		texturefile = "gfx/parliament/econ_crt_slider_limit_left.dds"
+	}
+	spriteType = {
+		name = "GFX_econ_crt_slider_limit_right"
+		texturefile = "gfx/parliament/econ_crt_slider_limit_right.dds"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_legislation"
+		texturefile = "gfx/parliament/parliament_legislation.png"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_war"
+		texturefile = "gfx/parliament/parliament_war.png"
+	}
+
+
+
+}

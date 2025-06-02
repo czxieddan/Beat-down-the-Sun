@@ -1,0 +1,14 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_cz_secondleader_name_bg"
+		textureFile = "gfx/interface/cz_secondleader_name_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_party_attached_window_bg"
+		textureFile = "gfx/interface/party_attached_window_bg.dds"
+	}
+
+
+}

@@ -1,0 +1,35 @@
+state={
+	id=525
+	name="STATE_525"
+
+	history={
+		owner = ROK
+		
+		victory_points = {
+			13376 50 # capital
+		}
+		buildings = {
+			infrastructure = 5
+			
+			industrial_complex = 7
+			air_base = 8
+			dockyard = 2
+			synthetic_refinery = 1
+		}
+		add_core_of = ROK
+		
+	}
+
+	provinces={
+		13376
+	}
+	manpower=9384512
+	buildings_max_level_factor=1
+	state_category="megalopolis"
+	
+	resources={
+		steel=10
+	}
+
+	local_supplies=0.0 
+}

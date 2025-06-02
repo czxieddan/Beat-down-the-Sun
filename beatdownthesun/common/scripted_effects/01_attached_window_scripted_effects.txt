@@ -1,0 +1,43 @@
+leader_portraits_effect = {
+	if = {
+		limit = {
+			not = {
+				has_country_flag = change_second_leader
+			}
+		}
+		set_country_flag = change_second_leader
+	}
+	else = {
+		clr_country_flag = change_second_leader
+	}
+}
+
+set_state_pic_view = {
+	set_variable = {
+		ROOT.view_entry = THIS.id
+	}
+	for_each_loop = {
+		array = global.viewed_state
+		value = v
+		index = i
+		break = b
+		if = {
+			limit = {
+				check_variable = { 
+					v = ROOT.view_entry
+				}
+			}
+			ROOT = {
+				set_variable = {
+					pic_num = i
+				}
+				add_to_variable = {
+					pic_num = 1
+				}
+			}
+			set_temp_variable = {
+				b = 0
+			}			
+		}
+	}
+}

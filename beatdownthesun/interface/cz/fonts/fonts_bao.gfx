@@ -1,0 +1,15 @@
+bitmapfonts = {
+    bitmapfont = {
+        name = "bao"
+        fontfiles = {
+            "gfx/fonts/bao/BAO_0"
+            
+        }
+        color = 0xffffffff
+		border_color = 0x00000000
+
+        textcolors = {
+            B = { 86 92 202 }
+        }
+    }
+}

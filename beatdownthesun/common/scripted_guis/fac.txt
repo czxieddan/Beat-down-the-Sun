@@ -1,0 +1,186 @@
+scripted_gui = {
+	faction_grid_button_window = {
+		window_name = "faction_grid_button_window"
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		triggers = {
+			ENG_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_ENG = THIS
+					}
+				}
+				has_global_flag = ENG_is_faction_1
+			}
+			GER_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_GER = THIS
+					}
+				}
+				has_global_flag = GER_is_faction_1
+			}	
+			SOV_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_SOV = THIS
+					}
+				}
+				has_global_flag = SOV_is_faction_1
+			}
+			ROK_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_ROK = THIS
+					}
+				}
+				has_global_flag = ROK_is_faction_1
+			}	
+
+		}
+		effects = {
+			ENG_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+			GER_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+			SOV_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+			ROK_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+
+		}
+	}
+
+	faction2_grid_button_window = {
+		window_name = "faction2_grid_button_window"
+		context_type = player_context
+		parent_window_name = "faction_pol_window_view"
+		triggers = {
+			ENG_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_ENG = THIS
+					}
+				}
+				has_global_flag = ENG_is_faction_1
+			}
+			GER_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_GER = THIS
+					}
+				}
+				has_global_flag = GER_is_faction_1
+			}	
+			SOV_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_SOV = THIS
+					}
+				}
+				has_global_flag = SOV_is_faction_1
+			}
+			ROK_faction_1_grid_button_visible = {
+				THIS = {
+					is_in_array = {
+						global.faction_menber_ROK = THIS
+					}
+				}
+				has_global_flag = ROK_is_faction_1
+			}	
+
+		}
+		effects = {
+			ENG_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+			GER_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+			SOV_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+			ROK_faction_1_grid_button_click = {
+				Faction_window_open = yes
+			}
+
+		}
+	}
+	#faction_gui = {
+	#	context_type = player_context
+	#	window_name = "faction_gui_window"
+	#	visible = {
+	#		ROOT = {
+	#			has_country_flag = faction_gui_open
+	#		}
+	#	}
+	#	dynamic_lists = {
+	#		faction_grid = {
+	#			array = grid_faction_array
+	#			index = i
+	#			value = v
+	#			entry_container = faction_entry
+	#		}
+	#	}
+	#	effects = {
+	#		button_close_click = {
+	#			clr_country_flag = faction_gui_open
+	#		}
+	#	}
+	#	
+	#	triggers = {
+	#		major_country_overlay_visible = {
+	#			var:v = {
+	#				is_major = yes
+	#			}
+	#		}
+	#	}
+	#	properties = {
+	#		country_flag = {
+	#			image = [?v.GetFlag]
+	#		}
+	#	}
+	#}
+
+	faction_gui = {
+		context_type = player_context
+		window_name = "faction_gui_window"
+		visible = {
+			ROOT = {
+				has_country_flag = faction_gui_open
+			}
+		}
+		dynamic_lists = {
+			faction_grid = {
+				array = grid_faction_array
+				index = idx
+				value = v
+				change_scope = yes
+				entry_container = faction_entry
+			}
+		}
+		effects = {
+			button_close_click = {
+				clr_country_flag = faction_gui_open
+				clr_country_flag = factionwindowopening
+			}
+		}
+		triggers = {
+			major_country_overlay_visible = {
+				THIS = {
+					is_major = yes
+				}
+			}
+		}
+		properties = {
+			country_flag = {
+				image = [THIS.GetFlag]
+			}
+		}
+	}
+}
+

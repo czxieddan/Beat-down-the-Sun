@@ -1,0 +1,51 @@
+is_diplomatic_action_valid_create_faction = {
+	has_global_flag = bdts_faction_buttons_present
+}
+
+is_diplomatic_action_valid_join_faction = {
+	has_global_flag = bdts_faction_buttons_present
+}
+
+is_diplomatic_action_valid_offer_join_faction = {
+	has_global_flag = bdts_faction_buttons_present
+}
+
+is_diplomatic_action_valid_leave_faction = {
+	has_global_flag = bdts_faction_buttons_present
+}
+
+is_diplomatic_action_valid_kick_from_faction = {
+	has_global_flag = bdts_faction_buttons_present
+}
+
+is_diplomatic_action_valid_assume_faction_leadership = {
+	has_global_flag = bdts_faction_buttons_present
+}
+
+is_diplomatic_action_valid_declare_war = {
+    has_global_flag = use_bdts_free_wargoals
+}
+
+is_diplomatic_action_valid_generate_wargoal = {
+    has_global_flag = use_bdts_free_wargoals
+}
+
+is_diplomatic_action_valid_guarantee = {
+    always = no
+}
+
+is_diplomatic_action_valid_stage_coup = {
+    always = no
+}
+
+is_diplomatic_action_valid_boost_party_popularity = {
+    always = no
+}
+
+is_diplomatic_action_valid_request_international_market_access_rights = {
+    always = no
+}
+
+is_diplomatic_action_valid_revoke_international_market_access_rights = {
+    always = no
+}

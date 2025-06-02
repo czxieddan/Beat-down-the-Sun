@@ -1,0 +1,23 @@
+scripted_gui = {
+
+	welcome_zhcn = {
+		context_type = player_context
+		window_name = "welcome_zhcn_container"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			is_ai = no
+			has_country_flag = show_welcome_b
+		}
+
+		effects = {
+			mod_options_button_click = {
+				clr_country_flag = show_welcome_b
+				country_event = bdts_mod.1
+			}
+		}
+	}
+}

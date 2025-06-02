@@ -1,0 +1,41 @@
+
+defined_text = { # Country
+	name = GetgridFactionName
+	text = {
+		localization_key = "[THIS.GetFactionName]"
+	}
+}
+
+defined_text = { # Country
+	name = GETfac_fac_politicsview_text
+	text = {
+	    trigger = {
+		    ROOT = { is_puppet = yes }
+	    }
+		localization_key = "fac_fac_politicsview_text1"
+	}
+	text = {
+	    trigger = {
+		    ROOT = {
+     		        is_puppet = no
+			        is_in_faction = no
+			    }
+		    
+	    }
+		localization_key = "fac_fac_politicsview_text2"
+	}
+	text = {
+		localization_key = "fac_fac_politicsview_text3"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

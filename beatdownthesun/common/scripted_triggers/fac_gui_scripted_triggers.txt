@@ -1,0 +1,9 @@
+is_in_this_faction = {
+	THIS = {
+					is_in_array = {
+						global.faction_menber_@THIS.faction_leader = THIS
+					}
+				}
+}
+
+

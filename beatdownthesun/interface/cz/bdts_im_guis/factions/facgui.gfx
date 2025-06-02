@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ENG_faction_1"
+		textureFile = "/gfx/attached_GUI/fac_icons/ENG_faction_1.png"
+	}
+	spriteType = {
+		name = "GFX_GER_faction_1"
+		textureFile = "/gfx/attached_GUI/fac_icons/GER_faction_1.png"
+	}
+	spriteType = {
+		name = "GFX_SOV_faction_1"
+		textureFile = "/gfx/attached_GUI/fac_icons/SOV_faction_1.png"
+	}
+	spriteType = {
+		name = "GFX_ROK_faction_1"
+		textureFile = "/gfx/attached_GUI/fac_icons/ROK_faction_1.png"
+	}
+
+
+
+}

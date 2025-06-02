@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	#News
+	SpriteType = {
+	    name = "GFX_cz_news_JPN_1"
+	    texturefile = "gfx/interface/cz/news/JPN/1.png"			
+	}
+	#Events
+	SpriteType = {
+	    name = "GFX_cz_events_JPN_2"
+	    texturefile = "gfx/interface/cz/events/JPN/2.png"			
+	}
+	
+}

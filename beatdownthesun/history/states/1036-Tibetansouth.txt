@@ -1,0 +1,17 @@
+state={
+	id=1036
+	name="STATE_1036"
+	provinces={
+		 10810 12730 1996
+	}
+	manpower=800000
+	history={
+		owner = RAJ
+		add_core_of = CCP
+		add_core_of = RAJ
+		
+	}
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

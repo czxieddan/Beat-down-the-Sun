@@ -1,0 +1,42 @@
+characters = {
+	HOK_leekachiu_john = {
+		name = HOK_leekachiu_john
+		portraits = {
+			civilian = {
+				large = GFX_portrait_HOK_leekachiu_john
+			}
+		}
+		country_leader = {
+			ideology = onecountrytwosystems
+			traits = {
+				CEHKSAR
+				 OCTS_supporter
+
+			}
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+	HOK_leekachiu_john2 = {
+		name = HOK_leekachiu_john
+		portraits = {
+			civilian = {
+				large = GFX_portrait_HOK_leekachiu_john
+			}
+		}
+		country_leader = {
+			ideology = onecountrytwosystems
+			traits = {
+				CEHKSAR
+				 OCTS_supporter
+
+			}
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+
+	
+}

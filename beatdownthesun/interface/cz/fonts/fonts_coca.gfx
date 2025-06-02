@@ -1,0 +1,17 @@
+bitmapfonts = {
+    bitmapfont = {
+        name = "coca"
+        fontfiles = {
+            "gfx/fonts/coca/COCA_0"
+            
+        }
+        color = 0xffffffff
+		border_color = 0x00000000
+
+        textcolors = {
+		    T = { 255 255 255 }
+            B = { 86 92 202 }
+			P = { 133 30 246 }
+        }
+    }
+}

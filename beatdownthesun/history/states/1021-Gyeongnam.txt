@@ -1,0 +1,29 @@
+state={
+	id=1021
+	name="STATE_1021"
+	provinces={
+		1054 4086 10085 12060 
+	}
+	manpower=3271148
+	
+	history={
+		owner = ROK
+		
+		
+		add_core_of = ROK
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+	}
+	resources={
+		chromium=3
+		steel=3
+	}
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

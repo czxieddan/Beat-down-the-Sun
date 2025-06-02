@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_state = {
+				limit = { is_owned_by = JPN }
+				set_state_flag = is_state_of_JPN
+			}
+			every_state = {
+				limit = { is_owned_by = CCP }
+				set_state_flag = is_state_of_CCP
+			}
+			every_state = {
+				limit = { is_owned_by = DPK }
+				set_state_flag = is_state_of_DPK
+			}
+			every_state = {
+				limit = { is_owned_by = ROK }
+				set_state_flag = is_state_of_ROK
+			}
+
+		}	
+	}
+	
+    
+}

@@ -1,0 +1,75 @@
+characters = {
+	DPK_kim_jongun = {
+		name = DPK_kim_jongun
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DPK_kim_jongun
+			}
+		}
+		country_leader = {
+			ideology = hd
+			traits = { 
+				DPK_general_secretary
+				DPK_commander
+		 }
+			expire = "2040.1.1.1"
+
+		}
+        
+	}
+	DPK_kim_jongun2 = {
+		name = DPK_kim_jongun
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DPK_kim_jongun
+			}
+		}
+		country_leader = {
+			ideology = hd
+			traits = { 
+				DPK_general_secretary
+				DPK_commander
+		 }
+			expire = "2040.1.1.1"
+
+		}
+        
+	}
+	DPK_ed_none = {
+		name = DPK_ed_none
+		#portraits = {
+			#civilian = {
+			#	large =
+			#}
+		#}
+		country_leader = {
+			ideology = othered
+			traits = { 
+				
+		 }
+			expire = "2099.1.1.1"
+
+		}
+        
+	}
+	DPK_gg_bond = {
+		name = DPK_gg_bond
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DPK_gg_bond
+			}
+		}
+		country_leader = {
+			ideology = ggbond
+			traits = { 
+				hero_ggbond
+		 }
+			expire = "2040.1.1.1"
+
+		}
+        
+	}
+
+
+	
+}

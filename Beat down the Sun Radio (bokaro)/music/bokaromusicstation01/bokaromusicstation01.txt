@@ -1,0 +1,82 @@
+music_station = "bokaromusicstation01"
+
+
+music = {
+    song = "bokaro_music_01_1"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_2"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_3"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_4"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_5"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_6"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_7"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_8"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_9"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "bokaro_music_01_10"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}

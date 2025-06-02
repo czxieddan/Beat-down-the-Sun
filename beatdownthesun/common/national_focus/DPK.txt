@@ -1,0 +1,137 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+
+
+focus_tree = {
+	id = DPK_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DPK
+		}
+	}
+	default = no
+	focus = {
+		id = DPK_comeonmyhero_ggbond
+		text = DPK_comeonmyhero_ggbond
+		icon = GFX_focus_DPK_comeonmyhero_ggbond
+		cost = 0
+		
+		x = 3
+		y = 1
+		#relative_position_id = 
+		allow_branch = {
+			
+		}
+		available = {
+			has_global_flag = dpk_come_on_my_hero_gg_bond
+			
+		}
+		completion_reward = {
+			
+			hidden_effect = {
+				promote_character = { 
+					character = DPK_gg_bond
+					
+					ideology = Environmental_Determinism
+				}
+				add_ideas = DPK_comeonmyhero_ggbond_com
+			}
+			
+			set_politics = {
+				ruling_party = Environmental_Determinism
+				elections_allowed = no
+				last_election = [GetDateText]
+				#election_frequency = 48
+				long_name = DPK_ggbond_party_long
+				name = DPK_ggbond_party
+			}
+			custom_effect_tooltip = DPK_comeonmyhero_ggbond_text
+			
+			hidden_effect = { set_cosmetic_tag = DPK_GGBONDflag }
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+	focus = {
+		id = DPK_feedpigs_ggbond
+		text = DPK_feedpigs_ggbond
+		icon = GFX_focus_DPK_feedpigs_ggbond
+		cost = 5.00
+		prerequisite = {
+			focus = DPK_comeonmyhero_ggbond
+		}
+		x = 0
+		y = 1
+		relative_position_id = DPK_comeonmyhero_ggbond
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = { add_ideas = DPK_feedpigs_ggbond_comA }
+			set_global_flag = DPK_feedpigs_ggbond_START
+			custom_effect_tooltip = DPK_feedpigs_ggbond_text
+			#豬豬上戰場
+			set_country_flag =  use_manpower_DPKggbond_lv7
+			set_country_flag =  use_manpower_DPKggbond_lv6
+			set_country_flag =  use_manpower_DPKggbond_lv5
+			set_country_flag =  use_manpower_DPKggbond_lv4
+			set_country_flag =  use_manpower_DPKggbond_lv3
+			set_country_flag =  use_manpower_DPKggbond_lv2
+			set_country_flag =  use_manpower_DPKggbond_lv1
+			if = {
+				limit = { has_idea = manpower_gen_lv7 }
+				add_ideas = manpower_DPKggbond_lv7
+			}
+			if = {
+				limit = { has_idea = manpower_gen_lv6 }
+				add_ideas = manpower_DPKggbond_lv6
+			}
+			if = {
+				limit = { has_idea = manpower_gen_lv5 }
+				add_ideas = manpower_DPKggbond_lv5
+			}
+			if = {
+				limit = { has_idea = manpower_gen_lv4 }
+				add_ideas = manpower_DPKggbond_lv4
+			}
+			if = {
+				limit = { has_idea = manpower_gen_lv3 }
+				add_ideas = manpower_DPKggbond_lv3
+			}
+			if = {
+				limit = { has_idea = manpower_gen_lv2 }
+				add_ideas = manpower_DPKggbond_lv2
+			}
+			if = {
+				limit = { has_idea = manpower_gen_lv1 }
+				add_ideas = manpower_DPKggbond_lv1
+			}
+			clr_country_flag = use_manpower_gen_lv7
+            clr_country_flag = use_manpower_gen_lv6
+            clr_country_flag = use_manpower_gen_lv5
+            clr_country_flag = use_manpower_gen_lv4
+            clr_country_flag = use_manpower_gen_lv3
+            clr_country_flag = use_manpower_gen_lv2
+            clr_country_flag = use_manpower_gen_lv1
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+}

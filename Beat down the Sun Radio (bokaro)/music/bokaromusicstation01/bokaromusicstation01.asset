@@ -1,0 +1,59 @@
+music = {
+    name = "bokaro_music_01_6"
+    file = "6.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_7"
+    file = "7.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_8"
+    file = "8.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_9"
+    file = "9.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_10"
+    file = "10.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_1"
+    file = "1.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_2"
+    file = "2.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_3"
+    file = "3.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_4"
+    file = "4.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "bokaro_music_01_5"
+    file = "5.ogg"
+    volume = 0.65
+}

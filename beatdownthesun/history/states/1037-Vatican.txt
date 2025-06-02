@@ -1,0 +1,19 @@
+state={
+	id=1037
+	name="STATE_1037"
+	provinces={
+		 13377
+	}
+	manpower=800
+	history={
+		owner = VAT
+		add_core_of = VAT
+		#add_core_of = ITA
+		victory_points = {
+			13377 40 
+		}
+	}
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

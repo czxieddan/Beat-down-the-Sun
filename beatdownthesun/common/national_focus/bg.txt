@@ -1,0 +1,83 @@
+focus_tree = {
+	id = bg
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	default = no
+	focus = {
+		id = goals_bookmark_bg
+		text = goals_bookmark_bg
+		icon = GFX_focus_goals_bookmark_bg
+		cost = 0
+		x = 1
+		y = 1
+		available = {}
+		ai_will_do = {factor = 0}
+		completion_reward = {	
+		}
+	}
+	focus = {
+		id = ROK_bookmark_bg
+		text = ROK_bookmark_bg
+		icon = GFX_focus_ROK_bookmark_bg
+		cost = 0
+		x = 1
+		y = 1
+		available = {}
+		ai_will_do = {factor = 0}
+		completion_reward = {	
+		}
+	}
+	focus = {
+		id = DPK_bookmark_bg
+		text = DPK_bookmark_bg
+		icon = GFX_focus_DPK_bookmark_bg
+		cost = 0
+		x = 1
+		y = 1
+		available = {}
+		ai_will_do = {factor = 0}
+		completion_reward = {	
+		}
+	}
+	focus = {
+		id = VAT_bookmark_bg
+		text = VAT_bookmark_bg
+		icon = GFX_focus_VAT_bookmark_bg
+		cost = 0
+		x = 1
+		y = 1
+		available = {}
+		ai_will_do = {factor = 0}
+		completion_reward = {	
+		}
+	}
+	focus = {
+		id = CCP_bookmark_bg
+		text = CCP_bookmark_bg
+		icon = GFX_focus_CCP_bookmark_bg
+		cost = 0
+		x = 1
+		y = 1
+		available = {}
+		ai_will_do = {factor = 0}
+		completion_reward = {	
+		}
+	}
+	focus = {
+		id = JPN_bookmark_bg
+		text = JPN_bookmark_bg
+		icon = GFX_focus_JPN_bookmark_bg
+		cost = 0
+		x = 1
+		y = 1
+		available = {}
+		ai_will_do = {factor = 0}
+		completion_reward = {	
+		}
+	}
+}

@@ -1,0 +1,219 @@
+ideas = {
+
+	country = {
+		JPN_chingyu_pv = {
+
+			picture = JPN_chingyu_pv
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				Power_Authoritarianism_drift = 0.02
+				consumer_goods_factor = 0.1
+				hidden_modifier = {
+					political_power_gain = -0.5
+				}
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+
+		JPN_chingyu_lit_tall_buildings = {
+
+			picture = JPN_chingyu_lit_tall_buildings
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.5
+				consumer_goods_factor = 0.1
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+
+		JPN_chingyu_city_life_style = {
+
+			picture = JPN_chingyu_city_life_style
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.30
+				resistance_target = -0.5
+				consumer_goods_factor = 0.1
+				hidden_modifier = {
+					resistance_activity = -0.5
+					Power_Authoritarianism_drift = 0.02
+					local_non_core_manpower = 0.1
+					local_org_regain = 0.3
+					resistance_growth = -0.3
+					#consumer_goods_factor = 0.1
+				}
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+
+		JPN_chingyu_cars_are_fast = {
+
+			picture = JPN_chingyu_cars_are_fast
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				consumer_goods_factor = 0.1
+				army_speed_factor = 0.3
+				army_attack_speed_factor = 0.3
+				hidden_modifier = {
+					army_morale = 0.5
+					org_loss_when_moving = -0.3
+					planning_speed = 0.2
+				}
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+
+		JPN_chingyu_factory_full_off_weapons = {
+
+			picture = JPN_chingyu_factory_full_off_weapons
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				consumer_goods_factor = 0.1
+				 
+				production_factory_max_efficiency_factor = 0.5
+				
+				
+				hidden_modifier = {
+					production_factory_efficiency_gain_factor = -0.2
+					production_lack_of_resource_penalty_factor = 2
+					line_change_production_efficiency_factor = -0.3  
+				    production_factory_start_efficiency_factor = 0.5
+			    }
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+
+		JPN_chingyu_JPN_call_upon_chingyu = {
+
+			picture = JPN_chingyu_JPN_call_upon_chingyu
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				drift_defence_factor = 0.5
+			
+				
+				
+				hidden_modifier = {
+					stability_factor = 0.30
+				    consumer_goods_factor = 0.1
+			    }
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		JPN_chingyu_power_of_god = {
+
+			picture = JPN_chingyu_power_of_god
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				army_core_attack_factor = 2
+			
+				army_strength_factor = 2
+				
+				hidden_modifier = {
+					army_attack_factor = -0.5
+					army_attack_against_minor_factor = -0.5
+					army_attack_against_major_factor = 0.5
+					pocket_penalty = -1
+			    }
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+	}
+
+		
+}

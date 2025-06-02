@@ -1,0 +1,33 @@
+spriteTypes = {
+    SpriteType = {
+		name = "GFX_focus_goals_bookmark_bg"
+		texturefile = "gfx/bookmark_bg/goals.png"
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_ROK_bookmark_bg"
+		texturefile = "gfx/bookmark_bg/ROK.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_DPK_bookmark_bg"
+		texturefile = "gfx/bookmark_bg/DPK.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_VAT_bookmark_bg"
+		texturefile = "gfx/bookmark_bg/VAT.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_CCP_bookmark_bg"
+		texturefile = "gfx/bookmark_bg/CCP.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JPN_bookmark_bg"
+		texturefile = "gfx/bookmark_bg/JPN.png"
+	}
+	
+	
+
+	
+
+
+}

@@ -1,0 +1,43 @@
+add_namespace = se_jpn
+
+
+
+
+
+country_event = {
+	id = se_jpn.1
+	title = se_jpn.1.t
+	desc = se_jpn.1.desc
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = no
+    hidden = yes
+	major = yes
+	
+
+	
+	
+    immediate = {
+		
+		clr_global_flag = JPN_sunshine_chingyu_without_war
+		
+        play_song = "SPEVNT_JPN_sun_war_chingyu_s_music"
+        
+    }
+    
+	option = {
+		name = "se_jpn.1.a"
+		if = {
+			limit = {
+				has_defensive_war_with = JPN 
+			}
+			ROOT = { set_country_flag = sunwar_with_jun_chingyu }
+			set_global_flag = JPN_sun_war_chingyu_s
+			set_global_flag = Super_Event_Visible
+
+		}
+
+		
+	}
+}

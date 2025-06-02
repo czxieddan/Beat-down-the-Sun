@@ -1,0 +1,15 @@
+music_station = "se"
+
+music = {
+    song =  "SPEVNT_JPN_power_of_god_chingyu_s_music"
+	chance = {
+	    modifier = { factor = 0 }
+	}
+}
+
+music = {
+    song =  "SPEVNT_JPN_sun_war_chingyu_s_music"
+	chance = {
+	    modifier = { factor = 0 }
+	}
+}

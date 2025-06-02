@@ -1,0 +1,34 @@
+characters = {
+	DMD_KPADMZ = {
+		name = DMD_KPADMZ
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DMD_KPADMZ
+			}
+		}
+		country_leader = {
+			ideology = dmzdmd
+			
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+	DMD_KPADMZ2 = {
+		name = DMD_KPADMZ
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DMD_KPADMZ
+			}
+		}
+		country_leader = {
+			ideology = dmzdmd
+			
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+
+	
+}

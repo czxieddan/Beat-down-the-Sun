@@ -1,0 +1,371 @@
+leader_traits = {
+
+	#ROK
+	daetongnyeong = {
+		random = no
+		Market_Capitalism_drift = 0.01
+		stability_weekly_factor = -0.3
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	rok_acting_president_choi = {
+		random = no
+		drift_defence_factor = -0.5
+		stability_weekly_factor = -0.3
+		stability_factor = -0.2
+		political_power_factor = -0.5
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	economic_vitality_reformer = {
+		random = no
+		political_power_gain = 0.5
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_buildings_factor = 0.2
+		consumer_goods_factor = 0.3
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	economic_vitality_reformer2 = {
+		random = no
+		sprite = 10
+		political_power_gain = -0.15
+		production_factory_efficiency_gain_factor = 0.2
+		production_factory_max_efficiency_factor = 0.2
+		production_speed_buildings_factor = 0.2
+		consumer_goods_factor = 0.15
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	economic_vitality_reformer3 = {
+		random = no
+		sprite = 10
+		
+		
+		consumer_goods_factor = -0.1
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	prime = {
+		random = no
+		
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	rok_traits_ROK_congress_Market_Capitalism = {
+		random = no
+		Market_Capitalism_drift = 0.01
+		stability_weekly_factor = 0.1
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ROK_choi_sangmok_economy_minister = {
+		random = no
+		
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	troubleshooter = {
+		random = yes
+		sprite = 9
+		improve_relations_maintain_cost_factor = -0.4
+		guarantee_cost = -0.2
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	audacious_cho = {
+		random = yes
+		civil_war_involvement_tension = 0.5
+		enemy_declare_war_tension = 0.3
+		faction_trade_opinion_factor = 0.5
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	manpower_policy_facilitators = {
+		random = no
+		recruitable_population_factor = 0.005
+        monthly_population = 0.1
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	rational_doer = {
+		random = no
+		stability_factor = 0.2
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	rational_doer2 = {
+		random = no
+		stability_factor = 0.2
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	jpn_tenno = {
+		random = no
+		stability_factor = 0.5
+		war_support_factor = 0.3
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jpn_chingyu_eclipsingbronzestatue = {
+		random = no
+		stability_factor = -0.3
+		war_support_factor = -0.3
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ow_god_chingyu = {
+		random = no
+		add_research_slot = 1
+		research_speed_factor = 0.3
+		justify_war_goal_time = -0.3
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+
+	DPK_general_secretary = {
+		random = no
+		Power_Authoritarianism_drift = 1
+	    drift_defence_factor = 1
+		political_power_gain = 0.5
+		stability_factor = 0.5
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	hero_ggbond = {
+		random = no
+		stability_factor = 0.3
+		
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	DPK_commander = {
+		random = no
+		war_support_factor = 0.3
+		hidden_modifier = {
+			lend_lease_tension = 1
+		    ai_focus_aggressive_factor = 0.5
+		    ai_focus_war_production_factor = 0.5
+		    ai_license_acceptance = -1.0
+
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	hoshuha = {
+		random = no
+		drift_defence_factor = 0.3
+		hidden_modifier = {
+			Market_Capitalism_drift = 0.01
+		    Ethnonationalism_drift = -0.01
+			Religious_Supremacy_drift = 0.01
+			Power_Authoritarianism_drift = 0.01
+		}
+		
+		#Religious_Supremacy_drift = 0.01
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	pragmatic_hardliners = {
+		random = no
+		hidden_modifier = {
+			
+		
+			forced_surrender_limit = 0.1
+		    resistance_growth_on_our_occupied_states = 0.3
+		}
+		opinion_gain_monthly_factor = -0.1
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jpn_Social_Contractism = {
+		random = no
+		hidden_modifier = {
+			
+		
+			
+		}
+		Social_Contractism_drift = 0.01
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jpn_japanesestylecommunism = {
+		random = no
+		hidden_modifier = {
+			
+		
+			
+		}
+		Social_Economic_Interventionism_drift = 0.01
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ccp_chairman = {
+		random = no
+		hidden_modifier = {
+			
+		
+			
+		}
+		stability_factor = 0.3
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jpn_nipponkaigi_post_vacancies = {
+		random = no
+		hidden_modifier = {
+			
+		
+			
+		}
+		stability_factor = -0.3
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jpn_nipponkaigi_l = {
+		random = no
+		hidden_modifier = {
+		
+		
+			
+		}
+		
+		war_support_factor = 0.5
+		
+		conscription_factor = 0.3
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	vat_papa = {
+		random = no
+		stability_factor = 0.8
+		Religious_Supremacy_drift = 0.05
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	OCTS_supporter = {
+		random = no
+		drift_defence_factor = 0.3
+		hidden_modifier = {
+			Market_Capitalism_drift = 0.02
+		    Ethnonationalism_drift = -0.01
+			Power_Authoritarianism_drift = 0.01
+		}
+		master_ideology_drift = 0.01
+		targeted_modifier = {
+            tag = CCP   
+            cic_to_target_factor = 0.2
+        }
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	CEHKSAR = {
+		random = no
+		stability_factor = 0.1
+			
+        mobilization_speed = -1
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	AOM_CE = {
+		random = no
+		stability_factor = 0.1
+			
+        mobilization_speed = -1
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	lagalist_Sam = {
+		random = no
+		stability_factor = 0.2
+		hidden_modifier = {
+			Social_Contractism_drift = 0.01
+			Market_Capitalism_drift = 0.02
+			master_ideology_drift = 0.01
+		}	
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

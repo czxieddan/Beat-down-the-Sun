@@ -1,0 +1,171 @@
+﻿l_simp_chinese:
+ Power_Authoritarianism: "强权统治主义"
+ Power_Authoritarianism_noun: "强权统治主义"
+ Power_Authoritarianism_desc: "强权统治主义政体"
+ Power_Authoritarianism_drift: "每日强权统治主义支持率"
+ 
+ Ethnonationalism: "民族认同主义"
+ Ethnonationalism_noun: "民族认同主义"
+ Ethnonationalism_desc: "民族认同主义政体"
+ Ethnonationalism_drift: "每日民族认同主义支持率"
+ 
+ Religious_Supremacy: "宗教至上主义"
+ Religious_Supremacy_noun: "宗教至上主义"
+ Religious_Supremacy_desc: "宗教至上主义政体"
+ Religious_Supremacy_drift: "每日宗教至上主义支持率"
+ 
+ Individual_Supremacy: "个人至上主义"
+ Individual_Supremacy_noun: "个人至上主义"
+ Individual_Supremacy_desc: "个人至上主义政体"
+ Individual_Supremacy_drift: "每日个人至上主义支持率"
+ 
+ Total_Autonomy: "完全自治主义"
+ Total_Autonomy_noun: "完全自治主义"
+ Total_Autonomy_desc: "完全自治主义政体"
+ Total_Autonomy_drift: "每日完全自治主义支持率"
+ 
+ Market_Capitalism: "市场资本主义"
+ Market_Capitalism_noun: "市场资本主义"
+ Market_Capitalism_desc: "市场资本主义政体"
+ Market_Capitalism_drift: "每日市场资本主义支持率"
+ 
+ Environmental_Determinism: "环境决定主义"
+ Environmental_Determinism_noun: "环境决定主义"
+ Environmental_Determinism_desc: "环境决定主义政体"
+ Environmental_Determinism_drift: "每日环境决定主义支持率"
+ 
+ Social_Contractism: "社会契约主义"
+ Social_Contractism_noun: "社会契约主义"
+ Social_Contractism_desc: "社会契约主义政体"
+ Social_Contractism_drift: "每日社会契约主义支持率"
+ 
+ Economic_Interventionism: "经济干预主义"
+ Economic_Interventionism_noun: "经济干预主义"
+ Economic_Interventionism_desc: "经济干预主义政体"
+ Economic_Interventionism_drift: "每日经济干预主义支持率"
+ 
+ Absolute_Egalitarianism: "绝对平等主义"
+ Absolute_Egalitarianism_noun: "绝对平等主义"
+ Absolute_Egalitarianism_desc: "绝对平等主义政体"
+ Absolute_Egalitarianism_drift: "每日绝对平等主义支持率"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ imperial: "皇权主义"
+ imperial_desc: "皇权主义认为应该复兴本土皇室并且延续皇权至上的皇帝制度。"
+ pc: "人民民主专政社会主义"
+ pc_desc: "人民民主专政社会主义认为国家应该由工人阶级领导，以工农联盟为基础实施无产阶级专政，国家的一切权力属于人民，采取民主集中制，依法治国。"
+ military2: "军阀"
+ military2_desc: "军阀通过军事力量进行独裁的压迫统治。"
+ ds: "教义至上"
+ ds_desc: "信仰领袖通过信仰对虔诚者与被统治者进行束缚。"
+ hd: "世袭独裁"
+ hd_desc: "一种现代化的世袭制度下的独裁统治。"
+ jr: "日本天皇"
+ jr_desc: "日本天皇。"
+ onecountrytwosystems: "一国两制"
+ onecountrytwosystems_desc: "一国两制，即“一个国家，两种制度”，是中国政府为实现国家和平统一而提出的基本国策。按照邓小平的论述，“一国两制”是指在一个中国的前提下，国家的主体坚持社会主义制度，香港、澳门、台湾保持原有的资本主义制度长期不变。"
+ mikado: "天皇制"
+ mikado_desc: "天皇制。"
+ ggbond: "猪猪侠式英雄主义"
+ ggbond_desc: "猪猪侠式英雄主义。"
+ trotskyism: "托洛茨基主义"
+ trotskyism_desc: "托洛茨基主义认为应当坚持独立的工人运动与阶级斗争理念，坚持工人阶级民主与无产阶级专政这两个实现社会主义的理论。支持民主权利，倡导工人民主和政治自由，反对与帝国主义势力进行损害国际工人阶级利益的政治交易，反对秘密外交，主张世界革命。"
+ 
+ 
+ #ROK_Market_Capitalism_party: "国民力量党"
+ #ROK_Market_Capitalism_party_long: "韩国国民力量党"
+ #ROK_Power_Authoritarianism_party: "保皇党"
+ #ROK_Power_Authoritarianism_party_long: "朝鲜王朝保皇党"
+ #ROK_Economic_Interventionism_party: "新国家党"
+ #ROK_Economic_Interventionism_party_long: "韩国大国家党(新国家党)"
+ #ROK_Social_Contractism_party: "劳动党"
+ #ROK_Social_Contractism_party_long: "韩国劳动党"
+ #ROK_Ethnonationalism_party: "一民党"
+ #ROK_Ethnonationalism_party_long: "大韩民族一民主义民族共同体"
+ #ROK_Religious_Supremacy_party: "保皇党"
+ #ROK_Religious_Supremacy_party_long: "大韩帝国"
+ 
+ #DPK_Market_Capitalism_party: "§R无§!"
+ #DPK_Market_Capitalism_party_long: "§R整合§!"
+ #DPK_Power_Authoritarianism_party: "祖国战线"
+ #DPK_Power_Authoritarianism_party_long: "朝鲜祖国战线"
+ #DPK_Economic_Interventionism_party: "§R无§!"
+ #DPK_Economic_Interventionism_party_long: "§R查禁§!"
+ #DPK_Social_Contractism_party: "§R无§!"
+ #DPK_Social_Contractism_party_long: "§R整合§!"
+ #DPK_Ethnonationalism_party: "§R无§!"
+ #DPK_Ethnonationalism_party_long: "§R查禁§!"
+ #DPK_Religious_Supremacy_party: "§R无§"
+ #DPK_Religious_Supremacy_party_long: "§R查禁§"
+ 
+ #JPN_Market_Capitalism_party: "自由民主党"
+ #JPN_Market_Capitalism_party_long: "日本自由民主党"
+ #JPN_Power_Authoritarianism_party: "皇道派系"
+ #JPN_Power_Authoritarianism_party_long: "朝鲜王朝保皇党"
+ #JPN_Economic_Interventionism_party: "维新会"
+ #JPN_Economic_Interventionism_party_long: 党"
+ #JPN_Social_Contractism_party: "日本共产党"
+ #JPN_Social_Contractism_party_long: "劳动党"
+ #JPN_Ethnonationalism_party: "右翼"
+ #JPN_Ethnonationalism_party_long: "新右翼运动"
+ #JPN_Religious_Supremacy_party: "内阁"
+ #JPN_Religious_Supremacy_party_long: "日本自由民主党"
+ 
+ ROK_Market_Capitalism_party: "国民力量党"
+ ROK_Market_Capitalism_party_long: "韩国国民力量党"
+ 
+ JPN_Power_Authoritarianism_party: "皇道派系"
+ JPN_Ethnonationalism_party: "新右翼运动"
+ JPN_Religious_Supremacy_party: "神道教"
+ JPN_Individual_Supremacy_party: "古典自由主义运动"
+ JPN_Total_Autonomy_party: "无政府主义运动"
+ JPN_Market_Capitalism_party: "自由民主党(内阁)"
+ JPN_Environmental_Determinism_party: "环境决定主义运动"
+ JPN_Social_Contractism_party: "革命共产主义者同盟"
+ JPN_Economic_Interventionism_party: "日本共产党"
+ JPN_Absolute_Egalitarianism_party: "马克思主义运动"
+ 
+ JPN_Power_Authoritarianism_party_long: "日本天皇皇道派系"
+ JPN_Ethnonationalism_party_long: "日本新右翼运动"
+ JPN_Religious_Supremacy_party_long: "日本神道教会"
+ JPN_Individual_Supremacy_party_long: "日本古典自由主义运动"
+ JPN_Total_Autonomy_party_long: "日本安娜其"
+ JPN_Market_Capitalism_party_long: "日本自由民主党"
+ JPN_Environmental_Determinism_party_long: "日本环保会"
+ JPN_Social_Contractism_party_long: "日本革命共产主义者同盟"
+ JPN_Economic_Interventionism_party_long: "日本共产党"
+ JPN_Absolute_Egalitarianism_party_long: "日本马克思主义运动"
+ 
+ japanesestylecommunism: "日式共产主义"
+ 
+ 
+ 
+ JPN_chingyuim_party: "强权统治主义"
+ JPN_chingyuim_party_long: "日本晴雨天皇集团"
+ JPN_naruhito_party: "强权统治主义"
+ JPN_naruhito_party_long: "日本德仁天皇内阁"
+ JPN_JRCL_party: "社会契约主义"
+ JPN_JRCL_party_long: "日本革命共产主义者同盟"
+ JPN_nipponkaigi_party: "民族认同主义"
+ JPN_nipponkaigi_party_long: "日本会议"
+ JPJ_Social_Contractism_party: "社会契约主义"
+ JPJ_Social_Contractism_party_long: "日本革命共产主义者同盟"
+ 
+ CCP_Power_Authoritarianism_party: "中国共产党"
+ CCP_Power_Authoritarianism_party_long: "中国共产党"
+ 
+ DPK_Power_Authoritarianism_party: "祖国战线"
+ DPK_Power_Authoritarianism_party_long: "朝鲜劳动党"
+ DPK_ggbond_party: "猪猪侠党"
+ DPK_ggbond_party_long: "国家青年大英雄猪猪侠党"
+ 
+ VAT_Religious_Supremacy_party: "教会"
+ VAT_Religious_Supremacy_party: "天主教会"

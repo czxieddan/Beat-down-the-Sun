@@ -1,0 +1,14 @@
+
+# MAIN THEME
+music = {
+	name = "SPEVNT_JPN_power_of_god_chingyu_s_music"
+	file = "sup_songs/JPN/SPEVNT_JPN_power_of_god_chingyu_s_music.ogg"
+	volume = 1
+}
+
+music = {
+	name = "SPEVNT_JPN_sun_war_chingyu_s_music"
+	file = "sup_songs/JPN/SPEVNT_JPN_sun_war_chingyu_s_music.ogg"
+	volume = 1
+}
+

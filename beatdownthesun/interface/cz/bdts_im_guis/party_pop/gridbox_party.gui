@@ -1,0 +1,59 @@
+guiTypes = {
+	containerWindowType = {
+		name = "gridbox_partyseat_window"
+		position = { x = -38 y = 1 }
+		size = { width = 500 height = 500 }
+
+		
+				
+		containerWindowType = {
+			name = "gridbox_partyseat_container"
+			position = { x = 0 y = 0 }
+			size = { width = 500 height = 500 }
+
+			gridboxtype = {
+				name = "partyseat_grid"
+				position = { x = 0 y = 0 }
+				slotsize = { width = 0 height = 2 }
+
+				max_slots_horizontal = 0
+				max_slots_vertical = 80
+				add_horizontal = no
+			}
+		}
+
+		#buttonType = {
+			#name = "refresh_button"
+			#spriteType = "GFX_browser_refresh"
+			#position = { x = 120 y = 130 }
+			#position = { x = 460 y = 16 }
+			
+		#}
+
+		iconType = {
+			name = party_seat_over
+			spriteType = "GFX_party_seat_over"
+			position = { x = -3 y = -2   }
+		}
+		
+	}
+
+
+	containerWindowType = {
+		name = "gridbox_partyseat_entry"
+		position = { x = 0 y = 0 }
+				
+		iconType = {
+			name = "gridbox_partyseat_icon"
+			position = { x = 0 y = 0 }
+			size = {
+				width = 15
+				height = 2
+			}
+			spriteType = "GFX_gridbox_partyseat"
+			orientation = UPPER_LEFT
+		}
+	}
+
+
+}

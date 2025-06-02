@@ -1,0 +1,360 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+
+
+focus_tree = {
+	id = ROK_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROK
+		}
+	}
+	default = no
+	focus = {
+		id = ROK_coordinated_government
+		text = ROK_coordinated_government
+		icon = GFX_focus_ROK_coordinated_government
+		cost = 4.3
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 14
+		y = 1
+		available = {
+			has_idea = ROK_disjointed_government
+			custom_trigger_tooltip = {
+            tooltip = ROK_coordinating_government_trigger_tooltip
+			always = yes
+			} 
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = ROK_disjointed_government
+			}
+		}
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+        select_effect ={
+			add_ideas = ROK_coordinating_government
+		}
+
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = ROK_disjointed_government
+				add_idea = ROK_disjointed_government2
+			}
+			
+		}
+		completion_reward = {
+			hidden_effect= {
+				remove_ideas = ROK_coordinating_government
+			}
+			custom_effect_tooltip = ROK_coordinating_government_end
+		}
+
+	}
+	focus = {
+		id = ROK_coordinating_congress
+		text = ROK_coordinating_congress
+		icon = GFX_focus_ROK_coordinating_congress
+		cost = 4.3
+		prerequisite = {
+			focus = ROK_coordinated_government
+		}
+		x = 0
+		y = 1
+		relative_position_id = ROK_coordinated_government
+
+	}
+	
+	focus = {
+		id = ROK_convene_congress
+		text = ROK_convene_congress
+		icon = GFX_focus_ARG_balancing_act
+		cost = 1.00
+		prerequisite = {
+			focus = ROK_coordinating_congress
+		}
+		x = 2
+		y = 1
+		relative_position_id = ROK_coordinating_congress
+
+	}
+	focus = {
+		id = ROK_scrutiny_news
+		text = ROK_scrutiny_news
+		icon = GFX_goal_generic_propaganda
+		cost = 5.00
+		prerequisite = {
+			focus = ROK_convene_congress
+		}
+		x = 0
+		y = 1
+		relative_position_id = ROK_convene_congress
+
+	}
+	focus = {
+		id = ROK_planned_resumption
+		text = ROK_planned_resumption
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_coordinating_congress
+		}
+		x = -2
+		y = 1
+		relative_position_id = ROK_coordinating_congress
+
+	}
+	focus = {
+		id = ROK_resume_operations
+		text = ROK_resume_operations
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_planned_resumption
+		}
+		x = 0
+		y = 1
+		relative_position_id = ROK_planned_resumption
+		available = {
+			has_idea = ROK_disjointed_government2
+			#custom_trigger_tooltip = {
+            #tooltip = ROK_coordinating_government_trigger_tooltip
+			#always = yes
+			#} 
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = ROK_disjointed_government2
+			}
+		}
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+        #select_effect ={
+		#	add_ideas = ROK_coordinating_government
+		#}
+
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = ROK_disjointed_government2
+				add_idea = ROK_disjointed_government3
+			}
+			
+		}
+		#completion_reward = {
+		#	hidden_effect= {
+		#		remove_ideas = ROK_coordinating_government
+		#	}
+		#	custom_effect_tooltip = ROK_coordinating_government_end
+		#}
+
+	}
+	focus = {
+		id = ROK_arrest_yin
+		text = ROK_arrest_yin
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_scrutiny_news
+			focus = ROK_resume_operations
+		}
+		x = 10
+		y = 2
+		relative_position_id = ROK_scrutiny_news
+		completion_reward = {
+			
+			
+			
+			
+		}
+
+	}
+	focus = {
+		id = ROK_review_constitution
+		text = ROK_review_constitution
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = ROK_scrutiny_news
+		}
+		prerequisite = {
+			focus = ROK_resume_operations
+		}
+		mutually_exclusive = {
+			focus = ROK_upholding_constitution
+		}
+		x = -8
+		y = 1
+		relative_position_id = ROK_scrutiny_news
+
+	}
+	focus = {
+		id = ROK_upholding_constitution
+		text = ROK_upholding_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = ROK_resume_operations
+		}
+		prerequisite = {
+			#focus = ROK_arrest_yin
+		}
+		mutually_exclusive = {
+			focus = ROK_review_constitution
+			#focus = ROK_vindication_yin
+		}
+		available = {
+			OR = {
+				has_global_flag = rok_trialyoona_a
+				has_global_flag = rok_trialyoonb_a
+			}
+			NOT = {
+				has_completed_focus = ROK_vindication_yin
+			}
+		}
+		x = 4
+		y = 1
+		relative_position_id = ROK_scrutiny_news
+
+	}
+	focus = {
+		id = ROK_vindication_yin
+		text = ROK_vindication_yin
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			#focus = ROK_scrutiny_news
+		}
+		prerequisite = {
+			focus = ROK_arrest_yin
+		}
+		#mutually_exclusive = {
+		#	focus = ROK_upholding_constitution
+		#}
+		x = -1
+		y = 1
+		relative_position_id = ROK_arrest_yin
+		available = {
+			has_completed_focus = ROK_scrutiny_news
+			has_global_flag = rok_yin_c
+			NOT = {
+				AND = {
+					has_completed_focus = ROK_trial_yin
+				    has_completed_focus = ROK_upholding_constitution
+				}
+			}
+		}
+		
+
+	}
+	focus = {
+		id = ROK_trial_yin
+		text = ROK_trial_yin
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = ROK_arrest_yin
+		}
+		x = 1
+		y = 1
+		relative_position_id = ROK_arrest_yin
+		available = {
+			has_completed_focus = ROK_upholding_constitution
+			has_global_flag = rok_yin_c
+			NOT = {
+				has_completed_focus = ROK_vindication_yin
+			}
+		}
+
+	}
+	focus = {
+		id = ROK_reappoint_yin
+		text = ROK_reappoint_yin
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			#focus = ROK_review_constitution
+		}
+		prerequisite = {
+			focus = ROK_vindication_yin
+		}
+		x = 0
+		y = 1
+		relative_position_id = ROK_vindication_yin
+		available = {
+			has_completed_focus = ROK_review_constitution
+			NOT = { has_global_flag = rok_yin_d }
+			#NOT = { has_global_flag = rok_yin_l }
+			NOT = {
+				custom_trigger_tooltip = {
+			    tooltip = ROK_rok_yin_b_trigger_tooltip
+			    NOT = { has_global_flag = rok_yin_b }
+			    }
+		    }
+		}
+		completion_reward = {
+			add_country_leader_role = {
+                character = ROK_yoon_sukyoul
+                country_leader = {
+                    expire = "2040.1.1"
+                    ideology = presidential
+                    traits = {
+                        daetongnyeong
+                    }
+                }
+                promote_leader = yes
+            }
+			
+			#add_ideas = ROK_choi_sangmok2
+			#hidden_effect={
+			#	set_can_be_fired_in_advisor_role = {
+			#		character = ROK_choi_sangmok2
+			#		value = no
+			#	}
+            #
+			#}
+		}
+		#bypass = {
+		#	NOT = {
+		#		has_idea = ROK_disjointed_government3
+		#	}
+		#}
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+        #select_effect ={
+		#	add_ideas = ROK_coordinating_government
+		#}
+
+		completion_reward = {
+           #swap_ideas = {
+			#	remove_idea = ROK_disjointed_government3
+			#	add_idea = ROK_disjointed_government4
+			#}
+			hidden_effect = {
+				swap_ideas = {
+				    remove_idea = ROK_han_ducksoo
+				    add_idea = ROK_choi_sangmok2
+			    }
+			}
+			custom_effect_tooltip = ROK_reappoint_yin_ministers
+		}
+
+	}
+}

@@ -1,0 +1,57 @@
+#manpower
+change_manpower_level7_button_visible = {
+    ROOT = {
+	    OR = {
+		    has_country_flag = use_manpower_gen_lv7
+			has_country_flag = use_manpower_DPKggbond_lv7
+		}
+	}
+}
+change_manpower_level6_button_visible = {
+    ROOT = {
+	    OR = {
+		    has_country_flag = use_manpower_gen_lv6
+			has_country_flag = use_manpower_DPKggbond_lv6
+		}
+	}
+}
+change_manpower_level5_button_visible = {
+    ROOT = {
+	    OR = {
+		    has_country_flag = use_manpower_gen_lv5
+			has_country_flag = use_manpower_DPKggbond_lv5
+		}
+	}
+}
+change_manpower_level4_button_visible = {
+    ROOT = {
+	    OR = {
+		    has_country_flag = use_manpower_gen_lv4
+			has_country_flag = use_manpower_DPKggbond_lv4
+		}
+	}
+}
+change_manpower_level3_button_visible = {
+    ROOT = {
+	    OR = {
+		    has_country_flag = use_manpower_gen_lv3
+			has_country_flag = use_manpower_DPKggbond_lv3
+		}
+	}
+}
+change_manpower_level2_button_visible = {
+    ROOT = {
+	    OR = {
+		    has_country_flag = use_manpower_gen_lv2
+			has_country_flag = use_manpower_DPKggbond_lv2
+		}
+	}
+}
+change_manpower_level1_button_visible = {
+    ROOT = {
+	    OR = {
+		    has_country_flag = use_manpower_gen_lv1
+			has_country_flag = use_manpower_DPKggbond_lv1
+		}
+	}
+}

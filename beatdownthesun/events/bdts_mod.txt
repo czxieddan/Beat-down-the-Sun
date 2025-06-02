@@ -1,0 +1,21 @@
+add_namespace = bdts_mod
+
+
+country_event = {
+	id = bdts_mod.1
+	title = bdts_mod.1.t
+	desc = bdts_mod.1.desc
+	picture = "GFX_welcome_bdts_bdts"
+	is_triggered_only = yes
+	
+	
+	
+    immediate = {}
+    option = {
+		name =  bdts_mod.1.a
+		hidden_effect = {
+			#country_event =  bdts_mod.2
+		}
+	}    
+}
+

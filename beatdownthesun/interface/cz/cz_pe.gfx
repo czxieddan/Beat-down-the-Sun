@@ -1,0 +1,28 @@
+spriteTypes = {
+
+	SpriteType = {
+	    name = "GFX_cz_news_penews_chingyu_1"
+	    texturefile = "gfx/interface/cz/news/penews/chingyu/1.png"			
+	}
+
+	SpriteType = {
+		name = "GFX_cz_news_penews_chingyu_2"
+		texturefile = "gfx/interface/cz/news/penews/chingyu/2.png"			
+	}
+
+	SpriteType = {
+	    name = "GFX_cz_events_peevents_chingyu_1"
+	    texturefile = "gfx/interface/cz/events/peevents/chingyu/pe1.png"			
+	}
+
+	SpriteType = {
+	    name = "GFX_cz_events_peevents_chingyu_2"
+	    texturefile = "gfx/interface/cz/events/peevents/chingyu/pe2.png"			
+	}
+	
+	SpriteType = {
+	    name = "GFX_cz_events_peevents_chingyu_3"
+	    texturefile = "gfx/interface/cz/events/peevents/chingyu/pe3.png"			
+	}
+	
+}

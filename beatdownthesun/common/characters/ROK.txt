@@ -1,0 +1,37 @@
+characters = {
+	ROK_choi_sangmok = {
+		name = ROK_choi_sangmok
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ROK_choi_sangmok
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { 
+				daetongnyeong
+				rok_acting_president_choi
+				economic_vitality_reformer
+		 }
+			expire = "2040.1.1.1"
+
+		}
+        
+	}
+
+	
+    
+	ROK_yoon_sukyoul = {
+        name = ROK_yoon_sukyoul
+        portraits = {
+            civilian = {
+            large = GFX_portrait_ROK_yoon_sukyoul
+            }
+        }
+       
+        
+
+        
+    }
+	
+}

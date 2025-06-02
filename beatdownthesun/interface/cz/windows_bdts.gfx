@@ -1,0 +1,63 @@
+spriteTypes = {
+	
+	corneredTileSpriteType = {
+		name = "GFX_bdts_tiled_window"
+		size= { x=192 y=192 }
+		textureFile = "gfx\interface\cz\t\bdts_tiled_window.png"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_bdts_air_window"
+		size= { x=192 y=192 }
+		textureFile = "gfx\interface\cz\t\bdts_air_window.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_scroll_track_horisontal_2"
+		size= {x = 5 y = 5 }
+		texturefile = "gfx/interface/scrollbar_horisontal_2.dds"
+		borderSize = { x=2 y=2 }
+	}
+
+	spriteType = {
+		name = "GFX_scroll_drager_2"
+		texturefile = "gfx/interface/scroll_drager_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_scroll_right_2"
+		texturefile = "gfx/interface/scroll_right_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_scroll_left_2"
+		texturefile = "gfx/interface/scroll_left_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_country_bg"
+		texturefile = "gfx/interface/bookmark_country_bg.png"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_info_bg"
+		texturefile = "gfx/interface/bookmark_info_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bookmark_idea_bg"
+		texturefile = "gfx/interface/bookmark_idea_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_cz_country_selection_entry3"
+		texturefile = "gfx/interface/cz_country_selection_entry3.tga"
+	}
+}

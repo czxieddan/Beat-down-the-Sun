@@ -1,0 +1,180 @@
+defined_text = { 
+	name = GetPortrait
+		
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = JPN_naruhito_i
+			}
+		}
+		localization_key = "GFX_portrait_JPN_naruhito"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = CCP_NPC_of_RPC
+			}
+		}
+		localization_key = "GFX_portrait_CCP_NPC"
+	}
+
+}
+
+defined_text = { 
+	name = GetPortrait2
+		
+	text = {
+		trigger = {
+			ROOT = {
+				has_idea = JPN_naruhito_i
+			}
+		}
+		localization_key = "GFX_portrait_JPN_naruhito"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_idea = CCP_NPC_of_RPC
+			}
+		}
+		localization_key = "GFX_portrait_CCP_NPC"
+	}
+
+}
+
+defined_text = { 
+	name = GetSecondLeader
+		
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = JPN_naruhito_i
+			}
+		}
+		localization_key = "JPN_TEENO_NARUHITO"
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_idea = CCP_NPC_of_RPC
+			}
+		}
+		localization_key = "CCP_NPC"
+	}
+
+}
+defined_text = { 
+	name = GetSecondLeaderDesc
+		
+	text = {
+		trigger = {
+			has_idea = JPN_naruhito_i
+		}
+		localization_key = "JPN_TEENO_NARUHITO_desc"
+	}
+	text = {
+		trigger = {
+			has_idea = CCP_NPC_of_RPC
+		}
+		localization_key = "CCP_NPC_desc"
+	}
+
+}
+
+defined_text = { 
+	name = GetStateViewPic
+		
+	text = {
+		localization_key = "GFX_state_lore_img_[?ROOT.pic_num]"
+	}
+}
+
+defined_text = { 
+	name = GetStateCity
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.pic_num = 1
+			}
+		}
+		localization_key = "City_View_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 2
+			}
+		}
+		localization_key = "City_View_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 3
+			}
+		}
+		localization_key = "City_View_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 4
+			}
+		}
+		localization_key = "City_View_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 5
+			}
+		}
+		localization_key = "City_View_5"
+	}
+
+}
+
+defined_text = { 
+	name = GetStateCityDesc
+		
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.pic_num = 1
+			}
+		}
+		localization_key = "City_View_desc_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 2
+			}
+		}
+		localization_key = "City_View_desc_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 3
+			}
+		}
+		localization_key = "City_View_desc_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 4
+			}
+		}
+		localization_key = "City_View_desc_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = {
+				ROOT.pic_num = 5
+			}
+		}
+		localization_key = "City_View_desc_5"
+	}
+}

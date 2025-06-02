@@ -1,0 +1,25 @@
+defined_text = {
+    name = sunwar_with_jun_chingyu
+    text = {
+        trigger = {
+           ROOT = { has_country_flag = sunwar_with_jun_chingyu }
+        }
+        localization_key = sunwar_with_jun_chingyu_KEY1
+    }
+    text = {
+        trigger = {
+           PREV = { has_country_flag = sunwar_with_jun_chingyu }
+        }
+        localization_key = sunwar_with_jun_chingyu_KEY2
+    }
+    text = {
+        trigger = {
+           FROM = { has_country_flag = sunwar_with_jun_chingyu }
+        }
+        localization_key = sunwar_with_jun_chingyu_KEY3
+    }
+    text = {
+        
+        localization_key = sunwar_with_jun_chingyu_KEY4
+    }
+}

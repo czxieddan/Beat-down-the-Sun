@@ -1,0 +1,17 @@
+bitmapfonts = {
+    bitmapfont = {
+        name = "qianlong"
+        fontfiles = {
+            "gfx/fonts/qianlong/QIANLONG_0"
+            "gfx/fonts/qianlong/QIANLONG_1"
+			"gfx/fonts/qianlong/QIANLONG_2"
+			"gfx/fonts/qianlong/QIANLONG_3"
+        }
+        color = 0xffffffff
+		border_color = 0x00000000
+
+        textcolors = {
+            G = { 86 92 202 }
+        }
+    }
+}

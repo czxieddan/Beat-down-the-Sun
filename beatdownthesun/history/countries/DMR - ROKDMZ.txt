@@ -1,0 +1,51 @@
+﻿#capital = 
+
+#oob = 
+
+set_research_slots = 0
+
+# Starting tech
+set_technology = {
+	
+}
+
+
+
+
+set_politics = {
+	ruling_party = Market_Capitalism
+	last_election = "2025.1.1"
+	#election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Market_Capitalism = 100
+	#Power_Authoritarianism = 100
+}
+
+
+
+
+
+#manpower
+set_country_flag = use_manpower_demilitarisedarea_lv1
+add_ideas = {
+    manpower_demilitarisedarea_lv1
+}
+
+#start_ideas
+add_ideas = {
+    
+}
+
+1038 = { set_demilitarized_zone = yes }
+
+set_country_flag = not_show_in_faction
+
+recruit_character = DMR_UNCDMZ
+recruit_character = DMR_UNCDMZ2
+
+#game_start_vars_setting
+add_to_variable = { current_int = 64 }
+on_game_start_effects = yes

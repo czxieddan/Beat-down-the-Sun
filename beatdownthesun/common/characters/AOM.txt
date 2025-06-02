@@ -1,0 +1,40 @@
+characters = {
+	AOM_samhoufai = {
+		name = AOM_samhoufai
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AOM_samhoufai
+			}
+		}
+		country_leader = {
+			ideology = onecountrytwosystems
+			traits = {
+				AOM_CE
+				lagalist_Sam
+			}
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+	AOM_samhoufai2 = {
+		name = AOM_samhoufai
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AOM_samhoufai
+			}
+		}
+		country_leader = {
+			ideology = onecountrytwosystems
+			traits = {
+				AOM_CE
+				lagalist_Sam
+			}
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+
+	
+}

@@ -1,0 +1,27 @@
+state={
+	id=1025
+	name="STATE_1025"
+	provinces={
+		1177 
+	}
+	manpower=676767
+	
+	history={
+		owner = ROK
+		#victory_points = { 3838 1 }
+		
+		add_core_of = ROK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 1
+			
+			
+		}
+	}
+	
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

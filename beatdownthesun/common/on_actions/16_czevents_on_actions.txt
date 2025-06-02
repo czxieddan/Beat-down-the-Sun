@@ -1,0 +1,30 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			ROK = {
+				country_event = {
+					id = country_rok.2
+					days = 1
+					
+				} 
+			
+			}
+		}
+		
+	}
+	on_startup = {
+		effect = {
+			DMD = {
+				set_rule = {
+					can_be_called_to_war = no
+				}
+			}
+			DMR = {
+				set_rule = {
+					can_be_called_to_war = no
+				}
+			}
+		}
+	}
+}

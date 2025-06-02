@@ -1,0 +1,32 @@
+ideas = {
+
+	country = {
+		
+
+		JPN_naruhito_i = {
+
+			picture = JPN_naruhito_i
+			
+			allowed = {
+				always = no
+				original_tag = JPN
+			}
+			
+			visible = no
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				hidden_modifier = {
+					stability_factor = 0.30
+				}
+				custom_modifier_tooltip = JPN_JPN_naruhito_i_text
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,211 @@
+guiTypes = {
+	containerWindowType = {
+		name = "gridbox_partyattached_window"
+		position = { x = 0 y = 0 }
+		size = { width = 175 height = 165 }
+		orientation = upper_left
+		clipping = no
+		iconType = {
+			name = "party_attached_window_bg"
+			position = { x = 0 y = 0 }
+			#spriteType = "GFX_party_attached_window_bg"
+			alwaystransparent = yes
+		}
+		containerWindowType = {
+		    name = "partyseat_grid_container"
+			position = { x = 0 y = 0 }
+			size = { width = 175 height = 1000 }
+			orientation = upper_left
+			clipping = no
+			background = {
+			    name = "Background"
+				#quadTextureSprite = "GFX_party_attached_window_bg"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = party_seat_bg
+				spriteType = "GFX_party_seat_bg"
+				position = {
+					x = -25
+					y = -6
+				}
+				alwaystransparent = yes
+			}
+			containerWindowType = {
+		    name = "partyseat_grid_container_view"
+			position = { x = 0 y = 2 }
+			instantTextboxType = {
+			name = "partypul0"
+			position = { x = 0 y = 0 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul0"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = z
+		    }
+			instantTextboxType = {
+			name = "partypul1"
+			position = { x = 0 y = 16 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul1"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = x
+		    }
+			instantTextboxType = {
+			name = "partypul2"
+			position = { x = 0 y = 32 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul2"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = c
+		    }
+			instantTextboxType = {
+			name = "partypul3"
+			position = { x = 0 y = 48 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul3"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = v
+		    }
+			instantTextboxType = {
+			name = "partypul4"
+			position = { x = 0 y = 64 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul4"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = b
+		    }
+			instantTextboxType = {
+			name = "partypul5"
+			position = { x = 0 y = 80 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul5"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = n
+		    }
+			instantTextboxType = {
+			name = "partypul6"
+			position = { x = 0 y = 96 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul6"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = m
+		    }
+			instantTextboxType = {
+			name = "partypul7"
+			position = { x = 0 y = 112 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul7"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = j
+		    }
+			instantTextboxType = {
+			name = "partypul8"
+			position = { x = 0 y = 128 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul8"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = k
+		    }
+			instantTextboxType = {
+			name = "partypul9"
+			position = { x = 0 y = 144 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "partypul9"
+			maxWidth = 0
+			maxHeight = 0
+			fixedsize = yes
+			alwaystransparent = yes
+			text_color_code = l
+		    }
+		}
+			#gridboxType = {
+			#    name = "partyattached_grid"
+			#	position = { x = 10000 y = 0 }
+			#    size = { width = 175 height = 30 }
+			#    orientation = upper_left
+			#	slotsize = { width = 30 height = 15 }
+			#	max_slots_horizontal = 1
+			#	max_slots_vertical = 10
+			#	add_horizontal = no
+			#	
+			#}
+		}
+		
+	}
+	#containerWindowType = {
+	#	name = "partyattached_entry"
+	#	size = { width = 175 height = 100% }
+	#	clipping = yes
+	#	background = {
+	#	name = "Background"
+	#		quadTextureSprite = "GFX_bdts_air_window"
+	#		alwaystransparent = yes
+	#	}
+	#	instantTextboxType = {
+	#		name = "gridbox_partyattached_text"
+	#		position = { x = 0 y = 0 }
+	#	    textureFile = ""
+	#		font = "hoi_16mbs"
+	#		borderSize = {x = 0 y = 0}
+	#		text = "partyattached"
+	#		maxWidth = 175
+	#		maxHeight = 100%
+	#		#fixedsize = yes
+	#		alwaystransparent = yes
+	#	}
+		#iconType = {
+		#	name = "rulpartyover"
+		#	position = { x = 0 y = 0 }
+		#	spriteType = "GFX_bdts_air_window"
+		#	size = { width = 175 height = 100% }
+		#	alwaystransparent = yes
+		#}
+	#}
+}

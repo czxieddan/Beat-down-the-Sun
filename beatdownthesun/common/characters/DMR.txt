@@ -1,0 +1,34 @@
+characters = {
+	DMR_UNCDMZ = {
+		name = DMR_UNCDMZ
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DMR_UNCDMZ
+			}
+		}
+		country_leader = {
+			ideology = dmzdmr
+			
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+	DMR_UNCDMZ2 = {
+		name = DMR_UNCDMZ
+		portraits = {
+			civilian = {
+				large = GFX_portrait_DMR_UNCDMZ
+			}
+		}
+		country_leader = {
+			ideology = dmzdmr
+			
+			expire = "2070.1.1.1"
+
+		}
+        
+	}
+
+	
+}

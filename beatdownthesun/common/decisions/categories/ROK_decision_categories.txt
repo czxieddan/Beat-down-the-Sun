@@ -1,0 +1,18 @@
+ROK_yoonsukyoul124_decisions = {
+	
+	icon = GFX_decision_ROK_yoonsukyoul124_decisions
+	allowed = {
+		original_tag = ROK
+	}
+
+	visible = {
+		#NOT = { has_completed_focus = ROK_coordinated_government }
+		OR = { 
+			has_global_flag = rok_yoonsukyoul_request
+		    has_global_flag = rok_yoonsukyoul124
+		}
+	}
+	visible_when_empty = yes
+
+	priority = 17
+}

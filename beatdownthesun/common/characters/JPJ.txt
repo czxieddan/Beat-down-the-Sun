@@ -1,0 +1,45 @@
+characters = {
+	
+
+	
+
+	JPJ_JRCL = {
+		name = JPN_JRCL
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_JRCL
+			}
+		}
+		country_leader = {
+			ideology = trotskyism
+			traits = { 
+				jpn_Social_Contractism
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+	
+	JPJ_JRCL2 = {
+		name = JPN_JRCL
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_JRCL
+			}
+		}
+		country_leader = {
+			ideology = trotskyism
+			traits = { 
+				jpn_Social_Contractism
+				
+	        }
+			expire = "2040.1.1.1"
+    
+		}
+        
+	}
+
+	
+}

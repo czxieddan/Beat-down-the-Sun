@@ -1,0 +1,51 @@
+﻿capital = 326
+
+#oob = 
+
+set_research_slots = 0
+
+# Starting tech
+set_technology = {
+	
+}
+
+
+
+
+set_politics = {
+	ruling_party = Market_Capitalism
+	last_election = "2025.1.1"
+	#election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	Market_Capitalism = 100
+	#Power_Authoritarianism = 100
+}
+
+#manpower
+set_country_flag = use_manpower_gen_lv7
+set_country_flag = use_manpower_gen_lv6
+set_country_flag = use_manpower_gen_lv5
+set_country_flag = use_manpower_gen_lv4
+set_country_flag = use_manpower_gen_lv3
+set_country_flag = use_manpower_gen_lv2
+set_country_flag = use_manpower_gen_lv1
+add_ideas = {
+    manpower_gen_lv6
+}
+
+#start_ideas
+add_ideas = {
+    
+}
+
+set_country_flag = not_show_in_faction
+
+recruit_character = HOK_leekachiu_john
+recruit_character = HOK_leekachiu_john2
+
+#game_start_vars_setting
+add_to_variable = { current_int = 27 }
+on_game_start_effects = yes

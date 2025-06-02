@@ -1,0 +1,277 @@
+scripted_gui = {
+	modGUI_parliament_scripted_gui = { #base
+		window_name = "modGUI_parliament_window"
+		context_type = player_context
+		parent_window_name = "party_parliament_window_view"
+
+		visible = {
+			#has_country_flag = parliament_gui_open
+		}
+
+		dynamic_lists = {
+			custom_slider_grid = {
+				array = slider_buttons
+				change_scope = no
+				entry_container = custom_slider_container
+				index = i
+				value = v
+			}
+
+			parliament_grid = {
+				array = parliament_seats
+				change_scope = no
+				entry_container = parliament_seat_container
+				index = idx
+				
+			}
+		}
+
+		properties = {
+			parliament_icon = {
+				x = seat_x_array^idx
+				y = seat_y_array^idx
+				frame = array_f_array^idx
+			}
+
+			slider_dot = {
+				x = slider_dot_x
+			}
+
+
+			custom_slider_icon = {
+				frame = button_frame
+			}
+		}
+		effects = {
+			close_button_click = {
+				#clr_country_flag = parliament_gui_open
+				
+			}
+
+			parliament_left_button_click = {
+				
+				add_to_variable = { current_int = -1 }
+				change_parliament_seats = yes
+			}
+
+			parliament_right_button_click = {
+				
+				add_to_variable = { current_int = 1 }
+				change_parliament_seats = yes
+			}
+
+			custom_slider_icon_click = {
+				set_variable = { current_int = v }
+				change_parliament_seats = yes
+			}
+
+			slider_limit_left_click = {
+				add_to_variable = { current_int = -1 }
+				clamp_variable = {
+					var = current_int
+					min = 0
+					max = 100
+				}
+				change_parliament_seats = yes
+			}
+			slider_limit_right_click = {
+				add_to_variable = { current_int = 1 }
+				clamp_variable = {
+					var = current_int
+					min = 0
+					max = 100
+				}
+				change_parliament_seats = yes
+			}
+
+		}
+		triggers = {
+
+			parliament_left_button_visible = {
+				is_debug = yes
+				has_country_flag = debug_on
+			}
+
+			parliament_right_button_visible = {
+				is_debug = yes
+				has_country_flag = debug_on
+			}
+			custom_slider_icon_visible = {
+				if = {
+					limit = {
+						check_variable = {
+							current_int = v
+						}
+					}
+					set_temp_variable = { button_frame =  2 }
+				}
+				else = {
+					set_temp_variable = { button_frame =  1 }
+				}
+			}
+		}
+	}
+	
+	parliament_ring_container = {
+		window_name = "parliament_ring_container"
+		context_type = player_context
+		parent_window_name = "party_parliament_window_view"
+		visible = {
+			is_ai = no
+		}
+		properties = {
+			parliament_ring_progressbar = {
+				frame = parliament_ring_progressbar
+			}
+		}
+		triggers = {
+		    parliament_ring_progressbar_num_visible = {
+			    has_country_flag = parliament_changing
+			}
+			parliament_ring_progressbar_successes_visible = {
+			    has_country_flag = change_successes
+			}
+			parliament_ring_progressbar_abortive_visible = {
+			    has_country_flag = change_abortive
+			}
+		}
+	}
+
+
+	parliament_button_window = { #button
+		window_name = "parliament_button_window"
+		context_type = player_context
+		parent_window_name = "parliament_button_view"
+		effects = {
+			parliament_legislatio_button_click = {
+			    clr_country_flag = parliament_manpower_open
+				if = {
+					limit = { has_country_flag = parliament_legislatio_open}
+					clr_country_flag = parliament_legislatio_open
+				}
+				else = {
+					set_country_flag = parliament_legislatio_open
+					clr_country_flag = parliament_war_open
+				}
+				
+			}
+			parliament_war_button_click = {
+			    clr_country_flag = parliament_manpower_open
+				if = {
+					limit = { has_country_flag = parliament_war_open}
+					clr_country_flag = parliament_war_open
+				}
+				else = {
+					set_country_flag = parliament_war_open
+					clr_country_flag = parliament_legislatio_open
+				}
+			}
+		}
+	}
+
+	parliament_warn_window = { #warn
+		window_name = "parliament_warn_window"
+		context_type = player_context
+		parent_window_name = "party_parliament_window_view"
+		visible = {
+			has_country_flag = warn_parliament_changing
+		}
+		effects = {
+		    parliament_warn_window_close_button_click = { 
+			    
+				clr_country_flag = warn_parliament_changing #警告窗口
+				
+			}
+		}
+	}
+
+	parliament_legislatio_window = { #legislatio_home
+		window_name = "parliament_legislatio_window"
+		context_type = player_context
+		parent_window_name = "party_parliament_window_view"
+		visible = {
+			has_country_flag = parliament_legislatio_open
+		}
+		effects = {
+		    change_manpower_level_button_click = {
+			    set_country_flag = parliament_manpower_open
+				clr_country_flag = parliament_legislatio_open
+			}
+		}
+	}
+
+	
+	
+	parliament_manpower_window = { #legislatio_manpower
+		window_name = "parliament_manpower_window"
+		context_type = player_context
+		parent_window_name = "party_parliament_window_view"
+		visible = {
+			has_country_flag = parliament_manpower_open
+		}
+		
+		effects = {
+			change_manpower_level7_button_click = {
+				set_variable = { manpower_change_to_variable = 7 }
+				parliament_change_set = yes
+			}
+			change_manpower_level6_button_click = {
+				set_variable = { manpower_change_to_variable = 6 }
+				parliament_change_set = yes
+			}
+			change_manpower_level5_button_click = {
+				set_variable = { manpower_change_to_variable = 5 }
+				parliament_change_set = yes
+			}
+			change_manpower_level4_button_click = {
+				set_variable = { manpower_change_to_variable = 4 }
+				parliament_change_set = yes
+			}
+			change_manpower_level3_button_click = {
+				set_variable = { manpower_change_to_variable = 3 }
+				parliament_change_set = yes
+			}
+			change_manpower_level2_button_click = {
+				set_variable = { manpower_change_to_variable = 2 }
+				parliament_change_set = yes
+			}
+			change_manpower_level1_button_click = {
+				set_variable = { manpower_change_to_variable = 1 }
+				parliament_change_set = yes
+			}
+		}
+
+		triggers = {
+			change_manpower_level7_button_visible = {
+				change_manpower_level7_button_visible = yes
+			}
+			change_manpower_level6_button_visible = {
+				change_manpower_level6_button_visible = yes
+			}
+			change_manpower_level5_button_visible = {
+				change_manpower_level5_button_visible = yes
+			}
+			change_manpower_level4_button_visible = {
+				change_manpower_level4_button_visible = yes
+			}
+			change_manpower_level3_button_visible = {
+				change_manpower_level3_button_visible = yes
+			}
+			change_manpower_level2_button_visible = {
+				change_manpower_level2_button_visible = yes
+			}
+			change_manpower_level1_button_visible = {
+				change_manpower_level1_button_visible = yes
+			}
+		}
+	}
+	
+	parliament_war_window = {
+		window_name = "parliament_war_window"
+		context_type = player_context
+		parent_window_name = "party_parliament_window_view"
+		visible = {
+			has_country_flag = parliament_war_open
+		}
+	}
+}

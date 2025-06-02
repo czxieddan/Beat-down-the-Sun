@@ -1,0 +1,194 @@
+DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_create_faction = yes
+	}
+}
+
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_offer_join_faction = yes
+	}
+}
+
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_join_faction = yes
+	}
+}
+
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_leave_faction = yes
+	}
+}
+
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_assume_faction_leadership = yes
+	}
+}
+
+DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_kick_from_faction = yes
+	}
+}
+
+DIPLOMACY_WAR_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_declare_war = yes
+	}
+}
+
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_generate_wargoal = yes
+	}
+}
+
+DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}
+
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}
+
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}
+
+DIPLOMACY_PEACE_PROPOSAL_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_PEACE_PROPOSAL_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}
+
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_guarantee = yes
+	}
+}
+
+DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_guarantee = yes
+	}
+}
+
+DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_stage_coup = yes
+	}
+}
+
+DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
+	if = {
+		limit = { is_ai = yes }
+		always = no
+	}
+	else_if = {
+		limit = { is_ai = no }
+		is_diplomatic_action_valid_boost_party_popularity = yes
+	}
+}
+
+DIPLOMACY_NONAGGRESSIONPACT_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_NONAGGRESSIONPACT_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}
+DIPLOMACY_REVOKE_NONAGGRESSIONPACT_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_REVOKE_NONAGGRESSIONPACT_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}
+
+DIPLOMACY_REQUEST_INTERNATIONAL_MARKET_ACCESS_RIGHTS_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_REQUEST_INTERNATIONAL_MARKET_ACCESS_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}
+
+DIPLOMACY_REVOKE_INTERNATIONAL_MARKET_ACCESS_RIGHTS_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = DIPLOMACY_REQUEST_INTERNATIONAL_MARKET_ACCESS_ENABLE_TRIGGER_DESC
+		always = no
+	}
+	
+}

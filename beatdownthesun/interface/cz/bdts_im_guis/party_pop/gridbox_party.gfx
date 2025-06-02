@@ -1,0 +1,75 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_party_seat_over"
+		textureFile = "gfx/attached_GUI/PARTY/party_seat_over.dds"
+	}
+	spriteType = {
+		name = "GFX_party_seat_bg"
+		textureFile = "gfx/attached_GUI/PARTY/party_seat_bg.dds"
+	}
+    spriteType = {
+		name = "GFX_gridbox_partyseat"
+		textureFile = "gfx/attached_GUI/PARTY/s.dds"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat0"
+		textureFile = "gfx/attached_GUI/PARTY/0.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat1"
+		textureFile = "gfx/attached_GUI/PARTY/1.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat2"
+		textureFile = "gfx/attached_GUI/PARTY/2.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat3"
+		textureFile = "gfx/attached_GUI/PARTY/3.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat4"
+		textureFile = "gfx/attached_GUI/PARTY/4.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat5"
+		textureFile = "gfx/attached_GUI/PARTY/5.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat6"
+		textureFile = "gfx/attached_GUI/PARTY/6.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat7"
+		textureFile = "gfx/attached_GUI/PARTY/7.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat8"
+		textureFile = "gfx/attached_GUI/PARTY/8.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gridbox_partyseat9"
+		textureFile = "gfx/attached_GUI/PARTY/9.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_pol_spr_bg"
+		textureFile = "gfx/interface/pol_spr_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pol_spr_over"
+		textureFile = "gfx/interface/pol_spr_over.dds"
+	}
+
+}

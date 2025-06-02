@@ -1,0 +1,198 @@
+ideas = {
+
+	country = {
+		successor_of_the_joseon_dynasty = {
+
+			picture = successor_of_the_joseon_dynasty
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.3
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		ROK_disjointed_government = {
+			
+			allowed = {
+				original_tag = ROK
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = Market_Capitalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.30
+				surrender_limit = -0.5
+				disabled_ideas = 1
+			}
+		}
+
+		ROK_disjointed_government2 = {
+			
+			allowed = {
+				original_tag = ROK
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = Market_Capitalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 1.0
+				stability_factor = -0.10
+				surrender_limit = -0.5
+				disabled_ideas = 1
+			}
+		}
+
+		ROK_disjointed_government3 = {
+			
+			allowed = {
+				original_tag = ROK
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = Market_Capitalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 1.5
+				
+				
+				disabled_ideas = 1
+			}
+		}
+
+		ROK_disjointed_government4 = {
+			
+			allowed = {
+				original_tag = ROK
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = Market_Capitalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_cost = 2
+				
+				
+				
+			}
+		}
+
+		ROK_coordinating_government = {
+			
+			allowed = {
+				original_tag = ROK
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = Market_Capitalism
+			}
+
+			removal_cost = -1
+
+			picture = ROK_coordinating_government
+			
+			modifier = {
+				political_power_cost = 1.5
+				stability_factor = -0.10
+				
+				
+			}
+		}
+
+		ROK_outpost_of_democracy_on_the_korean_peninsula = {
+			
+			allowed = {
+				original_tag = ROK
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = Market_Capitalism
+			}
+
+			removal_cost = -1
+
+			picture = ROK_outpost_of_democracy_on_the_korean_peninsula
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				Market_Capitalism_drift = 0.02
+				
+			}
+		}
+		
+		ROK_standoff = {
+
+			picture = ROK_standoff
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			
+			
+			modifier = {
+				war_support_factor = -0.3
+				enemy_operative_capture_chance_factor = 0.5
+				dig_in_speed_factor = 0.3
+				ai_focus_defense_factor = 0.5
+				ai_get_ally_desire_factor = 1
+			}
+			#rule = {
+			#	can_create_factions = yes
+			#}
+		}
+	}
+
+	#advisors = {
+
+        
+    #}
+
+
+}

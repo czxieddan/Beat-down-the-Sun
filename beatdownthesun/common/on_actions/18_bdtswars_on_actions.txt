@@ -1,0 +1,131 @@
+on_actions = {
+	
+	on_war = {
+        effect = {
+            if = {
+                limit = {
+                    tag = JPN
+                    
+					JPN = { has_offensive_war = yes }	
+        
+                    has_global_flag = JPN_sunshine_chingyu_without_war
+        
+                    NOT = {
+		                has_global_flag = JPN_sun_war_chingyu_s
+                        has_global_flag = Super_Event_Visible
+	                }
+                }
+                JPN = { country_event = se_jpn.1 }
+                #set_global_flag = JPN_sun_war_chingyu_s
+                
+            }
+        }
+    }
+	
+	on_weekly_JPN = {
+        effect = {
+	        if = {
+                limit = {
+                    date > 2025.4.12
+                    date < 2025.4.22
+		
+		            NOT = {
+			            has_global_flag = pe_chingyu_showls
+		            }
+                }
+                JPN = { news_event = penews_chingyu.1 }
+		        JPJ = { news_event = penews_chingyu.1 }
+		        CCP = { news_event = penews_chingyu.1 }
+            }
+       
+        }
+    }
+	
+	on_weekly_ROK = {
+        effect = {
+	        if = {
+                limit = {
+                    
+                ROK = { 
+				    NOT = {
+                        has_idea = ROK_standoff
+					}
+                }
+       
+                country_exists = DPK 
+        
+                ROK = {
+                    NOT = {
+                        has_war_with = DPK
+                    }
+                }
+                }
+                ROK = { add_ideas = ROK_standoff }
+		        
+            }
+			if = {
+                limit = {
+                    
+                ROK = { 
+				    has_idea = ROK_standoff
+                }
+       
+                OR = {
+                    NOT = { country_exists = DPK }
+            
+                    ROK = {
+                       has_war_with = DPK
+                   }
+                }
+                }
+                ROK = { remove_ideas = ROK_standoff }
+		        
+            }
+       
+        }
+    }
+	on_war = {
+	    effect = {
+	        if = {
+                limit = {
+                    
+                ROK = { 
+				    NOT = {
+                        has_idea = ROK_standoff
+					}
+                }
+       
+                country_exists = DPK 
+        
+                ROK = {
+                    NOT = {
+                        has_war_with = DPK
+                    }
+                }
+                }
+                ROK = { add_ideas = ROK_standoff }
+		        
+            }
+			if = {
+                limit = {
+                    
+                ROK = { 
+				    has_idea = ROK_standoff
+                }
+       
+                OR = {
+                    NOT = { country_exists = DPK }
+            
+                    ROK = {
+                       has_war_with = DPK
+                   }
+                }
+                }
+                ROK = { remove_ideas = ROK_standoff }
+		        
+            }
+       
+        }
+	}
+    
+}

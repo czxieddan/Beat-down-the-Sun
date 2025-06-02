@@ -1,0 +1,67 @@
+JPN_movecapital531_decisions = {
+	
+	icon = GFX_decision_JPN_movecapital531_decisions
+	allowed = {
+		original_tag = JPN
+	}
+
+	visible = {
+		
+		OR = { 
+			has_global_flag = jpn_move_capital_531_a
+		    has_global_flag = jpn_move_capital_531_b
+			has_global_flag = jpn_move_capital_531_c
+			has_global_flag = jpn_move_capital_531_d
+			has_global_flag = jpn_move_capital_531_e
+			has_global_flag = jpn_move_capital_531_f
+			
+		}
+		NOT = { has_global_flag =jpn_move_capital_531_comp_done}
+	
+	}
+	#visible_when_empty = yes
+	priority = 1000
+}
+
+JPN_yamatocapital_decisions = {
+	
+	icon = GFX_decision_JPN_yamatocapital_decisions
+	allowed = {
+		original_tag = JPN
+	}
+
+	visible = {
+		
+		has_global_flag = {
+			        flag = jpn_move_capital_531_comp_done
+				    days > 730
+				}
+		JPN = { has_completed_focus = JPN_sunshine_chingyu }
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = jpn_move_capital_531_a
+					has_global_flag = jpn_move_capital_531_b
+					has_global_flag = jpn_move_capital_531_c
+					has_global_flag = jpn_move_capital_531_d
+					has_global_flag = jpn_move_capital_531_e
+					
+				}
+			}
+			controls_province = 11960 
+		}
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = jpn_move_capital_531_f
+				}
+			}
+			controls_province = 1182 
+		}
+		
+
+	
+	}
+	#visible_when_empty = yes
+	priority = 1000
+}

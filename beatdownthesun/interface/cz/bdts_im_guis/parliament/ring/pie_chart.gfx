@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	progressbartype = {
+		name = "GFX_ring_progressbar"
+		textureFile1 = "gfx/pie_chart/ring_positive_full.dds"
+		textureFile2 = "gfx/pie_chart/ring_positive_empty.dds"
+		size = { x = 132 y = 134 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+	
+
+}

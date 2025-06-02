@@ -1,0 +1,14 @@
+guiTypes = {
+    containerWindowType = {
+		name = "parliament_war_window"
+		position = {x=493 y=-87}
+		background = {
+			name = "background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		orientation = center
+		origo = left
+		#moveable = yes
+		size = { width = 350 height= 251 }
+	}
+}

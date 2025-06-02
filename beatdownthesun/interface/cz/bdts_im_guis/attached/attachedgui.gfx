@@ -1,0 +1,106 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_state_view_bg"
+		size= { x=190 y=190 }
+		textureFile = "gfx/attached_GUI/tiled_techtree_bg.dds"
+		borderSize = { x=30 y=30 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spritetype = {
+		name = "GFX_SL_state_book_button"
+		texturefile = "gfx/attached_GUI/state_book_button.dds"
+	}
+	spritetype = {
+		name = "GFX_SL_title_underlay"
+		texturefile = "gfx/attached_GUI/title_underlay.dds"
+	}
+	spritetype = {
+		name = "GFX_SL_mapicon_button"
+		texturefile = "gfx/attached_GUI/sl_mapicon_button.dds"
+	}
+	spriteType = {
+		name = "GFX_tno_close_button"
+		textureFile = "gfx/attached_GUI/TNO_close_button.dds"
+	}
+
+
+	spritetype = {
+		name = "GFX_state_lore_img_5"
+		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_1.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_3"
+		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_10.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_1"
+		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_25.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_2"
+		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_39.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_4"
+		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_227.dds"
+	}
+
+
+	frameanimatedspritetype = {
+		name = "GFX_world_tension_globe_animation"
+		textureFile = "gfx/attached_GUI/world_tension/tension_globe_animation.png"
+		noOfFrames = 30
+		animation_rate_fps = 5
+		play_on_show = yes
+		looping = no
+		transparencecheck = yes
+	}
+	frameanimatedspritetype = {
+		name = "GFX_world_tension_progbar_animation"
+		textureFile = "gfx/attached_GUI/world_tension/tension_progbar_animation.png"
+		noOfFrames = 30
+		animation_rate_fps = 5
+		play_on_show = yes
+		looping = no
+		transparencecheck = yes
+	}
+	frameanimatedspritetype = {
+		name = "GFX_world_tension_block"
+		textureFile = "gfx/attached_GUI/world_tension/tension_block.dds"
+		noOfFrames = 2
+		animation_rate_fps = 0.173
+		play_on_show = yes
+		transparencecheck = yes
+	}
+	frameanimatedspritetype = {
+		name = "GFX_ongoingconflicts_button"
+		textureFile = "gfx/attached_GUI/world_tension/ongoingconflicts_button.dds"
+		noOfFrames = 2
+		animation_rate_fps = 0.173
+		play_on_show = yes
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_world_tension_background"
+		textureFile = "gfx/attached_GUI/world_tension/world_tension_background.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_fac_button_bg"
+		textureFile = "gfx/attached_GUI/fac_button_bg.png"
+	}
+	
+	spriteType = {
+		name = "GFX_fac_button_bg2"
+		textureFile = "gfx/attached_GUI/fac_button_bg2.png"
+	}
+
+	spriteType = {
+		name = "GFX_cz_category_header_bg"
+		textureFile = "gfx/interface/cz_category_header_bg.dds"
+	}
+
+
+}

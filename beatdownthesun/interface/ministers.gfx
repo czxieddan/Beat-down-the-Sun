@@ -1,0 +1,26 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_ROK_choi_sangmok2"
+		texturefile = "gfx/interface/ministers/ROK/ROK_choi_sangmok2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROK_choi_sangmok3"
+		texturefile = "gfx/interface/ministers/ROK/ROK_choi_sangmok2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROK_cho_taeyul"
+		texturefile = "gfx/interface/ministers/ROK/ROK_cho_taeyul.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROK_han_ducksoo"
+		texturefile = "gfx/interface/ministers/ROK/ROK_han_ducksoo.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROK_congress_Market_Capitalism"
+		texturefile = "gfx/interface/ministers/ROK/ROK_congress_Market_Capitalism.png"
+	}
+}

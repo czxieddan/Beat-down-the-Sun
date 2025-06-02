@@ -1,0 +1,19 @@
+state={
+	id=527
+	name="STATE_527"
+	history={
+		owner = DPK
+		add_core_of = ROK
+		add_core_of = DPK
+		victory_points = {
+			10065 50 # Kagoshima
+		}
+	}
+	provinces={
+		10065
+	}
+	manpower=6774200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

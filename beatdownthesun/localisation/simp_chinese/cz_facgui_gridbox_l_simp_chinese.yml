@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ Faction_name: "[?ROOT.grid_faction_leader.GetFactionName]"
+
+ Faction_menber_name: "[THIS.GetName]"
+ #Faction_menber_name_no_change_scope: "[?v.GetName]"
+
+
+ 

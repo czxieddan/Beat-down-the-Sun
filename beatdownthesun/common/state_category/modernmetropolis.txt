@@ -1,0 +1,9 @@
+state_categories={
+	modernmetropolis = {
+		local_building_slots = 24
+		
+		
+		
+		color = { 0 200 200 }
+	}
+}

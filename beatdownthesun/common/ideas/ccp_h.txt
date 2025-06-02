@@ -1,0 +1,32 @@
+ideas = {
+
+	country = {
+		
+
+		CCP_NPC_of_RPC = {
+
+			picture = CCP_NPC_of_RPC
+			
+			allowed = {
+				always = no
+				original_tag = CCP
+			}
+			
+			
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				hidden_modifier = {
+					stability_factor = 0.30
+				}
+				custom_modifier_tooltip = CCP_CCP_NPC_of_RPC_text
+			}
+			
+		}
+	}
+}

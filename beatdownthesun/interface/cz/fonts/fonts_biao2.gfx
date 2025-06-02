@@ -1,0 +1,22 @@
+bitmapfonts = {
+    bitmapfont = {
+        name = "biao2"
+        fontfiles = {
+            "gfx/fonts/biao/Biao_0"
+            "gfx/fonts/biao/Biao_1"
+			"gfx/fonts/biao/Biao_2"
+			"gfx/fonts/biao/Biao_3"
+			"gfx/fonts/biao/Biao_4"
+			"gfx/fonts/biao/Biao_5"
+			"gfx/fonts/biao/Biao_6"
+			"gfx/fonts/biao/Biao_7"
+			"gfx/fonts/biao/Biao_8"
+        }
+        color = 0xffffffff
+		border_color = 0x00000000
+
+        textcolors = {
+            
+        }
+    }
+}

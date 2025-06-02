@@ -1,0 +1,127 @@
+spriteTypes = {	
+
+	
+
+
+
+	###########################################################################
+	###########################################################################
+	##czczczczczczczczczczczcz#################################################
+	###########################################################################
+	###########################################################################
+	##FOCUS####################################################################
+	###########################################################################
+	###########################################################################
+
+
+
+	#ROK
+
+	SpriteType = {
+		name = "GFX_focus_ROK_coordinated_government"
+		texturefile = "gfx/interface/goals/focus_ROK_coordinated_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ROK_coordinating_congress"
+		texturefile = "gfx/interface/goals/focus_ROK_coordinating_congress.dds"
+	}
+
+	#JPN
+	SpriteType = {
+		name = "GFX_focus_JPN_call_upon_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_call_upon_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_acknowledge_allegiance_to_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_acknowledge_allegiance_to_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_lit_tall_buildings_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_lit_tall_buildings_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_city_life_style_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_city_life_style_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_cars_are_fast_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_cars_are_fast_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_factory_full_off_weapons_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_factory_full_off_weapons_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_power_of_god_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_power_of_god_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_sunshine_chingyu"
+		texturefile = "gfx/interface/goals/focus_JPN_sunshine_chingyu.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_wield_power_naruhito"
+		texturefile = "gfx/interface/goals/focus_JPN_wield_power_naruhito.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_wield_power_tamura_tomoko"
+		texturefile = "gfx/interface/goals/focus_JPN_wield_power_tamura_tomoko.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_wield_power_JRCL"
+		texturefile = "gfx/interface/goals/focus_JPN_wield_power_JRCL.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_peacefulrevolutin_JRCL"
+		texturefile = "gfx/interface/goals/focus_JPN_peacefulrevolutin_JRCL.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_wield_power_nipponkaigi"
+		texturefile = "gfx/interface/goals/focus_JPN_wield_power_nipponkaigi.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_choose_tamura_tomoko"
+		texturefile = "gfx/interface/goals/focus_JPN_choose_tamura_tomoko.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_choose_shii_kazuo"
+		texturefile = "gfx/interface/goals/focus_JPN_choose_shii_kazuo.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_choose_koike_akira"
+		texturefile = "gfx/interface/goals/focus_JPN_choose_koike_akira.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_JPN_god_position_naruhito"
+		texturefile = "gfx/interface/goals/focus_JPN_god_position_naruhito.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DPK_comeonmyhero_ggbond"
+		texturefile = "gfx/interface/goals/focus_DPK_comeonmyhero_ggbond.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_DPK_feedpigs_ggbond"
+		texturefile = "gfx/interface/goals/focus_DPK_feedpigs_ggbond.png"
+	}
+
+
+}

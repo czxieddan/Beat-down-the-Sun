@@ -1,0 +1,41 @@
+
+state={
+	id=441
+	name="STATE_441"
+	manpower = 2598027
+	
+	state_category = rural
+
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		add_claim_by = RAJ
+		add_claim_by = PAK
+		add_core_of = KAS
+		add_core_of = KHL 
+		#add_core_of = CCP
+
+		1963.1.1 = {
+			
+			
+			
+			CCP = {
+				set_province_controller = 5042
+				set_province_controller = 7273
+				
+			}
+		}
+
+		victory_points = {
+			12754 1
+		}
+	}
+
+	provinces={
+		 7316 8005 10905 12754 12884 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,190 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+
+
+focus_tree = {
+	id = CCP_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CCP
+		}
+	}
+	default = no
+	
+	
+	
+	focus = {
+		id = CCP_SE_rest_1
+		text = CCP_SE_rest_1
+		icon = GFX_focus_JPN_power_of_god_chingyu
+		cost = 0
+		
+		x = 3
+		y = 3
+		
+		available = {
+	
+			custom_trigger_tooltip = {
+				tooltip = JPN_power_of_god_chingyu_rest_trigger_tooltip
+					always = yes
+				}
+				
+				is_ai = no
+			
+		}
+		completion_reward = {
+			
+			custom_effect_tooltip = JPN_power_of_god_chingyu_text
+			hidden_effect = {
+				play_song = "SPEVNT_JPN_sun_war_chingyu_s_music"
+				set_global_flag = JPN_sun_war_chingyu_s
+			    set_global_flag = Super_Event_Visible
+				
+				
+			}
+		}
+		
+	
+		cancel_if_invalid = no
+	
+		ai_will_do = {
+			factor = 10
+		}
+	
+	   
+	
+	}
+	
+	focus = {
+		id = CCP_SE_rest_2
+		text = CCP_SE_rest_2
+		icon = GFX_focus_JPN_power_of_god_chingyu
+		cost = 0
+		
+		x = 3
+		y = 6
+		
+		available = {
+	
+			custom_trigger_tooltip = {
+				tooltip = JPN_power_of_god_chingyu_rest_trigger_tooltip
+					always = yes
+				}
+				
+				is_ai = no
+			
+		}
+		completion_reward = {
+			
+			custom_effect_tooltip = JPN_power_of_god_chingyu_text
+			hidden_effect = {
+				set_country_leader_portrait = {
+					ideology = Power_Authoritarianism
+					portrait = GFX_portrait_JPN_power_of_god_chingyu
+				} 
+				add_ideas = JPN_chingyu_power_of_god
+				set_global_flag = JPN_power_of_god_chingyu_s
+				set_global_flag = Super_Event_Visible
+				set_global_flag = JPN_531_CHINGYU
+				set_country_flag = JPN_power_of_god_chingyu_flag
+				play_song = "SPEVNT_JPN_power_of_god_chingyu_s_music"
+				hidden_effect = { set_cosmetic_tag = JPN_yamatoflag }
+				
+				
+				
+			}
+		}
+		
+	
+		cancel_if_invalid = no
+	
+		ai_will_do = {
+			factor = 10
+		}
+	
+	   
+	
+	}
+	
+	focus = {
+		id = CCP_SE_rest_3
+		text = CCP_SE_rest_3
+		icon = GFX_focus_JPN_power_of_god_chingyu
+		cost = 0
+		
+		x = 6
+		y = 3
+		
+		available = {
+	
+			custom_trigger_tooltip = {
+				tooltip = JPN_power_of_god_chingyu_rest_trigger_tooltip
+					always = yes
+				}
+				
+				is_ai = no
+			
+		}
+		completion_reward = {
+			
+			custom_effect_tooltip = JPN_power_of_god_chingyu_text
+			hidden_effect = {
+				play_song = "SPEVNT_JPN_sun_war_chingyu_s_music"
+				set_global_flag = JPN_sun_war_chingyu_s
+			    set_global_flag = Super_Event_Visible
+				
+				
+			}
+		}
+		
+	
+		cancel_if_invalid = no
+	
+		ai_will_do = {
+			factor = 10
+		}
+	
+	   
+	
+	}
+
+	focus = {
+		id = CCP_establishment_of_the_japan_province
+		text = CCP_establishment_of_the_japan_province
+		icon = GFX_focus_establishment_of_the_japan_province
+		cost = 0
+		
+		x = 10
+		y = 3
+		
+		available = {
+	        if = {
+				limit = { 
+					any_state = {
+						has_state_flag = is_state_of_JPN
+						
+						NOT = { is_controlled_by = CCP }
+					}
+				}
+				always = no
+			}
+			
+		}
+		completion_reward = {
+			
+			
+		}
+		
+	
+		cancel_if_invalid = no
+	
+		ai_will_do = {
+			factor = 10
+		}
+	
+	   
+	
+	}
+	
+}

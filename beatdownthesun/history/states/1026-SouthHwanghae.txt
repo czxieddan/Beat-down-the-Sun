@@ -1,0 +1,16 @@
+state={
+	id=1026
+	name="STATE_1026"
+	provinces={
+		1003 4107 7155 
+	}
+	history={
+		owner = DPK
+		add_core_of = ROK
+		add_core_of = DPK
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

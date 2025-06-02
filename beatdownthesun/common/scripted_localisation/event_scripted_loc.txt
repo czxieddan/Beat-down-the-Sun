@@ -1,0 +1,284 @@
+defined_text = {
+    name = country_jpn_2_DESC
+    text = {
+        trigger = {
+           has_global_flag = JPN_531_CHINGYU
+        }
+        localization_key = country_jpn_2_DESC1
+    }
+   
+    text = {
+        
+        localization_key = country_jpn_2_DESC0
+    }
+}
+defined_text = {
+    name = JPN_movecapital531_decisions_NAME
+    text = {
+        trigger = {
+           OR = {
+		       has_global_flag = jpn_move_capital_531_a
+			   has_global_flag = jpn_move_capital_531_b
+			   has_global_flag = jpn_move_capital_531_c
+			   has_global_flag = jpn_move_capital_531_d
+		   }
+        }
+        localization_key = JPN_movecapital531_decisions_NAME_name1
+    }
+	
+	text = {
+        trigger = {
+           
+			   has_global_flag = jpn_move_capital_531_e
+		   
+        }
+        localization_key = JPN_movecapital531_decisions_NAME_name2
+    }
+	
+	text = {
+        trigger = {
+           
+			   has_global_flag = jpn_move_capital_531_f
+		   
+        }
+        localization_key = JPN_movecapital531_decisions_NAME_name3
+    }
+	
+	
+   
+    text = {
+        
+        localization_key = JPN_movecapital531_decisions_NAME_name0
+    }
+}
+defined_text = {
+    name = jpn_move_capital_531_comp_where
+    text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_a
+        }
+        localization_key = JPN_V_11960_NAME_J1
+    }
+	text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_b
+        }
+        localization_key = JPN_V_11960_NAME_J2
+    }
+	text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_c
+        }
+        localization_key = JPN_V_11960_NAME_J3
+    }
+	text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_d
+        }
+        localization_key = JPN_V_11960_NAME_JN
+    }
+	text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_e
+        }
+        localization_key = JPN_V_11960_NAME_JA
+    }
+	text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_f
+        }
+        localization_key = JPN_V_1182_NAME_NEW_Tokyo
+    }
+   
+    text = {
+        
+        localization_key = JPN_V_11960_NAME_J0
+    }
+}
+defined_text = {
+    name = jpn_move_capital_531_comp_who
+    text = {
+        trigger = {
+           has_global_flag = JPN_531_CHINGYU
+        }
+        localization_key = jpn_move_capital_531_comp_who_NAME1
+    }
+   
+    text = {
+        
+        localization_key = jpn_move_capital_531_comp_who_NAME0
+    }
+}
+defined_text = {
+    name = JPN_movecapital531_decisions_JPN_plan_loc
+    text = {
+        trigger = {
+            OR = {
+			    has_global_flag = jpn_move_capital_531_a
+		        has_global_flag = jpn_move_capital_531_b
+			    has_global_flag = jpn_move_capital_531_c
+			    has_global_flag = jpn_move_capital_531_d
+			    #has_global_flag = jpn_move_capital_531_e
+			    #has_global_flag = jpn_move_capital_531_f
+			}
+        }
+        localization_key = JPN_movecapital531_decisions_JPN_plan_loc_a
+    }
+    text = {
+        trigger = {
+            OR = {
+			    
+			    has_global_flag = jpn_move_capital_531_e
+			    #has_global_flag = jpn_move_capital_531_f
+			}
+        }
+        localization_key = JPN_movecapital531_decisions_JPN_plan_loc_b
+    }
+   
+    text = {
+        
+        localization_key = JPN_movecapital531_decisions_JPN_plan_loc_c
+    }
+}
+defined_text = {
+    name = JPN_movecapital531_decisions_JPN_build_loc
+    text = {
+        trigger = {
+            OR = {
+			    has_global_flag = jpn_move_capital_531_a
+		        has_global_flag = jpn_move_capital_531_b
+			    has_global_flag = jpn_move_capital_531_c
+			    has_global_flag = jpn_move_capital_531_d
+			    #has_global_flag = jpn_move_capital_531_e
+			    #has_global_flag = jpn_move_capital_531_f
+			}
+        }
+        localization_key = JPN_movecapital531_decisions_JPN_build_loc_a
+    }
+    text = {
+        trigger = {
+            OR = {
+			    
+			    has_global_flag = jpn_move_capital_531_e
+			    #has_global_flag = jpn_move_capital_531_f
+			}
+        }
+        localization_key = JPN_movecapital531_decisions_JPN_build_loc_b
+    }
+   
+    text = {
+        
+        localization_key = JPN_movecapital531_decisions_JPN_build_loc_c
+    }
+}
+defined_text = {
+    name = JPN_movecapital531_decisions_JPN_move_loc1
+    text = {
+        trigger = {
+            OR = {
+			    has_global_flag = jpn_move_capital_531_a
+		        has_global_flag = jpn_move_capital_531_b
+			    has_global_flag = jpn_move_capital_531_c
+			    has_global_flag = jpn_move_capital_531_d
+			    has_global_flag = jpn_move_capital_531_e
+			    #has_global_flag = jpn_move_capital_531_f
+			}
+        }
+        localization_key = JPN_movecapital531_decisions_JPN_move_loc1_a
+    }
+    
+   
+    text = {
+        
+        localization_key = JPN_movecapital531_decisions_JPN_move_loc1_b
+    }
+}
+defined_text = {
+    name = JPN_movecapital531_decisions_JPN_move_loc2
+    text = {
+        trigger = {
+           has_global_flag = JPN_531_CHINGYU
+        }
+        localization_key = JPN_movecapital531_decisions_JPN_move_loc2_a
+    }
+   
+    text = {
+        
+        localization_key = JPN_movecapital531_decisions_JPN_move_loc2_b
+    }
+}
+defined_text = {
+    name = jpn_move_capital_531_TY
+    
+   
+    text = {
+        
+        localization_key = VICTORY_POINTS_1182
+    }
+}
+defined_text = {
+    name = news_jpn_1_b_loc
+    text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_e
+        }
+        localization_key = news_jpn_1_b_loc_b
+    }
+   
+    text = {
+        
+        localization_key = news_jpn_1_b_loc_a
+    }
+}
+defined_text = {
+    name = news_jpn_1_desc1_loc
+    text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_e
+        }
+        localization_key = news_jpn_1_desc1_loc_b
+    }
+   
+    text = {
+        
+        localization_key = news_jpn_1_desc1_loc_a
+    }
+}
+defined_text = {
+    name = news_jpn_1_desc2_loc
+    text = {
+        trigger = {
+           has_global_flag = jpn_move_capital_531_e
+        }
+        localization_key = news_jpn_1_desc2_loc_b
+    }
+   
+    text = {
+        
+        localization_key = news_jpn_1_desc2_loc_a
+    }
+}
+defined_text = {
+    name = modernmetropolis_loc
+    
+    text = {
+        
+        localization_key = modernmetropolis
+    }
+}
+defined_text = {
+    name = moderncity_loc
+    
+    text = {
+        
+        localization_key = moderncity
+    }
+}
+defined_text = {
+    name = JPN_V_yamato_loc
+    
+    text = {
+        
+        localization_key = JPN_V_yamato
+    }
+}

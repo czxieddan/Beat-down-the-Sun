@@ -1,0 +1,32 @@
+state={
+	id=1024
+	name="STATE_1024"
+	provinces={
+		 10110 11948 12085 
+	}
+	manpower=1776668
+	
+	history={
+		owner = ROK
+		victory_points = { 12085 5 }
+		
+		
+		add_core_of = ROK
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 1
+			12805 = {
+				naval_base = 6
+			}
+			air_base = 3
+			synthetic_refinery = 1
+		}
+	}
+	resources={
+		aluminium = 3
+	}
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

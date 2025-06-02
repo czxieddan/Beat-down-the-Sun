@@ -1,0 +1,38 @@
+characters = {
+	VAT_franciscus = {
+		name = VAT_franciscus
+		portraits = {
+			civilian = {
+				large = GFX_portrait_VAT_franciscus
+			}
+		}
+		country_leader = {
+			ideology = catholicism 
+			traits = { 
+				vat_papa
+		 }
+			expire = "2025.4.21.1"
+
+		}
+        
+	}
+	VAT_franciscus2 = {
+		name = VAT_franciscus
+		portraits = {
+			civilian = {
+				large = GFX_portrait_VAT_franciscus
+			}
+		}
+		country_leader = {
+			ideology = catholicism 
+			traits = { 
+				vat_papa
+		 }
+			expire = "2025.4.21.1"
+
+		}
+        
+	}
+
+	
+}

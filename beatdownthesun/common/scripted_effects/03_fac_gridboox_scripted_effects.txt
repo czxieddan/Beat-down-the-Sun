@@ -1,0 +1,52 @@
+Faction_window_open = {
+	if = {
+		limit = { 
+			ROOT = {
+				NOT = {
+					has_country_flag = factionwindowopening
+				}
+			}
+		}
+		clear_array = ROOT.grid_faction_array
+	    set_variable = {
+		    ROOT.grid_faction_leader = THIS.faction_leader
+	    }
+	    for_each_loop = {
+		    array = global.faction_menber_@THIS.faction_leader
+		    add_to_array = { ROOT.grid_faction_array = v }
+	    }
+	    ROOT = {
+		    set_country_flag = faction_gui_open
+	    }
+		ROOT = { set_country_flag = factionwindowopening }			
+	}
+	else = {
+		ROOT = {
+			clr_country_flag = factionwindowopening
+			clr_country_flag = faction_gui_open
+		}
+	}
+}
+#Get_grid_Faction_ENG = {
+#	clear_array = ROOT.grid_faction_array
+#	set_variable = {
+#		ROOT.grid_faction_leader = ENG
+#	}
+#	add_to_array = { ROOT.grid_faction_array = ENG }
+#	every_country = {
+#		limit = {
+#			is_in_faction_with = ENG
+#			NOT = {
+#				tag = ENG
+#			}
+#		}
+#		add_to_array = {
+#			ROOT.grid_faction_array = ENG
+#		}
+#	}
+#	ROOT = {
+#		set_country_flag = faction_gui_open
+#	}
+#}
+
+

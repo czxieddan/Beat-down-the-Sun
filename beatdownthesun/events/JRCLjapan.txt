@@ -1,0 +1,7 @@
+add_namespace = idea_jpj
+add_namespace = country_jpj
+add_namespace = news_jpj
+
+
+
+

@@ -1,0 +1,109 @@
+bookmarks = {
+	bookmark = {
+		name = "2025_NAME"
+		desc = "2025_DESC"
+		date = 2025.1.1.12
+		picture = "GFX_select_date_2025"
+		default_country = "ROK"
+		default = yes
+		
+		"ROK"={
+			history = "ROK_2025_DESC"
+			ideology = Market_Capitalism
+			available = YES
+			ideas = {
+				successor_of_the_joseon_dynasty
+				ROK_outpost_of_democracy_on_the_korean_peninsula
+				ROK_standoff
+				DPK_feedpigs_ggbond_comA
+				DPK_feedpigs_ggbond_comA
+				JPN_chingyu_power_of_god
+			}
+			focuses = {
+				ROK_bookmark_bg
+				goals_bookmark_bg
+				DPK_feedpigs_ggbond
+				JPN_wield_power_naruhito
+				DPK_feedpigs_ggbond
+			}
+			
+		}
+		
+		"DPK" = {
+			history = "DPK_2025_DESC"
+			ideology = Power_Authoritarianism
+			available = YES
+			ideas = {
+				DPK_feedpigs_ggbond_comA
+				DPK_feedpigs_ggbond_comB
+				DPK_feedpigs_ggbond_comC
+				DPK_feedpigs_ggbond_comD
+				DPK_feedpigs_ggbond_comE
+				DPK_feedpigs_ggbond_comF
+			}
+			focuses = {
+				DPK_bookmark_bg
+				goals_bookmark_bg
+				DPK_feedpigs_ggbond
+				DPK_feedpigs_ggbond
+				DPK_feedpigs_ggbond
+			}
+		}
+		"VAT"={
+			history = "VAT_2025_DESC"
+			ideology = Religious_Supremacy
+			available = YES
+			ideas = {
+				
+			}
+			focuses = {
+				VAT_bookmark_bg
+				goals_bookmark_bg
+			}
+		}
+		
+
+		
+
+		
+
+		"CCP"={
+			history = "CCP_2025_DESC"
+			ideology = Power_Authoritarianism
+			available = YES
+			ideas = {
+				
+			}	
+			focuses = {
+				CCP_bookmark_bg
+				goals_bookmark_bg
+			}		
+		}
+		
+		"JPN"={
+			history = "JPN_2025_DESC"
+			ideology = Religious_Supremacy
+			available = YES
+			ideas = {
+				JPN_naruhito_i
+			}	
+			focuses = {
+				JPN_bookmark_bg
+				goals_bookmark_bg
+			}			
+		}
+		
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

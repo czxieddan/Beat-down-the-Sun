@@ -1,0 +1,20 @@
+﻿l_simp_chinese:
+ #infantry
+ #czsupport_weapons
+ czsupport_weapons: "支援装备"
+ czsupport_weapons2: "支援装备"
+ czsupport_weapons3: "支援装备"
+ czsupport_weapons4: "支援装备"
+ #ROK
+ ROK_czsupport_weapons: "支援装备"
+ ROK_czsupport_weapons2: "支援装备"
+ ROK_czsupport_weapons3: "支援装备"
+ ROK_czsupport_weapons4: "支援装备"
+ #infantry_weapons
+ czinfantry_weapons2: "步兵装备"
+ improved_czinfantry_weapons_2: "步兵装备"
+ czinfantry_equipment_0: "步兵装备"
+ czinfantry_equipment_1: "步兵装备"
+ czinfantry_equipment_2: "步兵装备"
+ czinfantry_equipment_3: "步兵装备"
+ ROK_czinfantry_equipment_1: "K-11 多用途步枪"

@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_autonomy_DMZ_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_DMZ_icon.png"
+	}
+	spriteType = {
+		name = "GFX_autonomy_SACROK_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_SACROK_icon.png"
+	}
+	spriteType = {
+		name = "GFX_autonomy_HOK_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_HOK_icon.png"
+	}
+	spriteType = {
+		name = "GFX_autonomy_AOM_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_AOM_icon.png"
+	}
+}

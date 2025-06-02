@@ -1,0 +1,13 @@
+has_second_leader = {
+	OR = {
+		has_idea = JPN_naruhito_i
+		has_idea = CCP_NPC_of_RPC
+	}
+}
+
+has_state_view = {
+	is_in_array = {
+		array = global.viewed_state
+		value = THIS.id
+	}	
+}

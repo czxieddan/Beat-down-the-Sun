@@ -1,0 +1,156 @@
+ideas = {
+
+	country = {
+		DPK_comeonmyhero_ggbond_com = {
+
+			picture = DPK_comeonmyhero_ggbond_com
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    Environmental_Determinism_drift = 0.01
+				drift_defence_factor = 0.3
+				
+			}
+			
+		}
+		
+		DPK_feedpigs_ggbond_comA = {
+
+			picture = DPK_feedpigs_ggbond_com
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    cic_construction_boost_factor = 0.1
+				conscription_factor = 0.1
+				custom_modifier_tooltip = DPK_feedpigs_ggbond_com_text_A
+			}
+			
+		}
+		DPK_feedpigs_ggbond_comB = {
+
+			picture = DPK_feedpigs_ggbond_com
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    cic_construction_boost_factor = 0.2
+				conscription_factor = 0.2
+				custom_modifier_tooltip = DPK_feedpigs_ggbond_com_text_B
+			}
+			
+		}
+		DPK_feedpigs_ggbond_comC = {
+
+			picture = DPK_feedpigs_ggbond_com
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    cic_construction_boost_factor = 0.5
+				conscription_factor = 0.5
+				custom_modifier_tooltip = DPK_feedpigs_ggbond_com_text_C
+			}
+			
+		}
+		DPK_feedpigs_ggbond_comD = {
+
+			picture = DPK_feedpigs_ggbond_com
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    cic_construction_boost_factor = 1.0
+				conscription_factor = 1.0
+				custom_modifier_tooltip = DPK_feedpigs_ggbond_com_text_D
+			}
+			
+		}
+		DPK_feedpigs_ggbond_comE = {
+
+			picture = DPK_feedpigs_ggbond_com
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    cic_construction_boost_factor = 2.5
+				conscription_factor = 2.5
+				custom_modifier_tooltip = DPK_feedpigs_ggbond_com_text_E
+			}
+			
+		}
+		DPK_feedpigs_ggbond_comF = {
+
+			picture = DPK_feedpigs_ggbond_com
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    cic_construction_boost_factor = 6
+				conscription_factor = 6
+				custom_modifier_tooltip = DPK_feedpigs_ggbond_com_text_F
+			}
+			
+		}
+
+	}
+
+
+}

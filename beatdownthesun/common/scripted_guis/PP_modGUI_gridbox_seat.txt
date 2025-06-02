@@ -1,0 +1,40 @@
+scripted_gui = {
+	gridbox_partyseat_window = {
+		window_name = "gridbox_partyseat_window"
+		parent_window_name = "gridbox_partyseat_window_view"
+		
+	    #parent_window_name = "party_attached_window_view"
+		#context_type = decision_category
+		visible = {
+			is_ai = no
+		}
+		dynamic_lists = {
+			partyseat_grid = {
+				array = gridbox_partyseat_array
+				index = i
+				value = v
+				entry_container = gridbox_partyseat_entry
+				change_scope = no
+			}
+		}
+		effects = {
+			refresh_button_click = { 
+				if = {
+                    limit = { is_ai = no }    
+                    ROOT = {
+						set_variable = {
+                        party_size = party_size_quantitative
+                    }            
+                    refresh_seat = yes
+				}
+                }
+			}
+		}
+		properties = {
+			gridbox_partyseat_icon = {
+				frame = gridbox_partyseat_array^i
+			
+			}
+		}
+	}
+}
