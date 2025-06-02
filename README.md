@@ -41,8 +41,13 @@ As the tolling of the bells ushers in the dawn of the year 2025, a tide of uphea
 ### Required items
 > [!CAUTION]
 > This item requires all of the following other items
+<<<<<<< HEAD
 > - [Beat down the Sun Sounds (for super events)](#beat-down-the-sun-fonts-52)
 > + [Beat down the Sun Fonts (52)](#beat-down-the-sun-fonts-52)
+=======
+> - [Beat down the Sun Sounds (for super events)](#beat-down-the-sun-fonts-52)
+> + [Beat down the Sun Fonts (52)](#beat-down-the-sun-fonts-52)
+>>>>>>> d60b4b993886a143e32b73642baff971e5eef300
 
 ### CONTACTS
 You can reach me via **[my personal blog](https://czxieddan.top)** or directly by sending an email to **czxieddan@czxieddan.top**.
@@ -53,11 +58,19 @@ You can reach me via **[my personal blog](https://czxieddan.top)** or directly b
 + Others: Glaaki
 # Submods
 - #### Audio
+<<<<<<< HEAD
   - [Beat down the Sun Sounds (for super events)](#beat-down-the-sun-fonts-52) [(**Required item**)](#required-items)
 - #### Fonts
   - [Beat down the Sun Fonts (52)](#beat-down-the-sun-fonts-52) [(**Required item**)](#required-items)
 - #### Radio
   - [Beat down the Sun Radio (bokaro)](#beat-down-the-sun-radio-bokaro)
+=======
+  - [Beat down the Sun Sounds (for super events)](#beat-down-the-sun-fonts-52) [(**Required item**)](#required-items)
+- #### Fonts
+  - [Beat down the Sun Fonts (52)](#beat-down-the-sun-fonts-52) [(**Required item**)](#required-items)
+- #### Radio
+  - [Beat down the Sun Radio (bokaro)](#beat-down-the-sun-radio-bokaro)
+>>>>>>> d60b4b993886a143e32b73642baff971e5eef300
 - #### Focus
 
 ## Beat down the Sun Sounds (for super events)
@@ -69,7 +82,11 @@ You can reach me via **[my personal blog](https://czxieddan.top)** or directly b
 </div>
 
 ### BRIEF
+<<<<<<< HEAD
 [Audio](#audio) expansion pack for super events support.
+=======
+[Audio](#audio) expansion pack for super events support.
+>>>>>>> d60b4b993886a143e32b73642baff971e5eef300
 
 ### ELEMENT
 This submod is essential for an immersive gaming experience.
@@ -83,7 +100,11 @@ This submod is essential for an immersive gaming experience.
 </div>
 
 ### BRIEF
+<<<<<<< HEAD
 [Fonts](#fonts).
+=======
+[Fonts](#fonts).
+>>>>>>> d60b4b993886a143e32b73642baff971e5eef300
 
 ### ELEMENT
 This submod is essential for an immersive gaming experience.
@@ -97,7 +118,11 @@ This submod is essential for an immersive gaming experience.
 </div>
 
 ### BRIEF
+<<<<<<< HEAD
 Bokaro Style [Radio](#radio).
+=======
+Bokaro Style [Radio](#radio).
+>>>>>>> d60b4b993886a143e32b73642baff971e5eef300
 
 ### ELEMENT
 This submod is not essential for an immersive gaming experience.
