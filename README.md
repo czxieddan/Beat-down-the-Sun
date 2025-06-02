@@ -10,7 +10,7 @@
   <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3448474441">
     <img src="https://i.imgur.com/V00Z6x2.png" height="200">
   </a>
-  <h1><a href="https://steamcommunity.com/workshop/filedetails/?id=3478462766">Beat down the Sun Series</a></h1>
+  <h1><a href="https://steamcommunity.com/workshop/filedetails/?id=3478462766">Beat down the Sun Series</a> - Created by <a href="https://steamcommunity.com/id/czxieddan">CzXieDdan</a></h1>
 </div>
 
 **Description:**
@@ -35,10 +35,8 @@ As the tolling of the bells ushers in the dawn of the year 2025, a tide of uphea
 - The East Asia region is presently undergoing meticulous refinement, as its intricate landscapes and storied history are woven into a grand tapestry of development...
 
 ### NOTICE
-- This mod's GUI is designed exclusively for **_2560×1440_ resolution**. If you play the game at a lower resolution, some windows may extend beyond the screen, potentially affecting your gameplay experience
-
-### CONTACTS
-You can reach me via **[my personal blog](https://czxieddan.top)** or directly by sending an email to **czxieddan@czxieddan.top**.
+> [!WARNING]
+>  This mod's GUI is designed exclusively for **_2560×1440_ resolution**. If you play the game at a lower resolution, some windows may extend beyond the screen, potentially affecting your gameplay experience
 
 ### Required items
 > [!CAUTION]
@@ -46,6 +44,13 @@ You can reach me via **[my personal blog](https://czxieddan.top)** or directly b
 > - [Beat down the Sun Sounds (for super events)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52)
 > + [Beat down the Sun Fonts (52)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52)
 
+### CONTACTS
+You can reach me via **[my personal blog](https://czxieddan.top)** or directly by sending an email to **czxieddan@czxieddan.top**.
+
+### ACKNOWLEDGEMENT
+#### Producer/Participant:
+- Beat down the Sun: [CzXieDdan](https://x.com/czxieddan)(chief)
++ Others: 
 # Submods
 - #### Audio
   - [Beat down the Sun Sounds (for super events)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#beat-down-the-sun-fonts-52) [(**Required item**)](https://github.com/czxieddan/Beat-down-the-Sun/edit/main/README.md#required-items)
