@@ -25,33 +25,45 @@ This collection includes the [**Beat down the Sun**](https://steamcommunity.com/
 </div>
 
 ### BRIEF
+
 As the tolling of the bells ushers in the dawn of the year 2025, a tide of upheaval, vast and inexorable, prepares to sweep across the world. Since the turn of the millennium, the iron shroud of the Cold War has dissipated, granting way to an era of rapid progress after the millennium. Yet beneath the placid veneer of global harmony, unseen tempests churn. How shall the people, and the governments entrusted with their fate, navigate this shifting landscape? Amidst the lingering specters of the old order, who shall rise to unfurl the standard of defiance? And who shall emerge as the architect of a new epoch? As the wheel of fate turns, how many nations shall ascend in glory, only to fall into obscurity? And upon what path shall they embark, as fate calls them forth...
 
 ### DISCLAIMER
+
 - This work is currently in its early development stage and is not yet playable. It is shared solely for personal exchange. Some elements may draw inspiration from other works—please inform me of any potential copyright concerns.  
-+  The content may include imbalances and does not reflect any personal political stance or bias.
++ The content may include imbalances and does not reflect any personal political stance or bias.
 
 ### ELEMENT
+
 - The East Asia region is presently undergoing meticulous refinement, as its intricate landscapes and storied history are woven into a grand tapestry of development...
 
 ### NOTICE
+
 > [!WARNING]
 >  This mod's GUI is designed exclusively for **_2560×1440_ resolution**. If you play the game at a lower resolution, some windows may extend beyond the screen, potentially affecting your gameplay experience
 
+> [!TIP]
+>  All `.mod` files should be placed in `C:\Users\User_name\Documents\Paradox Interactive\Hearts of Iron IV\mod\`. All mod files should be placed in `D:\bdts_github\Beat-down-the-Sun\`.
+
 ### Required items
+
 > [!CAUTION]
 > This item requires all of the following other items
 > - [Beat down the Sun Sounds (for super events)](#beat-down-the-sun-fonts-52)
 > + [Beat down the Sun Fonts (52)](#beat-down-the-sun-fonts-52)
 
 ### CONTACTS
+
 You can reach me via **[my personal blog](https://czxieddan.top)** or directly by sending an email to **czxieddan@czxieddan.top**.
 
 ### ACKNOWLEDGEMENT
+
 #### Producer/Participant:
+
 - Beat down the Sun: [CzXieDdan](https://x.com/czxieddan)(chief)
 + Others: Glaaki
-# Submods
+  
+  # Submods
 - #### Audio
   - [Beat down the Sun Sounds (for super events)](#beat-down-the-sun-fonts-52) [(**Required item**)](#required-items)
 - #### Fonts
@@ -73,6 +85,7 @@ You can reach me via **[my personal blog](https://czxieddan.top)** or directly b
 [Audio](#audio) expansion pack for super events support.
 
 ### ELEMENT
+
 This submod is essential for an immersive gaming experience.
 
 ## Beat down the Sun Fonts (52)
@@ -88,6 +101,7 @@ This submod is essential for an immersive gaming experience.
 [Fonts](#fonts).
 
 ### ELEMENT
+
 This submod is essential for an immersive gaming experience.
 
 ## Beat down the Sun Radio (bokaro)
@@ -103,4 +117,21 @@ This submod is essential for an immersive gaming experience.
 Bokaro Style [Radio](#radio).
 
 ### ELEMENT
+
 This submod is not essential for an immersive gaming experience.
+
+# TOOLS
+
+You can find [them](https://github.com/czxieddan/Beat-down-the-Sun/tree/main/bdts_tools) in `bdts_tools` .
+
+## Flag Converter
+
+<div align="center">
+  <a href="https://github.com/czxieddan/Flag-Converter">
+    <img src="https://github.com/czxieddan/Flag-Converter/blob/main/Flag_Converter.png?raw=true" height="200">
+  </a>
+  <h1><a href="https://github.com/czxieddan/Flag-Converter">Flag Converter</a> - <a href="https://github.com/czxieddan/Beat-down-the-Sun#tools">Beat down the sun Tools</a></h1>
+</div>
+
+### BRIEF
+This tool supports the quick conversion of the required .tga files for flags and can automatically generate three sizes needed for the game, storing them in the corresponding folders. You can upload multiple files in bulk, and the program supports one-click conversion.
