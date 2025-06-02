@@ -1,0 +1,1 @@
+This collection includes the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3448474441][b]Beat down the Sun[/b][/url] Series proper as well as expansions. Bringing you graphical and musical modifications or gameplay expansions for a richer gaming experience. Some of this content may be provided by some of the collaborators and fans of this work!
