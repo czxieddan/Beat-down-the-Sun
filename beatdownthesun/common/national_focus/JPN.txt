@@ -173,7 +173,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JPN_acknowledge_allegiance_to_chingyu
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
 		available = {
@@ -249,7 +249,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JPN_acknowledge_allegiance_to_chingyu
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
 		available = {
@@ -318,6 +318,91 @@ focus_tree = {
 	}
 
 	focus = {
+		id = JPN_sunshine_chingyu
+		text = JPN_sunshine_chingyu
+		icon = GFX_focus_JPN_sunshine_chingyu
+		cost = 14.40
+		allow_branch = {
+			NOT = {
+				OR = {
+				#has_global_flag = jpn_chingyu_appeared
+				has_global_flag = jpn_naruhito_wield_power
+				has_global_flag = jpn_tamura_tomoko_wield_power
+				has_global_flag = jpn_JRCL_peacefulrevolutin
+				has_global_flag = jpn_JRCL_wield_power
+				has_global_flag = jpn_nipponkaigi_wield_power
+				}
+			}
+		}
+		prerequisite = {
+			#focus = JPN_power_of_god_chingyu
+		}
+		prerequisite = { 
+			
+		 }
+		x = 0
+		y = 5
+		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
+		available = {
+            hidden_trigger = {
+				has_completed_focus = JPN_power_of_god_chingyu
+				has_country_flag = {
+				flag = JPN_power_of_god_chingyu_flag
+				days > 365
+			}
+
+
+
+			}
+
+			
+			custom_trigger_tooltip = {
+				tooltip = JPN_last_chingy_focus_days_military_tt
+				has_country_flag = {
+					flag = JPN_power_of_god_chingyu_flag
+					days > 365
+				}
+				OR = {
+					has_global_flag = jpn_chingyu_appeared
+					
+					#always = yes #test
+				}
+				NOT = { has_global_flag = jpn_chingyu_oooooout }
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				 # add_ideas = JPN_chingyu_power_of_god
+		        every_state = {
+			     #limit = { is_on_continent = europe }
+			    add_core_of = JPN
+		        }
+				set_global_flag = JPN_sunshine_chingyu_without_war
+				#set_country_flag = state_buy_tool_open #t
+				
+			}
+          custom_effect_tooltip = JPN_sunshine_chingyu_text
+		  hidden_effect = { set_cosmetic_tag = JPN_chingyuflag }
+		  hidden_effect = {
+			set_variable = {
+				var = JPN_yamatocapital_d_TM
+				value = 520
+			}
+		  }
+		}
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	focus = {
 		id = JPN_power_of_god_chingyu
 		text = JPN_power_of_god_chingyu
 		icon = GFX_focus_JPN_power_of_god_chingyu
@@ -344,8 +429,8 @@ focus_tree = {
 			#focus = JPN_cars_are_fast_chingyu
 		 }
 		x = 0
-		y = 4
-		relative_position_id = JPN_acknowledge_allegiance_to_chingyu
+		y = -2
+		relative_position_id = JPN_sunshine_chingyu
 		available = {
 
 			custom_trigger_tooltip = {
@@ -405,90 +490,7 @@ focus_tree = {
 
 	}
 
-	focus = {
-		id = JPN_sunshine_chingyu
-		text = JPN_sunshine_chingyu
-		icon = GFX_focus_JPN_sunshine_chingyu
-		cost = 14.40
-		allow_branch = {
-			NOT = {
-				OR = {
-				#has_global_flag = jpn_chingyu_appeared
-				has_global_flag = jpn_naruhito_wield_power
-				has_global_flag = jpn_tamura_tomoko_wield_power
-				has_global_flag = jpn_JRCL_peacefulrevolutin
-				has_global_flag = jpn_JRCL_wield_power
-				has_global_flag = jpn_nipponkaigi_wield_power
-				}
-			}
-		}
-		prerequisite = {
-			#focus = JPN_power_of_god_chingyu
-		}
-		prerequisite = { 
-			
-		 }
-		x = 0
-		y = 2
-		relative_position_id = JPN_power_of_god_chingyu
-		available = {
-            hidden_trigger = {
-				has_completed_focus = JPN_power_of_god_chingyu
-				has_country_flag = {
-				flag = JPN_power_of_god_chingyu_flag
-				days > 365
-			}
-
-
-
-			}
-
-			
-			custom_trigger_tooltip = {
-				tooltip = JPN_last_chingy_focus_days_military_tt
-				has_country_flag = {
-					flag = JPN_power_of_god_chingyu_flag
-					days > 365
-				}
-				OR = {
-					has_global_flag = jpn_chingyu_appeared
-					
-					#always = yes #test
-				}
-				NOT = { has_global_flag = jpn_chingyu_oooooout }
-			}
-		}
-		completion_reward = {
-			hidden_effect = {
-				 # add_ideas = JPN_chingyu_power_of_god
-		        every_state = {
-			     #limit = { is_on_continent = europe }
-			    add_core_of = JPN
-		        }
-				set_global_flag = JPN_sunshine_chingyu_without_war
-				#set_country_flag = state_buy_tool_open #t
-				
-			}
-          custom_effect_tooltip = JPN_sunshine_chingyu_text
-		  hidden_effect = { set_cosmetic_tag = JPN_chingyuflag }
-		  hidden_effect = {
-			set_variable = {
-				var = JPN_yamatocapital_d_TM
-				value = 520
-			}
-		  }
-		}
-		
-
-		cancel_if_invalid = no
-
-		ai_will_do = {
-			factor = 10
-		}
-
-       
-
-	}
+	
 
 	focus = {
 		id = JPN_wield_power_naruhito
