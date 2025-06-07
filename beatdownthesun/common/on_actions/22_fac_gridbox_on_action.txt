@@ -75,6 +75,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_major = yes
 				every_country = {
 					limit = {
 						is_major = no
@@ -87,6 +88,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_unmajor = yes
 			}
 
 			#add_to_array = {
@@ -190,6 +192,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_major = yes
 				every_country = {
 					limit = {
 						is_major = no
@@ -202,6 +205,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_unmajor = yes
 			}
 
 			#add_to_array = {
@@ -305,6 +309,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_major = yes
 				every_country = {
 					limit = {
 						is_major = no
@@ -317,6 +322,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_unmajor = yes
 			}
 
 			#add_to_array = {
@@ -420,6 +426,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_major = yes
 				every_country = {
 					limit = {
 						is_major = no
@@ -432,6 +439,7 @@ on_actions = {
 						global.faction_menber_@PREV = THIS
 					}
 				}
+				fac_spe_fac_sub_unmajor = yes
 			}
 
 			#add_to_array = {
@@ -460,5 +468,6 @@ on_actions = {
 			#}
 		}
 	}
+	
 }
 #global.GER_faction_menber

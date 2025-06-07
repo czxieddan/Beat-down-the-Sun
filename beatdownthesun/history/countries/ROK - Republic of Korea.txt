@@ -139,6 +139,21 @@ set_global_flag = ROK_is_faction_1
 create_faction = Trilateral_of_korea_meeting
 add_to_faction = ROK
 add_to_faction = JPN
+USA = {
+	set_country_flag = show_in_ROK_faction_1
+	diplomatic_relation = {
+        country = ROK
+        relation = guarantee
+        active = yes
+    }
+    diplomatic_relation = {
+        country = JPN
+        relation = guarantee
+        active = yes
+    }
+}
+give_military_access = USA
+JPN = { give_military_access = USA }
 
 recruit_character = ROK_choi_sangmok
 recruit_character = ROK_yoon_sukyoul

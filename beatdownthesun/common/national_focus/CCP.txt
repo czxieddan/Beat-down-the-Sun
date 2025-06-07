@@ -150,30 +150,141 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CCP_the_war_of_China_s_recovery_of_Japan
+		text = CCP_the_war_of_China_s_recovery_of_Japan
+		icon = GFX_focus_CCP_the_war_of_China_s_recovery_of_Japan
+		cost = 0
+		
+		x = 8
+		y = 3
+		completion_reward = {
+			set_global_flag = the_war_of_China_s_recovery_of_Japan
+			declare_war_on = {
+                target = JPN
+                type = annex_everything
+            }
+		}
+	}
+
+	focus = {
 		id = CCP_establishment_of_the_japan_province
 		text = CCP_establishment_of_the_japan_province
-		icon = GFX_focus_establishment_of_the_japan_province
+		icon = GFX_focus_CCP_establishment_of_the_japan_province
 		cost = 0
 		
 		x = 10
 		y = 3
 		
 		available = {
-	        if = {
-				limit = { 
-					any_state = {
-						has_state_flag = is_state_of_JPN
-						
-						NOT = { is_controlled_by = CCP }
-					}
+	        NOT = {
+				any_state = {
+					has_state_flag = is_state_of_JPN	
+					is_controlled_by_ROOT_or_ally = no
 				}
-				always = no
-			}
-			
+		    }
 		}
 		completion_reward = {
-			
-			
+			set_autonomy = {
+	            target = JPN
+	            autonomy_state = autonomy_HOK
+            }
+		    JPN = {
+				set_politics = {
+				ruling_party = Economic_Interventionism
+				elections_allowed = no
+				last_election = [GetDateText]
+			    }
+				set_political_party = {
+				    ideology = Market_Capitalism
+				    popularity = 29
+			    }
+				set_political_party = {
+				    ideology = Economic_Interventionism
+				    popularity = 29
+			    }
+				set_variable = { current_int = 20 }
+			    change_parliament_seats = yes
+			}
+			every_state = {
+				limit = {
+                    has_state_flag = is_state_of_JPN
+					is_core_of = JPN
+					is_controlled_by_ROOT_or_ally = yes
+				}
+				set_state_owner_to = JPN
+			}
+			every_state = {
+				limit = {
+                    has_state_flag = is_state_of_JPN
+					is_core_of = JPN
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				set_state_controller_to = JPN
+			}
+			every_state = {
+				limit = {
+                    has_state_flag = is_state_of_JPN
+					NOT = {
+						is_core_of = JPN
+					}
+					is_controlled_by_ROOT_or_ally = yes
+				}
+				set_state_owner_to = CCP
+			}
+			every_state = {
+				limit = {
+                    has_state_flag = is_state_of_JPN
+					NOT = {
+						is_core_of = JPN
+					}
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				set_state_controller_to = CCP
+			}
+			every_state = {
+				limit = {
+                    has_state_flag = is_state_of_JPN
+					is_core_of = CCP
+					is_controlled_by_ROOT_or_ally = yes
+				}
+				set_state_owner_to = CCP
+			}
+			every_state = {
+				limit = {
+                    has_state_flag = is_state_of_JPN
+					is_core_of = CCP
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				set_state_controller_to = CCP
+			}
+			530 = {
+				if = {
+					limit = {
+					    is_controlled_by_ROOT_or_subject = yes
+					}
+					set_state_controller_to = CCP
+				}
+				if = {
+					limit = { 
+                        is_controlled_by_ROOT_or_ally = yes
+					}
+					set_state_owner_to = CCP
+				}
+				
+			}
+			if = {
+				limit = { 
+					has_global_flag = the_war_of_China_s_recovery_of_Japan
+				}
+				white_peace = {
+                    tag = ROK
+                    message = the_war_of_China_s_recovery_of_Japan_peace_tt
+                }
+				clr_global_flag = the_war_of_China_s_recovery_of_Japan
+			}
+			else = {
+				
+			}
 		}
 		
 	

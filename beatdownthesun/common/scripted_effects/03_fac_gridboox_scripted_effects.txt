@@ -20,6 +20,7 @@ Faction_window_open = {
 	    }
 		ROOT = { set_country_flag = factionwindowopening }			
 	}
+	
 	else = {
 		ROOT = {
 			clr_country_flag = factionwindowopening
@@ -49,4 +50,23 @@ Faction_window_open = {
 #	}
 #}
 
-
+fac_spe_fac_sub_major = {
+    every_country = {
+		limit = {
+			has_country_flag = show_in_ROK_faction_1
+		}
+		add_to_array = {
+		    global.faction_menber_ROK = THIS
+		}
+	}
+}
+fac_spe_fac_sub_unmajor = {
+    #every_country = {
+	#	limit = {
+	#		
+	#	}
+	#	add_to_array = {
+	#	    global.faction_menber_@PREV = THIS
+	#	}
+	#}
+}

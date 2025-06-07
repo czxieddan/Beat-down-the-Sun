@@ -33,6 +33,7 @@ scripted_gui = {
 					is_in_array = {
 						global.faction_menber_ROK = THIS
 					}
+					NOT = { tag = USA }
 				}
 				has_global_flag = ROK_is_faction_1
 			}	
