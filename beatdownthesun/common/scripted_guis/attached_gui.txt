@@ -179,24 +179,10 @@ scripted_gui = {
 		}
 		effects = {
 			state_button_click = {
-				set_state_pic_view = yes
+			    click_state_mapicon_effects = yes
 			}
 			state_button_right_click = {
-				if = {
-					limit = {
-						ROOT = {
-							has_country_flag = stateview_mapicons_enabled
-						}
-					}
-					ROOT = {
-						clr_country_flag = stateview_mapicons_enabled
-					}
-				}
-				else = {
-					ROOT = {
-						set_country_flag = stateview_mapicons_enabled
-					}
-				}
+				state_button_right_click_effects = yes
 			}
 
 		}
@@ -210,8 +196,7 @@ scripted_gui = {
 		}
 		effects = {
 			close_btn_click = {
-				clear_variable = view_entry
-				clear_variable = pic_num
+				close_btn_click_effects = yes
 			}
 		}
 		properties = {
@@ -220,51 +205,90 @@ scripted_gui = {
 			}
 		}
 	}
-
-	stateview_mapicons = {
-
-		window_name = "stateview_mapicons"
-		
+#下方由所有有介绍state的id对应
+    stateview_mapicons_2 = {
+		window_name = "stateview_mapicons_2"
 		context_type = state_mapicon
 		mapmode = default
 		mapicon_targets = {
-			target_array = global.viewed_state
+			target_array = global.viewed_state_2
 		}
-
 		visible = { 
 			ROOT = { has_country_flag = stateview_mapicons_enabled } 
 		}
-
 		effects = {
-			state_lore_mapicon_click = {
-				set_state_pic_view = yes
+			state_lore_mapicon_2_click = {
+			    click_state_mapicon_effects = yes
 			}
 		}
 	}
 
+	stateview_mapicons_4 = {
+		window_name = "stateview_mapicons_4"
+		context_type = state_mapicon
+		mapmode = default
+		mapicon_targets = {
+			target_array = global.viewed_state_4
+		}
+		visible = { 
+			ROOT = { has_country_flag = stateview_mapicons_enabled } 
+		}
+		effects = {
+			state_lore_mapicon_4_click = {
+			    click_state_mapicon_effects = yes
+			}
+		}
+	}
 
-	#tension_animation_GUI = {
-	#	context_type = player_context
-	#	parent_window_name = "world_tension_popup"
-	#	window_name = "tension_animation_gui"
-	#	visible = {
-	#		ROOT = {
-	#			not = {
-	#				has_country_flag = showed_animation
-	#			}
-	#		}
-	#	}
-	#	effects = {
-	#		tension_show_wars_button_click = {
-	#			ROOT = {
-	#				set_country_flag = showed_animation
-	#			}
-	#		}
-	#	}
-	#}
+	stateview_mapicons_16 = {
+		window_name = "stateview_mapicons_16"
+		context_type = state_mapicon
+		mapmode = default
+		mapicon_targets = {
+			target_array = global.viewed_state_16
+		}
+		visible = { 
+			ROOT = { has_country_flag = stateview_mapicons_enabled } 
+		}
+		effects = {
+			state_lore_mapicon_16_click = {
+			    click_state_mapicon_effects = yes
+			}
+		}
+	}
 
-	
+	stateview_mapicons_64 = {
+		window_name = "stateview_mapicons_64"
+		context_type = state_mapicon
+		mapmode = default
+		mapicon_targets = {
+			target_array = global.viewed_state_64
+		}
+		visible = { 
+			ROOT = { has_country_flag = stateview_mapicons_enabled } 
+		}
+		effects = {
+			state_lore_mapicon_64_click = {
+			    click_state_mapicon_effects = yes
+			}
+		}
+	}
 
-
+	stateview_mapicons_126 = {
+		window_name = "stateview_mapicons_126"
+		context_type = state_mapicon
+		mapmode = default
+		mapicon_targets = {
+			target_array = global.viewed_state_126
+		}
+		visible = { 
+			ROOT = { has_country_flag = stateview_mapicons_enabled } 
+		}
+		effects = {
+			state_lore_mapicon_126_click = {
+			    click_state_mapicon_effects = yes
+			}
+		}
+	}
 }
 

@@ -30,11 +30,12 @@ guiTypes = {
 		animation_time = 300
 		orientation = lower_left
 		size = { width=436 height=881 }
+		
 
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = 0 }
-			size = { width=780 height=696 }
+			size = { width=780 height=900 }
 
 
 			background = {
@@ -45,9 +46,9 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "state_name"
-				position = { x = 76 y = 7 }
+				position = { x = 76 y = 11 }
 				textureFile = ""
-				font = "hoi_36header"
+				font = "hoi_24header"
 				text = "STATE_NAME_TEST"
 				maxWidth = 320
 				maxHeight = 30
@@ -105,7 +106,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "claims"
-				position = { x = 15 y = 97 }
+				position = { x = 17 y = 97 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = ""
@@ -118,14 +119,14 @@ guiTypes = {
 			OverlappingElementsBoxType = {
 				name = "state_claims"
 				position = { x = 35 y = 118 }
-				size = { x = 110 y = 40 }
+				size = { x = 100 y = 40 }
 				format = left
 				spacing = 1.0
 			}
 
 			instantTextboxType = {
 				name = "owner"
-				position = { x = 15 y = 42 }
+				position = { x = 17 y = 43 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = ""
@@ -137,7 +138,7 @@ guiTypes = {
 
 			OverlappingElementsBoxType = {
 				name = "state_owners"
-				position = { x = 35 y = 63 }
+				position = { x = 35 y = 65 }
 				size = { x = 60 y = 40 }
 				format = left
 				spacing = 1.0
@@ -168,7 +169,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "state_resources"
-				position = { x= 26 y=355}
+				position = { x= 26 y=261}
 				size = { width=135 height=123 }
 
 
@@ -180,11 +181,11 @@ guiTypes = {
 				gridBoxType = {
 					name = "state_resources_entries"
 					position = { x = -42 y = -3 }
-					size = { width = 132 height = 120 }
+					size = { width = 132 height = 300 }
 					format = "UPPER_LEFT"
 					slotsize = { width = 52 height = 30 }
 					max_slots_horizontal = 2
-					max_slots_vertical = 3
+					max_slots_vertical = 8
 
 				}
 			}
@@ -235,9 +236,9 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "law_and_template_container"
-					position = { x = 0 y = 0}
+					position = { x = 356 y = 438}
 					size = { width = 0 height = 0 }
-
+                    scale = 0.8
 					buttonType = {
 						name = "select_law_button"
 						position = { x = 0 y = 68 }
@@ -294,7 +295,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "province"
 				position = { x = 0 y= -50 }
-				font = "hoi_20b"
+				font = "hoi_18mbs"
 				maxWidth = 300
 				maxHeight = 30
 				format = left
@@ -640,8 +641,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "amount"
-			position = { x = 66 y = 15 }
-			font = "hoi_20b"
+			position = { x = 69 y = 15 }
+			font = "hoi_18mbs"
 			maxWidth = 37
 			maxHeight = 18
 			format = center

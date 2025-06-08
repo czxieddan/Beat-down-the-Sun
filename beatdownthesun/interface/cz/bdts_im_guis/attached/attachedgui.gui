@@ -115,7 +115,7 @@ guiTypes = {
 
 	containerwindowtype = {
 		name = "state_view_button"
-		position = { x = 45 y = 500 }
+		position = { x = 45 y = 533 }
 		size = { width = 80 height = 80 }
 		background = {
 			name = "background"
@@ -191,17 +191,6 @@ guiTypes = {
 		}
 	}
 
-	containerwindowtype = {
-		name = "stateview_mapicons"
-		position = { x = 34 y = -25 }
-		size = { width = 85 height = 85 }
-		buttonType = {
-			name = "state_lore_mapicon"
-			spritetype = "GFX_SL_mapicon_button"
-			oversound = "ui_menu_over"
-		}
-	}
-
 	containerWindowType = {
 		name = "tension_animation_gui"
 		position = {
@@ -240,8 +229,57 @@ guiTypes = {
 			position = { x = 600 y = 430 }
 		}
 	}
-
-	
+#下方由所有有介绍state的id对应
+    containerwindowtype = {
+		name = "stateview_mapicons_2"
+		position = { x = 34 y = -25 }
+		size = { width = 85 height = 85 }
+		buttonType = {
+			name = "state_lore_mapicon_2"
+			spritetype = "GFX_state_lore_mapicon_pic_2"
+			oversound = "ui_menu_over"
+		}
+	}
+	containerwindowtype = {
+		name = "stateview_mapicons_4"
+		position = { x = 34 y = -25 }
+		size = { width = 85 height = 85 }
+		buttonType = {
+			name = "state_lore_mapicon_4"
+			spritetype = "GFX_state_lore_mapicon_pic_4"
+			oversound = "ui_menu_over"
+		}
+	}
+	containerwindowtype = {
+		name = "stateview_mapicons_16"
+		position = { x = 34 y = -25 }
+		size = { width = 85 height = 85 }
+		buttonType = {
+			name = "state_lore_mapicon_16"
+			spritetype = "GFX_state_lore_mapicon_pic_16"
+			oversound = "ui_menu_over"
+		}
+	}
+	containerwindowtype = {
+		name = "stateview_mapicons_64"
+		position = { x = 34 y = -25 }
+		size = { width = 85 height = 85 }
+		buttonType = {
+			name = "state_lore_mapicon_64"
+			spritetype = "GFX_state_lore_mapicon_pic_64"
+			oversound = "ui_menu_over"
+		}
+	}
+	containerwindowtype = {
+		name = "stateview_mapicons_126"
+		position = { x = 34 y = -25 }
+		size = { width = 85 height = 85 }
+		buttonType = {
+			name = "state_lore_mapicon_126"
+			spritetype = "GFX_state_lore_mapicon_pic_126"
+			oversound = "ui_menu_over"
+		}
+	}
 
     
 

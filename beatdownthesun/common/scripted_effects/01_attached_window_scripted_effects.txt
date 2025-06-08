@@ -14,7 +14,10 @@ leader_portraits_effect = {
 
 set_state_pic_view = {
 	set_variable = {
-		ROOT.view_entry = THIS.id
+		ROOT.view_entry = THIS.id	
+	}
+	set_variable = {
+	    ROOT.locking = THIS.id
 	}
 	for_each_loop = {
 		array = global.viewed_state
@@ -40,4 +43,48 @@ set_state_pic_view = {
 			}			
 		}
 	}
+}
+click_state_mapicon_effects = {
+	if = {
+				    limit = { 
+					    ROOT = {
+					        has_country_flag = stateview_opening
+						}
+						check_variable = { 
+					        THIS.id = ROOT.locking
+				        }
+					}
+					ROOT = {
+					    clr_country_flag = stateview_opening
+					    clear_variable = view_entry
+				        clear_variable = pic_num
+					}
+					
+				}
+				else = {
+				    ROOT = { set_country_flag = stateview_opening }
+				    set_state_pic_view = yes
+				}
+}
+state_button_right_click_effects = {
+	if = {
+					limit = {
+						ROOT = {
+							has_country_flag = stateview_mapicons_enabled
+						}
+					}
+					ROOT = {
+						clr_country_flag = stateview_mapicons_enabled
+					}
+				}
+				else = {
+					ROOT = {
+						set_country_flag = stateview_mapicons_enabled
+					}
+				}
+}
+close_btn_click_effects = {
+	clear_variable = view_entry
+				clear_variable = pic_num
+				clr_country_flag = stateview_opening
 }

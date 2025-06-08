@@ -28,9 +28,9 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "parliament_ring_progressbar_num"
-			position = { x = 129 y = 320 }
+			position = { x = 129 y = 321 }
 			font = "hoi_36header"
-			text = "[?parliament_ring_progressbar]"
+			text = "[?parliament_change_days]/50"
 			maxWidth = 400
 			maxHeight = 250
 			format = center

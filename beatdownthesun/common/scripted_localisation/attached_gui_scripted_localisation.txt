@@ -89,6 +89,7 @@ defined_text = {
 	}
 }
 
+
 defined_text = { 
 	name = GetStateCity
 	text = {

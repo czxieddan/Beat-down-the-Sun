@@ -102,5 +102,30 @@ spriteTypes = {
 		textureFile = "gfx/interface/cz_category_header_bg.dds"
 	}
 
+	spriteType = {
+		name = "GFX_state_lore_mapicon_pic_2"
+		textureFile = "gfx/attached_GUI/mapicon/2.png"
+	}
+
+	spriteType = {
+		name = "GFX_state_lore_mapicon_pic_4"
+		textureFile = "gfx/attached_GUI/mapicon/4.png"
+	}
+
+	spriteType = {
+		name = "GFX_state_lore_mapicon_pic_16"
+		textureFile = "gfx/attached_GUI/mapicon/16.png"
+	}
+
+	spriteType = {
+		name = "GFX_state_lore_mapicon_pic_64"
+		textureFile = "gfx/attached_GUI/mapicon/64.png"
+	}
+
+	spriteType = {
+		name = "GFX_state_lore_mapicon_pic_126"
+		textureFile = "gfx/attached_GUI/mapicon/126.png"
+	}
+
 
 }

@@ -113,7 +113,7 @@ set_country_flag = use_manpower_gen_lv3
 set_country_flag = use_manpower_gen_lv2
 set_country_flag = use_manpower_gen_lv1
 add_ideas = {
-    manpower_gen_lv6v
+    manpower_gen_lv6
 }
 
 #start_ideas

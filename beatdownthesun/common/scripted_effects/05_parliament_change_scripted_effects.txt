@@ -247,13 +247,23 @@ parliament_change_count = {
 		else = {
 			multiply_variable = { manpower_count_variable = 1 }
 		}
-		multiply_variable = { manpower_count_variable = 0.7 }
+		if = {
+			limit = { 
+				check_variable = {
+					pop_size > unpop_size
+				}
+				
+			}
+			subtract_from_variable = { manpower_count_variable = 7 }
+			multiply_variable = { manpower_count_variable = -1 }
+		}
+		else = {
+			multiply_variable = { manpower_count_variable = 1 }
+		}
 		set_variable = { pop_variable = pop_size }
 		subtract_from_variable = { pop_variable = unpop_size }
-		multiply_variable = { pop_variable = 0.6 }
-		multiply_variable = { pop_variable = manpower_count_variable }
-		set_variable = { manpower_count_variable = pop_variable }
-		
+		multiply_variable = { pop_variable = 0.2 }
+		multiply_variable = { manpower_count_variable = pop_variable }
 		add_to_variable = { manpower_count_variable = 50 }
 		if = { 
 		    limit = {
