@@ -1,46 +1,48 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			every_state = {
+				add_to_array = {
+					global.viewed_state_@THIS.id = THIS.id
+				}
+				add_to_array = {
+					global.viewed_state = THIS.id
+				}	
+			}					
+		}
+	}
+	on_startup = {
+		effect = {
 			2 = {
-				add_to_array = {
-					global.viewed_state_2 = THIS.id
-				}
-				add_to_array = {
-					global.viewed_state = THIS.id
-				}	
-			}
-			4 = {
-				add_to_array = {
-					global.viewed_state_4 = THIS.id
-				}
-				add_to_array = {
-					global.viewed_state = THIS.id
-				}	
-			}
-			16 = {
-				add_to_array = {
-					global.viewed_state_16 = THIS.id
-				}
-				add_to_array = {
-					global.viewed_state = THIS.id
-				}	
-			}
-			64 = {
-				add_to_array = {
-					global.viewed_state_64 = THIS.id
-				}
-				add_to_array = {
-					global.viewed_state = THIS.id
-				}	
-			}
-			126 = {
-				add_to_array = {
-					global.viewed_state_126 = THIS.id
-				}
-				add_to_array = {
-					global.viewed_state = THIS.id
-				}	
-			}			
+                add_to_array = {
+                    global.show_state = THIS.id
+                }    
+            }
+            4 = {
+                add_to_array = {
+                    global.show_state = THIS.id
+                }    
+            }
+            16 = {
+                add_to_array = {
+                    global.show_state = THIS.id
+                }    
+            }
+            64 = {
+                add_to_array = {
+                    global.show_state = THIS.id
+                }    
+            }
+            126 = {
+                add_to_array = {
+                    global.show_state = THIS.id
+                }    
+            }
+            282 = {
+                add_to_array = {
+                    global.show_state = THIS.id
+                }
+            }
 		}
 	}
 }

@@ -92,90 +92,61 @@ defined_text = {
 
 defined_text = { 
 	name = GetStateCity
-	text = {
-		trigger = {
-			check_variable = {
-				ROOT.pic_num = 1
-			}
-		}
-		localization_key = "City_View_1"
+	
+    text = {
+		localization_key = "City_View_[?ROOT.pic_num]"
 	}
-	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 2
-			}
-		}
-		localization_key = "City_View_2"
-	}
-	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 3
-			}
-		}
-		localization_key = "City_View_3"
-	}
-	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 4
-			}
-		}
-		localization_key = "City_View_4"
-	}
-	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 5
-			}
-		}
-		localization_key = "City_View_5"
-	}
-
 }
 
 defined_text = { 
 	name = GetStateCityDesc
 		
 	text = {
+		localization_key = "City_View_desc_[?ROOT.pic_num]"
+	}
+}
+
+defined_text = { 
+	name = GetStateViewCity
+	
+    text = {
+		localization_key = "City_View_[?THIS.id]"
+	}
+}
+
+defined_text = { 
+	name = open_button_click_tt
+		
+    text = {
 		trigger = {
-			check_variable = {
-				ROOT.pic_num = 1
-			}
+			ROOT = {
+					        has_country_flag = stateview_opening
+						}
+						check_variable = { 
+					        THIS.id = ROOT.locking
+				        }
 		}
-		localization_key = "City_View_desc_1"
+		localization_key = "buttonclose"
 	}
+
 	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 2
-			}
-		}
-		localization_key = "City_View_desc_2"
+		localization_key = "buttonopen"
 	}
-	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 3
-			}
+}
+
+defined_text = { 
+	name = open_button_right_click_tt
+		
+    text = {
+		trigger = {
+			ROOT = {
+							has_country_flag = stateview_mapicons_enabled
+						}
 		}
-		localization_key = "City_View_desc_3"
+		localization_key = "buttonclose"
 	}
+
 	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 4
-			}
-		}
-		localization_key = "City_View_desc_4"
-	}
-	text = {
-		trigger = { 
-			check_variable = {
-				ROOT.pic_num = 5
-			}
-		}
-		localization_key = "City_View_desc_5"
+		localization_key = "buttonopen"
 	}
 }

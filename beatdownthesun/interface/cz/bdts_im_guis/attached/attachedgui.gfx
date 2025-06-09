@@ -2,14 +2,14 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_state_view_bg"
 		size= { x=190 y=190 }
-		textureFile = "gfx/attached_GUI/tiled_techtree_bg.dds"
+		textureFile = "gfx/attached_GUI/tiled_techtree_bg.png"
 		borderSize = { x=30 y=30 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	spritetype = {
 		name = "GFX_SL_state_book_button"
-		texturefile = "gfx/attached_GUI/state_book_button.dds"
+		texturefile = "gfx/attached_GUI/state_book_button.png"
 	}
 	spritetype = {
 		name = "GFX_SL_title_underlay"
@@ -25,26 +25,6 @@ spriteTypes = {
 	}
 
 
-	spritetype = {
-		name = "GFX_state_lore_img_5"
-		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_1.dds"
-	}
-	spritetype = {
-		name = "GFX_state_lore_img_3"
-		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_10.dds"
-	}
-	spritetype = {
-		name = "GFX_state_lore_img_1"
-		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_25.dds"
-	}
-	spritetype = {
-		name = "GFX_state_lore_img_2"
-		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_39.dds"
-	}
-	spritetype = {
-		name = "GFX_state_lore_img_4"
-		texturefile = "gfx/attached_GUI/state_lore/images/state_lore_img_227.dds"
-	}
 
 
 	frameanimatedspritetype = {
@@ -102,6 +82,32 @@ spriteTypes = {
 		textureFile = "gfx/interface/cz_category_header_bg.dds"
 	}
 
+#介紹圖
+	spritetype = {
+		name = "GFX_state_lore_img_2"
+		texturefile = "gfx/attached_GUI/state_lore/images/2.png"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_4"
+		texturefile = "gfx/attached_GUI/state_lore/images/4.png"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_16"
+		texturefile = "gfx/attached_GUI/state_lore/images/16.png"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_64"
+		texturefile = "gfx/attached_GUI/state_lore/images/64.png"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_126"
+		texturefile = "gfx/attached_GUI/state_lore/images/126.png"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_282"
+		texturefile = "gfx/attached_GUI/state_lore/images/282.png"
+	}
+#圖標
 	spriteType = {
 		name = "GFX_state_lore_mapicon_pic_2"
 		textureFile = "gfx/attached_GUI/mapicon/2.png"
@@ -125,6 +131,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_state_lore_mapicon_pic_126"
 		textureFile = "gfx/attached_GUI/mapicon/126.png"
+	}
+
+	spriteType = {
+		name = "GFX_state_lore_mapicon_pic_282"
+		textureFile = "gfx/attached_GUI/mapicon/282.png"
 	}
 
 

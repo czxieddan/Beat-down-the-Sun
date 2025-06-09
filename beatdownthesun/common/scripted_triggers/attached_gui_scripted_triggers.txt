@@ -7,7 +7,7 @@ has_second_leader = {
 
 has_state_view = {
 	is_in_array = {
-		array = global.viewed_state
+		array = global.show_state
 		value = THIS.id
 	}	
 }

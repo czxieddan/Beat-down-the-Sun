@@ -220,6 +220,9 @@ scripted_gui = {
 			state_lore_mapicon_2_click = {
 			    click_state_mapicon_effects = yes
 			}
+			state_lore_mapicon_2_right_click = {
+			    state_button_right_click_effects = yes
+			}
 		}
 	}
 
@@ -236,6 +239,9 @@ scripted_gui = {
 		effects = {
 			state_lore_mapicon_4_click = {
 			    click_state_mapicon_effects = yes
+			}
+			state_lore_mapicon_4_right_click = {
+			    state_button_right_click_effects = yes
 			}
 		}
 	}
@@ -254,6 +260,9 @@ scripted_gui = {
 			state_lore_mapicon_16_click = {
 			    click_state_mapicon_effects = yes
 			}
+			state_lore_mapicon_16_right_click = {
+			    state_button_right_click_effects = yes
+			}
 		}
 	}
 
@@ -271,6 +280,9 @@ scripted_gui = {
 			state_lore_mapicon_64_click = {
 			    click_state_mapicon_effects = yes
 			}
+			state_lore_mapicon_64_right_click = {
+			    state_button_right_click_effects = yes
+			}
 		}
 	}
 
@@ -287,6 +299,29 @@ scripted_gui = {
 		effects = {
 			state_lore_mapicon_126_click = {
 			    click_state_mapicon_effects = yes
+			}
+			state_lore_mapicon_126_right_click = {
+			    state_button_right_click_effects = yes
+			}
+		}
+	}
+
+	stateview_mapicons_282 = {
+		window_name = "stateview_mapicons_282"
+		context_type = state_mapicon
+		mapmode = default
+		mapicon_targets = {
+			target_array = global.viewed_state_282
+		}
+		visible = { 
+			ROOT = { has_country_flag = stateview_mapicons_enabled } 
+		}
+		effects = {
+			state_lore_mapicon_282_click = {
+			    click_state_mapicon_effects = yes
+			}
+			state_lore_mapicon_282_right_click = {
+			    state_button_right_click_effects = yes
 			}
 		}
 	}
