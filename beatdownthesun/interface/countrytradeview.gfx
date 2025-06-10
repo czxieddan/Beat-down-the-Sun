@@ -70,7 +70,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_trade_resource_bg"
-		texturefile = "gfx/interface/trade_resource_bg.dds"
+		texturefile = "gfx/interface/cz_trade_resource_bg.png"
 	}
 
 	spriteType = {
@@ -87,7 +87,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_TRADE_resource_btn"
-		texturefile = "gfx/interface/resource_btn.dds"
+		texturefile = "gfx/interface/cz_resource_btn.png"
 		noOfFrames = 2
 	}
 

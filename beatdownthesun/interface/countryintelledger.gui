@@ -41,15 +41,7 @@ guiTypes = {
 			spriteType = "GFX_resources_strip"
 		}
 		
-		instantTextboxType = {
-			name = "amount"
-			position = { x = 82 y = 14 }
-			font = "hoi_18mbs"
-			maxWidth = 60
-			maxHeight = 18
-			format = left
-			text = "123-421"
-		}
+		
 		
 		iconType = {
 			name = "chart"
@@ -69,6 +61,15 @@ guiTypes = {
 			position = { x = 70 y = 35 }
 			spriteType = "GFX_traded_factories_icon"
 			scale = 0.45
+		}
+		instantTextboxType = {
+			name = "amount"
+			position = { x = 36 y = 25 }
+			font = "hoi_18mbs"
+			maxWidth = 60
+			maxHeight = 18
+			format = center
+			text = "123-421"
 		}
 	}
 	
@@ -462,11 +463,11 @@ guiTypes = {
 					}
 					gridBoxType = {
 						name = "resource_entries"
-						position = { x = -47 y = 5 }
+						position = { x = -48 y = 5 }
 						size = { width = 300 height = 60 }
 						format = "UPPER_LEFT"
-						slotsize = { width = 85 height = 30 }
-						max_slots_vertical = 6
+						slotsize = { width = 31 height = 30 }
+						max_slots_vertical = 16
 					}
 				}
 				
