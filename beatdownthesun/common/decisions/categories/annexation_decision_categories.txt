@@ -1,0 +1,8 @@
+annexation_decisions = {
+	icon = GFX_icon_decision_annexation
+	picture = GFX_picture_decision_annexation
+	priority = 10000
+
+	allowed = { always = no } 
+}
+
