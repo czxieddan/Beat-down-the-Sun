@@ -297,5 +297,84 @@ focus_tree = {
 	   
 	
 	}
+
+	focus = {
+		id = CCP_nuke_capital
+		icon = GFX_surrender_tiny_flag
+		cost = x
+		x = 10
+		y = 10
+		completion_reward = { 
+			#clear_array = ROOT.nuke_state
+			#clear_array = global.every_nuke_state
+			clear_variable = ROOT.nuke_state_id
+			#every_state = {
+			#	add_to_array = {
+			#		global.every_nuke_state = THIS.id
+			#	}	
+			#}
+			every_state = {
+				limit = {
+					is_capital = yes
+					is_owned_by = ROOT
+				}
+				#add_to_array = {
+				#	ROOT.nuke_state = THIS.id
+				#}
+				set_variable = {
+					ROOT.nuke_state_id = THIS.id
+				}
+			}
+			launch_nuke = {
+				state = ROOT.nuke_state_id
+				use_nuke = yes
+			}
+			#for_each_loop = {
+			#	array = ROOT.nuke_state
+			#	value = v
+			#	break = break
+			#	launch_nuke = {
+			#		state = v
+			#		use_nuke = yes
+			#	}
+			#	set_variable = {
+			#		ROOT.nuke_state_id = v
+			#	}
+			#}
+			#for_each_loop = {
+		   #     array = global.every_nuke_state
+		   #     value = v
+		     #   index = i
+		   #     break = b
+		   #     if = {
+			#        limit = {
+			#	        check_variable = { 
+			#		        v = ROOT.nuke_state_id
+			#	        }
+			  #      }
+			  #      ROOT = {
+			#	        set_variable = {
+				#	        ROOT.nuke_num = i
+				#        }
+			#	        add_to_variable = {
+				#	        ROOT.nuke_num = 1
+			#	        }
+			     #   }
+			       # set_temp_variable = {
+				       # b = 0
+			        #}			
+		        #}
+	        #}
+			#every_country = {
+				#goto_state = ROOT.nuke_num
+				#goto_state = ROOT.nuke_state_id
+			#}
+			var:ROOT.nuke_state_id = {
+				every_country = {
+					goto_state = PREV
+				}
+			}
+		}
+	}
 	
 }
