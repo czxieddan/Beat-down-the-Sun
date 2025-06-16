@@ -15,4 +15,8 @@ spriteTypes = {
 		name = "GFX_autonomy_AOM_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_AOM_icon.png"
 	}
+	spriteType = {
+		name = "GFX_autonomy_JPPCCP_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_JPPCCP_icon.png"
+	}
 }

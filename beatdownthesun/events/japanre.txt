@@ -52,7 +52,7 @@ country_event = {
 			
 		JPJ = { change_tag_from = JPN }	
 		
-        
+        set_global_flag = JPJ_JRCL_HAP
         
     }
     

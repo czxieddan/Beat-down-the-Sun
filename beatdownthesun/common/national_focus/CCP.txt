@@ -184,11 +184,26 @@ focus_tree = {
 		    }
 		}
 		completion_reward = {
-			set_autonomy = {
-	            target = JPN
-	            autonomy_state = autonomy_HOK
-            }
-		    JPN = {
+			if = {
+				limit = { 
+					has_global_flag = JPJ_JRCL_HAP
+					#has_global_flag = JPJ_JRCL_WIN
+			    }
+				set_autonomy = {
+	                target = JPJ
+	                autonomy_state = autonomy_JPPCCP
+                }
+			}
+			#else_if = {
+			#	limit = { has_global_flag = JPJ_JRCL_HAP }
+#
+		#	}
+			else = {
+				set_autonomy = {
+	                target = JPN
+	                autonomy_state = autonomy_JPPCCP
+                }
+				JPN = {
 				set_politics = {
 				ruling_party = Economic_Interventionism
 				elections_allowed = no
@@ -204,7 +219,10 @@ focus_tree = {
 			    }
 				set_variable = { current_int = 20 }
 			    change_parliament_seats = yes
+			    }
 			}
+			
+		    
 			every_state = {
 				limit = {
                     has_state_flag = is_state_of_JPN

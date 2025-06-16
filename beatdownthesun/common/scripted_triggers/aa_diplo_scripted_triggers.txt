@@ -23,7 +23,8 @@ is_diplomatic_action_valid_assume_faction_leadership = {
 }
 
 is_diplomatic_action_valid_declare_war = {
-    has_global_flag = use_bdts_free_wargoals
+    #has_global_flag = use_bdts_free_wargoals
+    always = yes
 }
 
 is_diplomatic_action_valid_generate_wargoal = {
