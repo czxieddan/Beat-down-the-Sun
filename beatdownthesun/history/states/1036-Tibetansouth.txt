@@ -2,7 +2,7 @@ state={
 	id=1036
 	name="STATE_1036"
 	provinces={
-		 10810 12730 1996
+		 10810 12730 1996 12322  
 	}
 	manpower=800000
 	history={

@@ -2,13 +2,13 @@ state={
 	id=1023
 	name="STATE_1023"
 	provinces={
-		4126 11977 
+		4126   10085
 	}
 	manpower=1768491
 	
 	history={
 		owner = ROK
-		victory_points = { 11977 1 }
+		
 		
 		add_core_of = ROK
 		buildings = {

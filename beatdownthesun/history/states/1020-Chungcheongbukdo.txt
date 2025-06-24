@@ -2,14 +2,14 @@ state={
 	id=1020
 	name="STATE_1020"
 	provinces={
-		 1100 9936 10115 
+		 1100 11977
 	}
 	manpower=1641481
 	
 	history={
 		owner = ROK
 		#victory_points = { 3838 1 }
-		
+		victory_points = { 11977 1 }
 		add_core_of = ROK
 		buildings = {
 			infrastructure = 4

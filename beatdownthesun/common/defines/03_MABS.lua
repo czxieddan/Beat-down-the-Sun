@@ -1,0 +1,3 @@
+
+NDefines_Graphics.NFrontend.CAMERA_MAX_HEIGHT = 3300.0
+NDefines.NGraphics.MINIMUM_PROVINCE_SIZE_IN_PIXELS = 1
