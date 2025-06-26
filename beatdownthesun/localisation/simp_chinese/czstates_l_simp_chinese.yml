@@ -10,6 +10,7 @@
  STATE_1023: "全北特别自治道"
  STATE_1024: "全罗南道"
  STATE_1025: "济州特别自治道"
+ VICTORY_POINTS_1177: "济州岛"
  STATE_1040: "釜山广域市"
  STATE_1041: "大邱广域市"
  STATE_1042: "蔚山广域市"
@@ -32,11 +33,17 @@
  DMD_STATE_1039: "朝鲜非军事区"
  STATE_1038: "北岸"
  STATE_1039: "南岸"
+ #CCP
+ STATE_1047: "东海"
+ VICTORY_POINTS_13390: "钓鱼岛"
  #CCP IND
  STATE_1035: "东克什米尔"
  CCP_STATE_1035: "喀喇昆仑走廊"
  STATE_1036: "阿萨姆邦"
  CCP_STATE_1036: "藏南地区"
+ #CHI
+ STATE_1048: "金门县"
+ VICTORY_POINTS_13394: "金门岛"
  #VAT
  STATE_1037: "梵蒂冈城"
 #vp_ROK

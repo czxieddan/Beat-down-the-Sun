@@ -9,7 +9,8 @@ state= {
 	state_category = rural
 
 	history= {
-		owner = JPN
+		owner = ZZZ # = SOV
+		add_core_of = SOV
 		add_core_of = JPN
 		
 		buildings = {

@@ -1,0 +1,89 @@
+set_research_slots = 0
+set_politics = {
+	ruling_party = Environmental_Determinism
+	last_election = "2025.1.1"
+	#election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Environmental_Determinism = 100
+}
+set_country_flag = not_show_in_faction
+
+#game_start_vars_setting
+add_to_variable = { current_int = 32 }
+on_game_start_effects = yes
+
+#content_tag
+set_country_flag = tag_with_content
+
+#INDEVELOPMENT
+for_each_loop = {
+	array = global.countries
+	value = v
+	add_to_array = {
+		global.tag_not_with_content = v
+	}
+}
+every_country = {
+	limit = {
+		has_country_flag = tag_with_content
+	}
+	remove_from_array = {
+		array = global.tag_not_with_content
+		value = THIS
+	}
+}
+for_each_loop = {
+	array = global.tag_not_with_content
+	value = v
+	#every_state = {
+		#limit = {
+			#is_controlled_by = v
+			#is_controlled_by = ZZZ
+			#NOT = {
+			#	is_in_array = {
+			#		array = global.state_owner_without_content
+			#		value = THIS.id
+			#	}
+			#}
+		#}
+		#add_to_array = {
+		#	global.state_owner_without_content = THIS.id
+		#}
+		#set_state_flag = ZZZ_get
+	#}
+	every_state = {
+		limit = {
+			is_controlled_by = ZZZ
+			is_core_of = v
+			NOT = {
+				is_core_of = ZZZ
+			}
+		}
+		remove_core_of = v
+		add_core_of = ZZZ
+	}
+}
+#for_each_loop = {
+	#array = global.state_owner_without_content
+	#value = v
+	#every_country = {
+	#	limit = {
+	#		is_in_array = {
+	#			array = global.tag_not_with_content
+	#			value = THIS
+	#		}
+	#	}
+	#	remove_state_core = v
+	#}
+	#ZZZ = {
+	#	add_state_core = v
+	#}
+#}
+#every_state = {
+	#limit = {
+	#	has_state_flag = ZZZ_get
+	#}
+	#transfer_state_to = ZZZ
+#}

@@ -21,5 +21,12 @@ on_actions = {
 		}	
 	}
 	
-    
+    on_startup = {
+		effect = {
+			#every_state = {
+	        #    limit = { has_state_flag = ZZZ_get }
+	        #    transfer_state_to = ZZZ
+            #}
+		}
+	}
 }

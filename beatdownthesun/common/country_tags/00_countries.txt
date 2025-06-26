@@ -354,3 +354,7 @@ DMD = "countries/DPKDMZ.txt"
 SEJ = "countries/Sejong.txt"
 HOK = "countries/HongKong.txt"
 AOM = "countries/Aomen.txt"
+
+#indevelopment
+
+ZZZ = "countries/ZZZindevelopment.txt"

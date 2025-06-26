@@ -51,3 +51,6 @@ recruit_character = SEJ_sej2
 #game_start_vars_setting
 add_to_variable = { current_int = 32 }
 on_game_start_effects = yes
+
+#content_tag
+set_country_flag = tag_with_contentv

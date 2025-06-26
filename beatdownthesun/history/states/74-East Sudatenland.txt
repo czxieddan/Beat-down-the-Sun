@@ -7,7 +7,7 @@ state = {
 	
 	history = {
 		
-		owner = CZE
+		owner = ZZZ # = CZE
 		add_core_of = CZE
 
 		buildings = {
@@ -24,8 +24,8 @@ state = {
 		}
 
 		1938.9.30 = {
-			owner = GER
-			controller = GER
+			owner = ZZZ # = GER
+			#controller = GER
 			add_core_of = GER
 		}
 	}

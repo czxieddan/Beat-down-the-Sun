@@ -5,7 +5,7 @@ state={
 	state_category=town
 
 	history={
-		owner = ENG
+		owner = ZZZ # = ENG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

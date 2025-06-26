@@ -7,16 +7,16 @@ state = {
 
 	history = {
 
-		owner = BEL
+		owner = ZZZ # = BEL
 
 		IF = {
 			limit = {
 				has_dlc = "Gotterdammerung"
 			}
-			transfer_state_to = COG
-			add_dynamic_modifier = {
-				modifier = COG_burundian_separatism_modifier
-			}	
+			#transfer_state_to = COG
+			#add_dynamic_modifier = {
+				#modifier = COG_burundian_separatism_modifier
+			#}	
 		}
 		
 		add_core_of = BRD

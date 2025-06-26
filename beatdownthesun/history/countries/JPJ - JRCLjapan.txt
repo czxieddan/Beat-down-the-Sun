@@ -126,3 +126,6 @@ recruit_character = JPJ_JRCL2
 #game_start_vars_setting
 add_to_variable = { current_int = 59 }
 on_game_start_effects = yes
+
+#content_tag
+set_country_flag = tag_with_content

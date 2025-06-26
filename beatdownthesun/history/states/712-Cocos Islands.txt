@@ -6,7 +6,7 @@ state={
 	
 	history=
 	{
-		owner = ENG
+		owner = ZZZ # = ENG
 		buildings = {
 			infrastructure = 2
 			13002 = {
