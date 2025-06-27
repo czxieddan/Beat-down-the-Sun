@@ -57,7 +57,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12265;4252;sea;5868;-1;-1;-1;-1;;Choiseul-Santa Isabel
 4252;1085;sea;5868;-1;-1;-1;-1;;Santa Isabel-Malaita
 1085;10291;sea;5868;-1;-1;-1;-1;;Malaita-Guadalcanal
-1742;7868;sea;2510;-1;-1;-1;-1;;Sakhalin-Siberia
 12661;7884;sea;8538;-1;-1;-1;-1;;Kodiak-Alaska
 9952;1117;sea;2658;-1;-1;-1;-1;;Niigata-Sado
 4198;12032;sea;8472;-1;-1;-1;-1;;Kanoya-Yokushima
