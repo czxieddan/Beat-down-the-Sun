@@ -9,6 +9,7 @@ state={
 		owner = AOM
 		add_core_of = AOM
 		add_core_of = CCP
+		add_core_of = CHI
 		victory_points = {
 			4189 1 
 		}

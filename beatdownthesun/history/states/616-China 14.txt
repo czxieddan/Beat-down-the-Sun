@@ -6,8 +6,11 @@ state = {
 
 		owner = CCP
 		add_core_of = CCP
+		add_core_of = CHI
 		add_core_of = CCP
+		add_core_of = CHI
 		add_core_of = CCP
+		add_core_of = CHI
 
 		buildings = {
 			infrastructure = 1

@@ -18,6 +18,7 @@ state={
 		add_core_of = KAS
 		add_core_of = KHL 
 		#add_core_of = CCP
+		add_core_of = CHI
 		1949.1.1 = {
 			
 			

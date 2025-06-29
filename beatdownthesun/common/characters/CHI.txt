@@ -1,0 +1,37 @@
+characters = {
+	CHI_lai_qingde = {
+		name = CHI_lai_qingde
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_lai_qingde
+			}
+		}
+		country_leader = {
+			ideology = chidemocraticprogressive
+			traits = { 
+				chi_flexible_taiwan_separatist
+		    }
+			expire = "2040.1.1.1"
+
+		}
+        
+	}
+	CHI_lai_qingde1 = {
+		name = CHI_lai_qingde
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CHI_lai_qingde
+			}
+		}
+		country_leader = {
+			ideology = chidemocraticprogressive
+			traits = { 
+				chi_flexible_taiwan_separatist
+		    }
+			expire = "2040.1.1.1"
+
+		}
+        
+	}
+	
+}

@@ -263,6 +263,28 @@ scripted_gui = {
 			change_manpower_level1_button_visible = {
 				change_manpower_level1_button_visible = yes
 			}
+			#ENABLE
+			change_manpower_level7_button_click_enabled = {
+				change_manpower_level7_button_click_enabled = yes
+			}
+			change_manpower_level6_button_click_enabled = {
+				change_manpower_level6_button_click_enabled = yes
+			}
+			change_manpower_level5_button_click_enabled = {
+				change_manpower_level5_button_click_enabled = yes
+			}
+			change_manpower_level4_button_click_enabled = {
+				change_manpower_level4_button_click_enabled= yes
+			}
+			change_manpower_level3_button_click_enabled = {
+				change_manpower_level3_button_click_enabled = yes
+			}
+			change_manpower_level2_button_click_enabled = {
+				change_manpower_level2_button_click_enabled = yes
+			}
+			change_manpower_level1_button_click_enabled = {
+				change_manpower_level1_button_click_enabled = yes
+			}
 		}
 	}
 	

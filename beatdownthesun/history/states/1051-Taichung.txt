@@ -6,9 +6,10 @@ state={
 	}
 	manpower=1
 	history={
-		owner = ZZZ # = CHI
+		owner = CHI
 		add_core_of = CHI
 		add_core_of = CCP
+		add_core_of = CHI
 		victory_points = {
 			11959 10
 		}

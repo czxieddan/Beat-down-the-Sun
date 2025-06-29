@@ -13,6 +13,7 @@ state={
 		owner = ZZZ # = RAJ
 		add_core_of = RAJ
 		#add_core_of = CCP
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 1
 		}

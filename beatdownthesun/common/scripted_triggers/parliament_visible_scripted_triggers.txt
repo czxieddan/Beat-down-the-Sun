@@ -55,3 +55,102 @@ change_manpower_level1_button_visible = {
 		}
 	}
 }
+    #enable
+change_manpower_level7_button_click_enabled = {
+	ROOT = {
+		NOT = {
+			OR = {
+				has_idea = manpower_gen_lv7
+				has_idea = manpower_DPKggbond_lv7
+			}
+		}
+		if = {
+			limit = { has_country_flag = parliament_changing }
+			has_country_flag = change_manpower_to_lv7
+		}
+	}
+}
+change_manpower_level6_button_click_enabled = {
+	ROOT = {
+		NOT = {
+			OR = {
+				has_idea = manpower_gen_lv6
+				has_idea = manpower_DPKggbond_lv6
+			}
+		}
+		if = {
+			limit = { has_country_flag = parliament_changing }
+			has_country_flag = change_manpower_to_lv6
+		}
+	}
+}
+change_manpower_level5_button_click_enabled = {
+	ROOT = {
+		NOT = {
+			OR = {
+				has_idea = manpower_gen_lv5
+				has_idea = manpower_DPKggbond_lv5
+			}
+		}
+		if = {
+			limit = { has_country_flag = parliament_changing }
+			has_country_flag = change_manpower_to_lv5
+		}
+	}
+}
+change_manpower_level4_button_click_enabled = {
+	ROOT = {
+		NOT = {
+			OR = {
+				has_idea = manpower_gen_lv4
+				has_idea = manpower_DPKggbond_lv4
+			}
+		}
+		if = {
+			limit = { has_country_flag = parliament_changing }
+			has_country_flag = change_manpower_to_lv4
+		}
+	}
+}
+change_manpower_level3_button_click_enabled = {
+	ROOT = {
+		NOT = {
+			OR = {
+				has_idea = manpower_gen_lv3
+				has_idea = manpower_DPKggbond_lv3
+			}
+		}
+		if = {
+			limit = { has_country_flag = parliament_changing }
+			has_country_flag = change_manpower_to_lv3
+		}
+	}
+}
+change_manpower_level2_button_click_enabled = {
+	ROOT = {
+		NOT = {
+			OR = {
+				has_idea = manpower_gen_lv2
+				has_idea = manpower_DPKggbond_lv2
+			}
+		}
+		if = {
+		    limit = { has_country_flag = parliament_changing }
+		    has_country_flag = change_manpower_to_lv2
+	    }
+	}
+}
+change_manpower_level1_button_click_enabled = {
+	ROOT = {
+		NOT = {
+			OR = {
+				has_idea = manpower_gen_lv1
+				has_idea = manpower_DPKggbond_lv1
+			}
+		}
+		if = {
+		    limit = { has_country_flag = parliament_changing }
+		    has_country_flag = change_manpower_to_lv1
+	    }
+	}
+}
