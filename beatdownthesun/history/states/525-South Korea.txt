@@ -17,7 +17,8 @@ state={
 			synthetic_refinery = 1
 		}
 		add_core_of = ROK
-		
+		add_core_of = DPK
+		add_core_of = DPK
 	}
 
 	provinces={

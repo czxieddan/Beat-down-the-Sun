@@ -12,6 +12,7 @@ state={
 		victory_points = { 7221 5 }
 		
 		add_core_of = ROK
+		add_core_of = DPK
 		buildings = {
 			infrastructure = 5
 			arms_factory = 3

@@ -8,6 +8,7 @@ state={
 		owner = DPK
 		add_core_of = ROK
 		add_core_of = DPK
+		add_core_of = DPK
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

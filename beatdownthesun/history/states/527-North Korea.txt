@@ -5,6 +5,7 @@ state={
 		owner = DPK
 		add_core_of = ROK
 		add_core_of = DPK
+		add_core_of = DPK
 		victory_points = {
 			10065 50 # Kagoshima
 		}

@@ -8,6 +8,7 @@ state={
 	history={
 		owner = ROK
 		add_core_of = ROK
+		add_core_of = DPK
 		victory_points = { 4056 20 }
 		buildings = {
 		    4056 = {

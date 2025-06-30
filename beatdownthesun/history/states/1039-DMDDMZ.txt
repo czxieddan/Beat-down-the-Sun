@@ -9,6 +9,7 @@ state={
 		owner = DMD
 		add_core_of = DMD
 		add_core_of = DPK
+		add_core_of = ROK
 		victory_points = { 13385 20 }
 	}
 	buildings_max_level_factor=1.000

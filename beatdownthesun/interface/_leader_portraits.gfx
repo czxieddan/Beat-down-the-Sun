@@ -8958,4 +8958,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/HOK/HOK_leekachiu_john.png"
 	}
 
+	#CHI
+	spriteType = {
+		name = GFX_portrait_CHI_lai_qingde
+		textureFile = "gfx/leaders/CHI/CHI_lai_qingde.png"
+	}
+
 }

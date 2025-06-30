@@ -10,6 +10,7 @@ characters = {
 			ideology = chidemocraticprogressive
 			traits = { 
 				chi_flexible_taiwan_separatist
+				chi_pragmatic_taiwan_independence_workers
 		    }
 			expire = "2040.1.1.1"
 
@@ -27,6 +28,7 @@ characters = {
 			ideology = chidemocraticprogressive
 			traits = { 
 				chi_flexible_taiwan_separatist
+				chi_pragmatic_taiwan_independence_workers
 		    }
 			expire = "2040.1.1.1"
 

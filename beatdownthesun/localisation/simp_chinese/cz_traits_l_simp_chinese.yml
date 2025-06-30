@@ -36,5 +36,6 @@
  AOM_CE: "行政长官"
  lagalist_Sam: "法治者"
  #CHI
- chi_flexible_taiwan_separatist: "柔性台独主义者"
- chi_flexible_taiwan_separatist_tooltip: "  - 该领导人的柔性台独主义政策推进会使得我们\n    与§Y[CCP.GetFlag][CCP.GetAdjective]§!之间关系变得愈发紧张\n      - （§Y[CCP.GetFlag][CCP.GetAdjective]§!）对我国评价: §R大幅降低§!\n    国内的§t统一派系§!也会与我们挑起矛盾\n    错误的决策也极易引爆我们与§3民众§!间的火药桶\n    §R我们可能会因此与§Y[CCP.GetFlag][CCP.GetAdjective]§!之间爆发战争§!"
+ chi_flexible_taiwan_separatist: "柔性台独主义"
+ chi_flexible_taiwan_separatist_tooltip: "  - 该领导人的柔性台独主义政策推进会使得我们\n    与§Y[CCP.GetFlag][CCP.GetAdjective]§!之间关系变得愈发紧张\n      - （§Y[CCP.GetFlag][CCP.GetAdjective]§!）对我国评价: §R大幅降低§!\n    国内的§t统一派系§!也会与我们挑起矛盾\n    错误的决策也极易引爆我们与§3民众§!间的火药桶\n    §R我们可能会因此与§Y[CCP.GetFlag][CCP.GetAdjective]§!爆发战争§!"
+ chi_pragmatic_taiwan_independence_workers: "务实的工作者"
