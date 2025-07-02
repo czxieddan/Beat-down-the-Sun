@@ -2,7 +2,7 @@ state={
 	id=1030
 	name="STATE_1030"
 	provinces={
-		912 9918 11835 
+		912 3912 9918 11835 13413
 	}
 	manpower=1
 	history={
@@ -10,6 +10,9 @@ state={
 		add_core_of = ROK
 		add_core_of = DPK
 		add_core_of = DPK
+		victory_points = {
+			13413 20
+		}
 	}
 	buildings_max_level_factor=1.000
 	state_category=town

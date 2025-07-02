@@ -319,7 +319,7 @@ focus_tree = {
 	focus = {
 		id = CCP_nuke_capital
 		icon = GFX_surrender_tiny_flag
-		cost = x
+		cost = 0
 		x = 10
 		y = 10
 		completion_reward = { 
@@ -396,4 +396,9 @@ focus_tree = {
 	}
 
 	
+
+	
 }
+
+	
+

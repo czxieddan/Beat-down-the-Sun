@@ -7,11 +7,11 @@ state={
 		add_core_of = DPK
 		add_core_of = DPK
 		victory_points = {
-			10065 50 # Kagoshima
+			4052 50 # Kagoshima
 		}
 	}
 	provinces={
-		10065
+		4052
 	}
 	manpower=6774200
 	buildings_max_level_factor=1.000

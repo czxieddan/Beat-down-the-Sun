@@ -2,7 +2,7 @@ state={
 	id=1033
 	name="STATE_1033"
 	provinces={
-		898 959 6822 6944 
+		898 959 3860 6822 6944 11878
 	}
 	manpower=1
 	history={

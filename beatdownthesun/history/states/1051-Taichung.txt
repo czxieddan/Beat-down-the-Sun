@@ -11,7 +11,7 @@ state={
 		add_core_of = CCP
 		add_core_of = CHI
 		victory_points = {
-			11959 10
+			12027 10
 		}
 	}
 	buildings_max_level_factor=1.000
