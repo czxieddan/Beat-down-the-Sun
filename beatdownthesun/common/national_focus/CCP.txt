@@ -25,17 +25,150 @@ focus_tree = {
 		
 		available = {
 	
-			custom_trigger_tooltip = {
-				tooltip = JPN_power_of_god_chingyu_rest_trigger_tooltip
-					always = yes
-				}
+			
 				
 				is_ai = no
 				
 			
 		}
 		completion_reward = {
-			
+			JPN = {
+				set_cosmetic_tag = JPN_tgwflag
+			}
+			set_victory_points = {
+				province = 7072
+				value = 20
+			}
+			set_victory_points = {
+				province = 1092
+				value = 25
+			}
+		    AVE = {
+				transfer_state = 529
+				transfer_state = 531
+				transfer_state = 647
+				transfer_state = 684
+				set_capital = {state = 529}
+		    }
+			set_victory_points = {
+				province = 1182
+				value = 25
+			}
+			set_victory_points = {
+				province = 9998
+				value = 20
+			}
+			MGO = {
+				transfer_state = 282
+				set_capital = {state = 282}
+			}
+			set_victory_points = {
+				province = 10125
+				value = 25
+			}
+			JPJ = {
+				transfer_state = 532
+				transfer_state = 534
+				transfer_state = 535
+				set_capital = {state = 532}
+			}
+			set_victory_points = {
+				province = 9950
+				value = 25
+			}
+			FIB = {
+				transfer_state = 528
+				transfer_state = 526
+				set_capital = {state = 530}
+			}
+			every_state = {
+				limit = {
+					is_core_of = JPN
+				}
+				remove_core_of = JPN
+			}
+			set_victory_points = {
+				province = 4179
+				value = 30
+			}
+			set_victory_points = {
+				province = 10444
+				value = 25
+			}
+			JPN = {
+				set_capital = {
+					state = 530
+				}
+			}
+			set_victory_points = {
+				province = 7169
+				value = 25
+			}
+			JPY = {
+				transfer_state = 533
+				set_capital = {state = 533}
+			}
+
+			JPJ = { 
+			    declare_war_on = {
+				    target = JPN
+				    type = civil_war
+			    }
+		        add_civil_war_target = JPN
+	        }
+			JPY = { 
+			    declare_war_on = {
+				    target = JPN
+				    type = civil_war
+			    }
+		        add_civil_war_target = JPN
+	        }
+			JPN = { 
+			    declare_war_on = {
+				    target = AVE
+				    type = civil_war
+			    }
+		        add_civil_war_target = AVE
+	        }
+			JPY = {
+				declare_war_on = {
+				    target = JPN
+				    type = civil_war
+			    }
+		        add_civil_war_target = JPN
+				declare_war_on = {
+				    target = JPJ
+				    type = civil_war
+			    }
+		        add_civil_war_target = JPJ
+			}
+			FIB = { 
+			    declare_war_on = {
+				    target = JPN
+				    type = civil_war
+			    }
+		        add_civil_war_target = JPN
+				declare_war_on = {
+				    target = JPJ
+				    type = civil_war
+			    }
+		        add_civil_war_target = JPJ
+				declare_war_on = {
+				    target = JPY
+				    type = civil_war
+			    }
+		        add_civil_war_target = JPY
+				declare_war_on = {
+				    target = AVE
+				    type = civil_war
+			    }
+		        add_civil_war_target = AVE
+				declare_war_on = {
+				    target = MGO
+				    type = civil_war
+			    }
+		        add_civil_war_target = MGO
+	        }
 		}
 		
 	

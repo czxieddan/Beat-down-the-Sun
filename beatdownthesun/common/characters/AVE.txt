@@ -1,0 +1,38 @@
+characters = {
+	AVE_sakiko_togawa = {
+		name = AVE_sakiko_togawa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AVE_sakiko_togawa
+			}
+		}
+		country_leader = {
+			ideology = avemujica
+			traits = { 
+				
+		 }
+			expire = "2075.4.21.1"
+
+		}
+        
+	}
+	AVE_sakiko_togawa2 = {
+		name = AVE_sakiko_togawa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AVE_sakiko_togawa
+			}
+		}
+		country_leader = {
+			ideology = avemujica
+			traits = { 
+				
+		 }
+			expire = "2075.4.21.1"
+
+		}
+        
+	}
+
+	
+}

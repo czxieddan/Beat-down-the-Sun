@@ -354,6 +354,10 @@ DMD = "countries/DPKDMZ.txt"
 SEJ = "countries/Sejong.txt"
 HOK = "countries/HongKong.txt"
 AOM = "countries/Aomen.txt"
+AVE = "countries/Ave Mujica.txt"
+JPY = "countries/Japan YRA.txt"
+MGO = "countries/MyGO.txt"
+FIB = "countries/Pure Land of Freedom.txt"
 
 #indevelopment
 

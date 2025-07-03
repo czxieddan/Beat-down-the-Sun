@@ -109,6 +109,8 @@ ideologies = {
 
 			catholicism = {}
 
+			avemujica={}
+
 			othercm = {
 			}
 		}
@@ -258,6 +260,9 @@ ideologies = {
 			}
 			
 			chidemocraticprogressive = {
+			}
+
+			tgwgroup = {
 			}
 
 			

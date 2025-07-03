@@ -1157,6 +1157,22 @@ VAT = {
 	color = rgb { 246 239 42 }
 	color_ui = rgb {  246 239 42 }	
 }
+AVE = {
+	color = rgb { 136 17 68 }
+	color_ui = rgb {  136 17 68 }	
+}
+MGO = {
+	color = rgb { 51 136 187 }
+	color_ui = rgb {  51 136 187 }	
+}
+FIB = {
+	color = rgb { 36 78 183 }
+	color_ui = rgb {  36 78 183 }	
+}
+JPY = {
+	color = rgb { 266 22 22 }
+	color_ui = rgb {  266 22 22 }	
+}
 ZZZ = {
     color = rgb { 255 160 220 }
 	color_ui = rgb { 255 160 220 }

@@ -8929,6 +8929,18 @@ spriteTypes = {
 		texturefile = "gfx/leaders/JPN/JPN_JRCL.png"
 	}
 
+	#AVE
+	spriteType = {
+		name = GFX_portrait_AVE_sakiko_togawa
+		textureFile = "gfx/leaders/AVE/AVE_sakiko_togawa.png"
+	}
+
+	#JPY
+	spriteType = {
+		name = GFX_portrait_JPY_YRA
+		textureFile = "gfx/leaders/JPY/JPY_YRA.png"
+	}
+
 	#CCP
 	spriteType = {
 		name = GFX_portrait_CCP_xijinping
