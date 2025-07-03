@@ -31,18 +31,11 @@ focus_tree = {
 				}
 				
 				is_ai = no
+				
 			
 		}
 		completion_reward = {
 			
-			custom_effect_tooltip = JPN_power_of_god_chingyu_text
-			hidden_effect = {
-				play_song = "SPEVNT_JPN_sun_war_chingyu_s_music"
-				set_global_flag = JPN_sun_war_chingyu_s
-			    set_global_flag = Super_Event_Visible
-				
-				
-			}
 		}
 		
 	
@@ -395,7 +388,210 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = CCP_1
+		icon = GFX_surrender_tiny_flag
+		cost = 0
+		x = 15
+		y = 10
+		available = {
+			always = no
+		}
+		completion_reward = {
+			every_state = {
+				if = {
+				    limit = { 
+					    any_province_building_level = {
+						    building = bunker
+						    level > 9
+						    province = {
+							    all_provinces = yes
+						    	limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 9
+				        province = {
+					        all_provinces = yes
+					        level > 9
+				        }
+			        }    
+			    }
+				else_if = {
+				    limit = { 
+				    	any_province_building_level = {
+					    	building = bunker
+						    level > 8
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 8
+				        province = {
+					        all_provinces = yes
+					        level > 8
+				        }
+		            }
+			    }
+				else_if = {
+				    limit = { 
+				    	any_province_building_level = {
+					    	building = bunker
+						    level > 7
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 7
+				        province = {
+					        all_provinces = yes
+					        level > 7
+				        }
+		            }
+			    }
+				else_if = {
+				    limit = { 
+				    	any_province_building_level = {
+					    	building = bunker
+						    level > 6
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 6
+				        province = {
+					        all_provinces = yes
+					        level > 6
+				        }
+		            }
+			    }
+				else_if = {
+				    limit = { 
+				    	any_province_building_level = {
+					    	building = bunker
+						    level > 5
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 5
+				        province = {
+					        all_provinces = yes
+					        level > 5
+				        }
+		            }
+			    }
+				else_if = {
+				    limit = { 
+				    	any_province_building_level = {
+					    	building = bunker
+						    level > 4
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 4
+				        province = {
+					        all_provinces = yes
+					        level > 4
+				        }
+		            }
+			    }
+				else_if = {
+				    limit = { 
+				    	any_province_building_level = {
+					    	building = bunker
+						    level > 3
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 3
+				        province = {
+					        all_provinces = yes
+					        level > 3
+				        }
+		            }
+			    }
+			    else_if = {
+				    limit = { 
+				    	any_province_building_level = {
+					    	building = bunker
+						    level > 2
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 2
+				        province = {
+					        all_provinces = yes
+					        level > 2
+				        }
+		            }
+			    }
+			    else_if = {
+				    limit = { 
+					    any_province_building_level = {
+						    building = bunker
+						    level > 1
+						    province = {
+							    all_provinces = yes
+							    limit_to_border = no
+						    }
+					    }
+				    }
+				    set_building_level = {
+				        type = bunker
+				        level = 1
+				        province = {
+					        all_provinces = yes
+					        level > 1
+				       }
+			        }
+			    }
+			    else = {
+				    set_building_level = {
+				        type = bunker
+				        level = 0
+				        province = {
+					        all_provinces = yes
+					        level > 0
+				        }
+			        }
+			    }
+			}
+		}
+	}
 
 	
 }
