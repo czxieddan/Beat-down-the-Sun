@@ -8929,6 +8929,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/JPN/JPN_JRCL.png"
 	}
 
+	spriteType = {
+		name = GFX_portrait_JPN_togawa_sadaharu
+		texturefile = "gfx/leaders/JPN/JPN_togawa_sadaharu.png"
+	}
+
 	#AVE
 	spriteType = {
 		name = GFX_portrait_AVE_sakiko_togawa

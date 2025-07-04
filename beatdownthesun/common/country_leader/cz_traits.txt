@@ -307,6 +307,42 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	tgw_plutocracy = {
+		random = no
+		local_building_slots_factor = 0.2
+		faction_trade_opinion_factor = 0.2
+		consumer_goods_factor = 0.2
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	tgw_controller = {
+		random = no
+		targeted_modifier = {
+			tag = AVE
+			cic_to_target_factor = 0.05
+			defense_bonus_against = -0.5
+		}
+		targeted_modifier = {
+			tag = MGO
+			attack_bonus_against = 0.3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	saki_kami = {
+		random = no
+		drift_defence_factor = 0.5
+		stability_factor = 0.5
+		war_support_factor = 0.5
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	vat_papa = {
 		random = no
@@ -394,4 +430,6 @@ leader_traits = {
 		}
 		
 	}
+
+
 }

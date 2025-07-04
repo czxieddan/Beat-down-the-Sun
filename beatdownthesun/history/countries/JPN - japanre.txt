@@ -137,6 +137,7 @@ recruit_character = JPN_ishiba_shigeru2
 recruit_character = JPN_ishiba_shigeru3
 recruit_character = JPN_nipponkaigi
 recruit_character = JPN_nipponkaigi2
+recruit_character = JPN_togawa_sadaharu
 
 #game_start_vars_setting
 add_to_variable = { current_int = 31 }

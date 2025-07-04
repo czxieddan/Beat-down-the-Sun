@@ -25,11 +25,12 @@ focus_tree = {
 		y = 0
 		#relative_position_id = 
 		available = {	
-		JPN = {
-			all_core_state = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-		}
+			NOT = {
+				any_state = {
+					has_state_flag = is_state_of_JPN	
+					is_controlled_by_ROOT_or_ally = no
+				}
+		    }
 		
 		
 			

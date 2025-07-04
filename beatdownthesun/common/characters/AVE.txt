@@ -9,7 +9,7 @@ characters = {
 		country_leader = {
 			ideology = avemujica
 			traits = { 
-				
+				saki_kami
 		 }
 			expire = "2075.4.21.1"
 

@@ -250,5 +250,21 @@ characters = {
 		}
 	}
 
+	JPN_togawa_sadaharu = {
+		name = JPN_togawa_sadaharu
+		portraits = {
+		    civilian = {
+				large = GFX_portrait_JPN_togawa_sadaharu
+			}
+		}
+		country_leader = {
+			ideology = tgwgroup
+			traits = {
+				tgw_plutocracy
+				tgw_controller
+			}
+		}
+	}
+
 	
 }

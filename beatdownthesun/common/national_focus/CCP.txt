@@ -34,6 +34,19 @@ focus_tree = {
 		completion_reward = {
 			JPN = {
 				set_cosmetic_tag = JPN_tgwflag
+				promote_character = { 
+					character = JPN_togawa_sadaharu
+					#chingyu
+					ideology = Market_Capitalism
+				}
+				set_politics = {
+				    ruling_party = Market_Capitalism
+				    elections_allowed = no
+				    last_election = [GetDateText]
+				    #election_frequency = 48
+				    long_name = JPN_togawa_party_long
+				    name = JPN_togawa_party
+			    }
 			}
 			set_victory_points = {
 				province = 7072
@@ -169,6 +182,12 @@ focus_tree = {
 			    }
 		        add_civil_war_target = MGO
 	        }
+			JPN = {
+				remove_ideas = JPN_naruhito_i
+			}
+			MGO = {
+				add_ideas = JPN_naruhito_i
+			}
 		}
 		
 	
