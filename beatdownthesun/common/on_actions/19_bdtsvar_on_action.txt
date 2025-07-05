@@ -27,7 +27,7 @@ on_actions = {
 					clear_variable = parliament_ring_progressbar
                     clr_country_flag = parliament_changing
 					clear_variable = parliament_change_days
-                    parliament_change_completed = yes
+                    parliament_manpower_change_completed = yes
 				}	
 			}
 			if = {

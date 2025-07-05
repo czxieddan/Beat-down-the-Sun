@@ -1,4 +1,4 @@
-parliament_change_set = {
+parliament_manpower_change_set = {
     ROOT = {
 	    if = {
 		    limit = { 
@@ -19,8 +19,7 @@ parliament_change_set = {
 				clr_country_flag =  change_abortive
 			}
 			else = {
-				set_country_flag = warn_parliament_changing
-				clr_country_flag = parliament_manpower_open
+				parliament_manpower_change_same = yse
 			}
 		}
 		if = {
@@ -42,8 +41,7 @@ parliament_change_set = {
 				clr_country_flag =  change_abortive
 			}
 			else = {
-				set_country_flag = warn_parliament_changing
-				clr_country_flag = parliament_manpower_open
+				parliament_manpower_change_same = yse
 			}
 		}
 		if = {
@@ -65,8 +63,7 @@ parliament_change_set = {
 				clr_country_flag =  change_abortive
 			}
 			else = {
-				set_country_flag = warn_parliament_changing
-				clr_country_flag = parliament_manpower_open
+				parliament_manpower_change_same = yse
 			}
 		}
 		if = {
@@ -88,8 +85,7 @@ parliament_change_set = {
 				clr_country_flag =  change_abortive
 			}
 			else = {
-				set_country_flag = warn_parliament_changing
-				clr_country_flag = parliament_manpower_open
+				parliament_manpower_change_same = yse
 			}
 		}
 		if = {
@@ -111,8 +107,7 @@ parliament_change_set = {
 				clr_country_flag =  change_abortive
 			}
 			else = {
-				set_country_flag = warn_parliament_changing
-				clr_country_flag = parliament_manpower_open
+				parliament_manpower_change_same = yse
 			}
 		}
 		if = {
@@ -134,8 +129,7 @@ parliament_change_set = {
 				clr_country_flag =  change_abortive
 			}
 			else = {
-				set_country_flag = warn_parliament_changing
-				clr_country_flag = parliament_manpower_open
+				parliament_manpower_change_same = yse
 			}
 		}
 		if = {
@@ -157,13 +151,12 @@ parliament_change_set = {
 				clr_country_flag =  change_abortive
 			}
 			else = {
-				set_country_flag = warn_parliament_changing
-				clr_country_flag = parliament_manpower_open
+				parliament_manpower_change_same = yse
 			}
 		}
 	}
 }
-parliament_change_present = {
+parliament_manpower_change_present = {
     ROOT = {
 	    if = {
 		    limit = {
@@ -232,8 +225,9 @@ parliament_change_present = {
 	
 }
 
-parliament_change_count = {
+parliament_manpower_change_count = {
     ROOT = {
+		parliament_manpower_change_present = yes
 	    set_variable = { manpower_count_variable = manpower_present_variable }
 	    subtract_from_variable = { manpower_count_variable = manpower_will_change_variable }
 		if = {
@@ -289,9 +283,9 @@ parliament_change_count = {
 	}
 }
 
-parliament_change_completed = {
+parliament_manpower_change_completed = {
 	ROOT = {
-	    parliament_change_count = yes
+	    parliament_manpower_change_count = yes
 	    if = {
 		    limit = { has_country_flag = change_manpower_to_lv7 }
 			random_list = {
@@ -469,4 +463,39 @@ parliament_change_completed = {
 		}
 	}
 }
+parliament_manpower_change_cancel = {
+	ROOT = {
+		clr_country_flag = change_manpower_to_lv7
+		clr_country_flag = change_manpower_to_lv6
+		clr_country_flag = change_manpower_to_lv5
+		clr_country_flag = change_manpower_to_lv4
+		clr_country_flag = change_manpower_to_lv3
+		clr_country_flag = change_manpower_to_lv2
+		clr_country_flag = change_manpower_to_lv1
+		clear_variable = parliament_ring_progressbar
+        clr_country_flag = parliament_changing
+		clear_variable = parliament_change_days
+		set_country_flag = {
+			flag = change_cancel
+			days = 10
+		}
+	}
+}
 
+parliament_manpower_change_same = {
+	ROOT = {
+		clr_country_flag = parliament_manpower_open
+		if = {
+			limit = { 
+				has_country_flag = {
+					flag = parliament_changing
+					days < 10 
+				}
+			}
+			parliament_manpower_change_cancel = yes
+		}
+		else = {
+			set_country_flag = warn_parliament_changing
+		}
+	}
+}

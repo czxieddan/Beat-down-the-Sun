@@ -134,6 +134,9 @@ scripted_gui = {
 			parliament_ring_progressbar_abortive_visible = {
 			    has_country_flag = change_abortive
 			}
+			parliament_ring_progressbar_cancel_visible = {
+			    has_country_flag = change_cancel
+			}
 		}
 	}
 
@@ -213,31 +216,31 @@ scripted_gui = {
 		effects = {
 			change_manpower_level7_button_click = {
 				set_variable = { manpower_change_to_variable = 7 }
-				parliament_change_set = yes
+				parliament_manpower_change_set = yes
 			}
 			change_manpower_level6_button_click = {
 				set_variable = { manpower_change_to_variable = 6 }
-				parliament_change_set = yes
+				parliament_manpower_change_set = yes
 			}
 			change_manpower_level5_button_click = {
 				set_variable = { manpower_change_to_variable = 5 }
-				parliament_change_set = yes
+				parliament_manpower_change_set = yes
 			}
 			change_manpower_level4_button_click = {
 				set_variable = { manpower_change_to_variable = 4 }
-				parliament_change_set = yes
+				parliament_manpower_change_set = yes
 			}
 			change_manpower_level3_button_click = {
 				set_variable = { manpower_change_to_variable = 3 }
-				parliament_change_set = yes
+				parliament_manpower_change_set = yes
 			}
 			change_manpower_level2_button_click = {
 				set_variable = { manpower_change_to_variable = 2 }
-				parliament_change_set = yes
+				parliament_manpower_change_set = yes
 			}
 			change_manpower_level1_button_click = {
 				set_variable = { manpower_change_to_variable = 1 }
-				parliament_change_set = yes
+				parliament_manpower_change_set = yes
 			}
 		}
 

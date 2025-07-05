@@ -14,6 +14,7 @@
  parliament_warn_text: "[country_parliament_name]正在讨论，不可以再提交其他议案！"
  parliament_ring_progressbar_successes: "§G议案被通过!§!"
  parliament_ring_progressbar_abortive: "§R议案被否决!§!"
+ parliament_ring_progressbar_cancel: "§B议案被取消!§!"
  ##parliament_name
  country_parliament_name_gen: "议会"
  country_parliament_name_CCPNPC: "人民代表大会"
