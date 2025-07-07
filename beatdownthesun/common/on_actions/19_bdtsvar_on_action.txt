@@ -56,6 +56,10 @@ on_actions = {
 					            flag = change_successes
 					            days > 10
 				            }
+							has_country_flag = {
+								flag = change_cancel
+								days > 10
+							}
 						}
 					}
 					if = {
@@ -76,7 +80,15 @@ on_actions = {
 						}
 						clr_country_flag = change_successes
 					}
-					
+					if = {
+						limit = {
+                             has_country_flag = {
+					            flag = change_cancel
+					            days > 10
+				            }
+						}
+						clr_country_flag = change_cancel
+					}
 					
 				}
 					

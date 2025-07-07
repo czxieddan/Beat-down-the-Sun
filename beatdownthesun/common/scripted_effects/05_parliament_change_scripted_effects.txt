@@ -1,5 +1,8 @@
 parliament_manpower_change_set = {
     ROOT = {
+		clr_country_flag = change_cancel
+		clr_country_flag = change_successes
+		clr_country_flag =  change_abortive
 	    if = {
 		    limit = { 
 			    check_variable = {
@@ -15,8 +18,7 @@ parliament_manpower_change_set = {
 				set_country_flag = change_manpower_to_lv7
 				set_country_flag = parliament_changing
 				clr_country_flag = parliament_manpower_open
-				clr_country_flag = change_successes
-				clr_country_flag =  change_abortive
+				
 			}
 			else = {
 				parliament_manpower_change_same = yse
@@ -37,8 +39,7 @@ parliament_manpower_change_set = {
 				set_country_flag = change_manpower_to_lv6
 				set_country_flag = parliament_changing
 				clr_country_flag = parliament_manpower_open
-				clr_country_flag = change_successes
-				clr_country_flag =  change_abortive
+				
 			}
 			else = {
 				parliament_manpower_change_same = yse
@@ -59,8 +60,7 @@ parliament_manpower_change_set = {
 				set_country_flag = change_manpower_to_lv5
 				set_country_flag = parliament_changing
 				clr_country_flag = parliament_manpower_open
-				clr_country_flag = change_successes
-				clr_country_flag =  change_abortive
+				
 			}
 			else = {
 				parliament_manpower_change_same = yse
@@ -81,8 +81,7 @@ parliament_manpower_change_set = {
 				set_country_flag = change_manpower_to_lv4
 				set_country_flag = parliament_changing
 				clr_country_flag = parliament_manpower_open
-				clr_country_flag = change_successes
-				clr_country_flag =  change_abortive
+				
 			}
 			else = {
 				parliament_manpower_change_same = yse
@@ -103,8 +102,7 @@ parliament_manpower_change_set = {
 				set_country_flag = change_manpower_to_lv3
 				set_country_flag = parliament_changing
 				clr_country_flag = parliament_manpower_open
-				clr_country_flag = change_successes
-				clr_country_flag =  change_abortive
+				
 			}
 			else = {
 				parliament_manpower_change_same = yse
@@ -125,8 +123,7 @@ parliament_manpower_change_set = {
 				set_country_flag = change_manpower_to_lv2
 				set_country_flag = parliament_changing
 				clr_country_flag = parliament_manpower_open
-				clr_country_flag = change_successes
-				clr_country_flag =  change_abortive
+				
 			}
 			else = {
 				parliament_manpower_change_same = yse
@@ -147,8 +144,7 @@ parliament_manpower_change_set = {
 				set_country_flag = change_manpower_to_lv1
 				set_country_flag = parliament_changing
 				clr_country_flag = parliament_manpower_open
-				clr_country_flag = change_successes
-				clr_country_flag =  change_abortive
+				
 			}
 			else = {
 				parliament_manpower_change_same = yse
@@ -475,10 +471,7 @@ parliament_manpower_change_cancel = {
 		clear_variable = parliament_ring_progressbar
         clr_country_flag = parliament_changing
 		clear_variable = parliament_change_days
-		set_country_flag = {
-			flag = change_cancel
-			days = 10
-		}
+		set_country_flag = change_cancel
 	}
 }
 
