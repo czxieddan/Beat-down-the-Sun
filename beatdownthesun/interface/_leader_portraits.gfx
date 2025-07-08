@@ -8940,6 +8940,17 @@ spriteTypes = {
 		textureFile = "gfx/leaders/AVE/AVE_sakiko_togawa.png"
 	}
 
+	#MGO
+	spriteType = {
+		name = GFX_portrait_MGO_tomorin_ar
+		textureFile = "gfx/leaders/MGO/MGO_tomorin_ar.png"
+	}
+
+	spriteType = {
+		name = GFX_portrait_MGO_tomorin
+		textureFile = "gfx/leaders/MGO/MGO_tomorin.png"
+	}
+
 	#JPY
 	spriteType = {
 		name = GFX_portrait_JPY_YRA

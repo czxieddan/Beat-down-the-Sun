@@ -153,6 +153,8 @@ ideologies = {
 			classical_liberalism = {
 			}
 
+			MyGO = {}
+
 			otheris = {
 			}
 		}

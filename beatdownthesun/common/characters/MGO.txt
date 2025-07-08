@@ -1,0 +1,39 @@
+characters = {
+	MGO_tomorin = {
+		name = MGO_tomorin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MGO_tomorin
+			}
+		}
+		country_leader = {
+			ideology = MyGO
+			traits = { 
+				mygo_t
+				pengin
+		 }
+			expire = "2075.4.21.1"
+
+		}
+        
+	}
+	MGO_tomorin2 = {
+		name = MGO_tomorin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MGO_tomorin
+			}
+		}
+		country_leader = {
+			ideology = MyGO
+			traits = { 
+				
+		 }
+			expire = "2075.4.21.1"
+
+		}
+        
+	}
+
+	
+}

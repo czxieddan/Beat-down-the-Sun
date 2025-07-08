@@ -1,0 +1,53 @@
+#!gfx:interface/cz/bdts_goals/CZ_goals.gfx
+### search_filters = {FOCUS_FILTER_POLITICAL}
+
+
+focus_tree = {
+	id = MGO_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MGO
+		}
+	}
+	default = no
+	#continuous_focus_position = {
+		#x = 500
+		#y = 2500
+	#}
+	focus = {
+		id = MGO_T1
+		text = MGO_T1
+		icon = GFX_focus_MGO_T1
+		cost = 0
+		
+		x = 7
+		y = 0
+		#relative_position_id = 
+		available = {	
+			ROOT = { has_war = yes }
+		
+		
+			
+		}
+		completion_reward = {
+			set_country_leader_portrait = {
+				ideology = Individual_Supremacy
+				portrait = GFX_portrait_MGO_tomorin_ar
+			}
+		}	
+		
+
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+       
+
+	}
+
+	
+}

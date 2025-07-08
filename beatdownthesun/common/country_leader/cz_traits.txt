@@ -343,7 +343,30 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	
+
+	pengin = {
+		random = no
+		custom_modifier_tooltip = pengin_tt
+		hidden_modifier = {
+			opinion_gain_monthly_factor = 1
+			lend_lease_tension = -1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    mygo_t = {
+		random = no
+		surrender_limit = -1
+		stability_factor = -0.3
+		industry_repair_factor = 0.3
+		custom_modifier_tooltip = mygo_t_tt
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	vat_papa = {
 		random = no
 		stability_factor = 0.8

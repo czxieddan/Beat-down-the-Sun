@@ -115,8 +115,8 @@ add_ideas = {
 
 
 
-#recruit_character = AVE_sakiko_togawa
-#recruit_character = AVE_sakiko_togawa2
+recruit_character = MGO_tomorin
+recruit_character = MGO_tomorin2
 
 #game_start_vars_setting
 add_to_variable = { current_int = 13 }
