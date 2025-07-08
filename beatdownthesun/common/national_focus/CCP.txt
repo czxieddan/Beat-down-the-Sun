@@ -300,7 +300,9 @@ focus_tree = {
 		text = CCP_the_war_of_China_s_recovery_of_Japan
 		icon = GFX_focus_CCP_the_war_of_China_s_recovery_of_Japan
 		cost = 0
-		
+		available = {
+			is_ai = no
+		}
 		x = 8
 		y = 3
 		completion_reward = {
@@ -322,6 +324,7 @@ focus_tree = {
 		y = 3
 		
 		available = {
+			
 	        NOT = {
 				any_state = {
 					has_state_flag = is_state_of_JPN	
@@ -468,6 +471,9 @@ focus_tree = {
 		cost = 0
 		x = 10
 		y = 10
+		available = {
+			is_ai = no
+		}
 		completion_reward = { 
 			#clear_array = ROOT.nuke_state
 			#clear_array = global.every_nuke_state
